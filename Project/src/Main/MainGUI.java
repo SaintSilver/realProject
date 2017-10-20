@@ -32,6 +32,9 @@ import javax.swing.JTextPane;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.SwingConstants;
+
+import User.LoginGUI;
+
 import javax.swing.JRadioButton;
 import javax.swing.JDesktopPane;
 import java.awt.event.ActionListener;
@@ -250,6 +253,22 @@ public class MainGUI {
 		sl_menuPanel.putConstraint(SpringLayout.EAST, btnNewButton_3, 0, SpringLayout.EAST, btnNewButton);
 		menuPanel.add(btnNewButton_3);
 		panel.add(titlePanel);
+		
+		JButton logoutButton = new JButton("\uB85C\uADF8\uC544\uC6C3");
+		logoutButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				
+				LoginGUI login = new LoginGUI();
+				login.main(null);
+			}
+		});
+		sl_titlePanel.putConstraint(SpringLayout.NORTH, logoutButton, 10, SpringLayout.NORTH, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.WEST, logoutButton, -95, SpringLayout.EAST, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.EAST, logoutButton, -10, SpringLayout.EAST, titlePanel);
+		logoutButton.setBackground(Color.WHITE);
+		logoutButton.setFont(new Font("°íµµ B", Font.PLAIN, 10));
+		titlePanel.add(logoutButton);
 		
 		
 		
