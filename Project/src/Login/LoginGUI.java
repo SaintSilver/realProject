@@ -42,7 +42,6 @@ public class LoginGUI {
 	private String myID;
 	private JPasswordField pwField;
 	
-	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {

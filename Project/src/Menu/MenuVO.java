@@ -1,4 +1,4 @@
-package User;
+package Menu;
 
 public class MenuVO {
    int itemNumber;      //상품번호
