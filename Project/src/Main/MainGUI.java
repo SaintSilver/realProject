@@ -101,7 +101,7 @@ public class MainGUI {
 		
 		
 		//order_current
-		Order_current_panel order_current = new Order_current_panel();
+		Order_current order_current = new Order_current();
 		mainPanel.add(order_current, "order_current");
 		
 		//payment panel
