@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
-import Login.LoginGUI;
+import User.LoginGUI;
 
 public class OrderDAO {
 

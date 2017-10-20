@@ -1,4 +1,4 @@
-package Login;
+package User;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -23,9 +23,9 @@ import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
+import Main.Clock;
 import Main.MainGUI;
-import User.Clock;
-import User.UserDAO;
+
 import javax.swing.JPasswordField;
 
 public class LoginGUI {
@@ -135,7 +135,7 @@ public class LoginGUI {
 		sl_panel.putConstraint(SpringLayout.SOUTH, panel_2, 0, SpringLayout.SOUTH, LoginButton);
 		sl_panel.putConstraint(SpringLayout.NORTH, LoginButton, 149, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.EAST, LoginButton, -115, SpringLayout.EAST, panel);
-		LoginButton.setIcon(new ImageIcon(LoginGUI.class.getResource("/Login/loginbt.png")));
+		LoginButton.setIcon(new ImageIcon(LoginGUI.class.getResource("/User/loginbt.png")));
 		panel.add(LoginButton);
 		
 		JButton JoinButton = new JButton("");
@@ -153,7 +153,7 @@ public class LoginGUI {
 		sl_panel.putConstraint(SpringLayout.SOUTH, JoinButton, -155, SpringLayout.SOUTH, panel);
 		sl_panel.putConstraint(SpringLayout.EAST, JoinButton, -115, SpringLayout.EAST, panel);
 		sl_panel.putConstraint(SpringLayout.WEST, LoginButton, 0, SpringLayout.WEST, JoinButton);
-		JoinButton.setIcon(new ImageIcon(LoginGUI.class.getResource("/Login/joinbt.png")));
+		JoinButton.setIcon(new ImageIcon(LoginGUI.class.getResource("/User/joinbt.png")));
 		panel.add(JoinButton);
 		
 		idField = new JTextField();

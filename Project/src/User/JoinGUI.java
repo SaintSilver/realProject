@@ -1,4 +1,4 @@
-package Login;
+package User;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -26,9 +26,8 @@ import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
-import User.Clock;
-import User.UserDAO;
-import User.UserVO;
+import Main.Clock;
+
 import javax.swing.JPasswordField;
 
 public class JoinGUI {
@@ -109,7 +108,7 @@ public class JoinGUI {
 		sl_panel.putConstraint(SpringLayout.WEST, cancelButton, 700, SpringLayout.WEST, panel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, cancelButton, -32, SpringLayout.SOUTH, panel);
 		sl_panel.putConstraint(SpringLayout.EAST, cancelButton, -69, SpringLayout.EAST, panel);
-		cancelButton.setIcon(new ImageIcon(JoinGUI.class.getResource("/Login/cancelBt.png")));
+		cancelButton.setIcon(new ImageIcon(JoinGUI.class.getResource("/User/cancelBt.png")));
 		panel.add(cancelButton);
 
 		JRadioButton radioButton_Man = new JRadioButton("\uB0A8\uC790");
@@ -180,7 +179,7 @@ public class JoinGUI {
 		sl_panel.putConstraint(SpringLayout.WEST, confirmButton, 562, SpringLayout.WEST, panel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, confirmButton, 0, SpringLayout.SOUTH, cancelButton);
 		sl_panel.putConstraint(SpringLayout.EAST, confirmButton, -23, SpringLayout.WEST, cancelButton);
-		confirmButton.setIcon(new ImageIcon(JoinGUI.class.getResource("/Login/cnfrimBt.png")));
+		confirmButton.setIcon(new ImageIcon(JoinGUI.class.getResource("/User/cnfrimBt.png")));
 		panel.add(confirmButton);
 
 		JPanel panel_1 = new JPanel();
