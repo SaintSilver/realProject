@@ -29,14 +29,14 @@ public class UserDAO {
 	public void join(UserVO user) {
 
 		try {
-			
-			int lastUserNumber = getLastUserNumber()+1;
-			
+
+			int lastUserNumber = getLastUserNumber() + 1;
+
 			getConnection();
 
 			String sql = "Insert into UserInfo values(?,?,?,?,?,?,?)";
 			psmt = con.prepareStatement(sql);
-			
+
 			psmt.setInt(1, lastUserNumber);
 			psmt.setString(2, user.getUserType());
 			psmt.setString(3, user.getId());
@@ -70,10 +70,10 @@ public class UserDAO {
 
 	private int getLastUserNumber() {
 
-		int result = 1; 
-		
+		int result = 1;
+
 		try {
-			
+
 			String sql = "select usernumber from userinfo";
 			getConnection();
 			psmt = con.prepareStatement(sql);
@@ -231,7 +231,7 @@ public class UserDAO {
 
 			String sql = "update userinfo set password =? , name = ? , contact = ? where id = ?";
 			psmt = con.prepareStatement(sql);
-			
+
 			psmt.setString(1, user.getPassword());
 			psmt.setString(2, user.getName());
 			psmt.setString(3, user.getContact());
@@ -311,17 +311,17 @@ public class UserDAO {
 
 	}
 
-	public boolean imPossibleJoin(String id) {
+	public boolean isPossibleJoin(String id) {
 
 		try {
 			list = getUserList();
 
 			for (int i = 0; i < list.size(); i++) {
 				if (list.get(i).getId().equals(id)) {
-					return true;
+					return false;
 				}
 			}
-			return false;
+			return true;
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -338,6 +338,26 @@ public class UserDAO {
 				e.printStackTrace();
 			}
 		}
+		return false;
+	}
+
+	public boolean checkInputOnlyNumberAndAlphabet(String textInput) {
+
+		char chrInput;
+
+		for (int i = 0; i < textInput.length(); i++) {
+
+			chrInput = textInput.charAt(i);
+
+			if (chrInput >= 0x61 && chrInput <= 0x7A) {
+				// 영문(소문자)
+			} else if (chrInput >= 0x30 && chrInput <= 0x39) {
+				// 숫자
+			} else {
+				return false; // 영문자도 아니고 숫자도 아님!
+			}
+		}
+
 		return true;
 	}
 

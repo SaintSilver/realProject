@@ -41,7 +41,7 @@ public class JoinGUI {
 	private JLabel timeLabel;
 	private UserVO user = new UserVO();
 	private UserDAO dao = new UserDAO();
-	private boolean checkID = true;
+	private boolean checkID = false;
 	private JPasswordField pwField;
 	private JPasswordField pwConField;
 
@@ -123,23 +123,28 @@ public class JoinGUI {
 			public void actionPerformed(ActionEvent e) {
 
 				char ch = idField.getText().charAt(0);
-
+				char[] array = idField.getText().toCharArray();
 				// 아이디 중복검사 실행
-				checkID = dao.imPossibleJoin(idField.getText());
-				if (checkID) {
-					warning.setText("이미 존재하는 아이디입니다.");
-				} else if (idField.getText().equals("")) {
+				checkID = dao.isPossibleJoin(idField.getText());
+				
+				boolean checkID2 = dao.checkInputOnlyNumberAndAlphabet(idField.getText());
+				
+				if(idField.getText().equals("")) {
 					warning.setText("아이디를 입력해주세요.");
-					checkID = true;
-				} else if (idField.getText().contains(" ")) {
+				}else if (idField.getText().contains(" ")) {
 					warning.setText("유효하지 않은 아이디입니다.");
-					checkID = true;
 				} else if (!(Character.isLowerCase(ch))) {
 					warning.setText("ID는 영어 소문자로 시작해야 합니다.");
-					checkID = true;
-				} else {
-					warning.setText("사용 가능한 아이디입니다.");
+				}else if(array.length>10 || array.length<4) {
+					warning.setText("4자 이상, 10자 이하로 설정해주세요.");
+				}else if(!checkID2) {
+					warning.setText("ID는 영소문자와 숫자로만 가능합니다.");
+				}else if(!checkID) {
+					warning.setText("이미 존재하는 아이디입니다.");
+				}else {
+					warning.setText("사용가능한 아이디입니다.");
 				}
+				
 			}
 		});
 
@@ -161,11 +166,13 @@ public class JoinGUI {
 				if (idField.getText().equals("") || contactField.getText().equals("") || pw.equals("") || pw1.equals("")
 						|| nameField.getText().equals("") || contactField.getText().equals("")) {
 					warning.setText("빈 항목이 있습니다.");
-				} else if (checkID) {
+				} else if (!checkID) {
 					warning.setText("아이디 중복검사를 해주세요.");
 				} else if (!(pw.equals(pw1))) {
 					warning.setText("비밀번호가 일치하지 않습니다.");
-				} else {
+				} else if(pw.length()<4){
+					warning.setText("비밀번호를 4자리 이상 설정해주세요.");
+				}else {
 
 					user = new UserVO(user.getUserNumber(), "일반", idField.getText(), pw, nameField.getText(),
 							contactField.getText(), gender);
@@ -306,6 +313,9 @@ public class JoinGUI {
 		sl_panel.putConstraint(SpringLayout.SOUTH, warning, 0, SpringLayout.SOUTH, cancelButton);
 		sl_panel.putConstraint(SpringLayout.EAST, warning, -30, SpringLayout.WEST, confirmButton);
 		panel.add(warning);
+		
+
+
 
 	}
 }
