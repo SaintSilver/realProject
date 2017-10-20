@@ -4,22 +4,28 @@ import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.SpringLayout;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.JTable;
 
 
 public class UserManagePanel extends JPanel  {
+	private JTable table;
 	
 	public UserManagePanel() {
-		SpringLayout sl_userManagePanel = new SpringLayout();
-		setLayout(sl_userManagePanel);
+		SpringLayout springLayout = new SpringLayout();
+		setLayout(springLayout);
 		
-		JCheckBox chckbxNewCheckBox = new JCheckBox("order");
-		sl_userManagePanel.putConstraint(SpringLayout.NORTH, chckbxNewCheckBox, 152, SpringLayout.NORTH, this);
-		add(chckbxNewCheckBox);
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		springLayout.putConstraint(SpringLayout.NORTH, scrollPane, 10, SpringLayout.NORTH, this);
+		springLayout.putConstraint(SpringLayout.WEST, scrollPane, 10, SpringLayout.WEST, this);
+		springLayout.putConstraint(SpringLayout.SOUTH, scrollPane, 548, SpringLayout.NORTH, this);
+		springLayout.putConstraint(SpringLayout.EAST, scrollPane, 751, SpringLayout.WEST, this);
+		add(scrollPane);
 		
-		JRadioButton rdbtnNewRadioButton2 = new JRadioButton("°áÁ¦ÀÚ");
-		sl_userManagePanel.putConstraint(SpringLayout.NORTH, rdbtnNewRadioButton2, 83, SpringLayout.NORTH, this);
-		sl_userManagePanel.putConstraint(SpringLayout.EAST, rdbtnNewRadioButton2, -215, SpringLayout.EAST, this);
-		add(rdbtnNewRadioButton2);
+		table = new JTable();
+		scrollPane.setViewportView(table);
 		
 		
 	}
