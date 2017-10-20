@@ -1,7 +1,7 @@
 package Main;
 
 public class PickNameVO {
-
+	
 	String name;
 	String time;
 	int price;

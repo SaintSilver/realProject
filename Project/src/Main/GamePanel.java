@@ -1,28 +1,26 @@
 package Main;
 
-import javax.swing.JCheckBox;
 import javax.swing.JPanel;
-import javax.swing.JRadioButton;
-import javax.swing.SpringLayout;
+import java.awt.CardLayout;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 
 public class GamePanel extends JPanel{
 
 	
 	public GamePanel() {
+		setLayout(new CardLayout(0, 0));
 		
-	
-			SpringLayout sl_gamePanel = new SpringLayout();
-			setLayout(sl_gamePanel);
+		JLabel nameLabel = new JLabel("New label");
+		nameLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		add(nameLabel, "name_36506576172679");
 			
-			JCheckBox chckbxNewCheckBox = new JCheckBox("∞‘¿”");
-			sl_gamePanel.putConstraint(SpringLayout.NORTH, chckbxNewCheckBox, 152, SpringLayout.NORTH, this);
-			add(chckbxNewCheckBox);
-			
-			JRadioButton rdbtnNewRadioButton2 = new JRadioButton("New radio ∆–≥Œ");
-			sl_gamePanel.putConstraint(SpringLayout.NORTH, rdbtnNewRadioButton2, 83, SpringLayout.NORTH, this);
-			sl_gamePanel.putConstraint(SpringLayout.EAST, rdbtnNewRadioButton2, -215, SpringLayout.EAST, this);
-			add(rdbtnNewRadioButton2);
-			
+		PickNameDAO dao = new PickNameDAO();
+		
+		PickNameVO pickName = dao.pickedName();
+		
+		nameLabel.setText(pickName.getName()+"¥‘¿Ã "+pickName.getTime()+"ø° "+pickName.getPrice()+"¥Á√∑!!!!");
+		
 		
 	}
 }
