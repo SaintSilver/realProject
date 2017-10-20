@@ -1,13 +1,13 @@
-package Main;
+package Admin;
 
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.SpringLayout;
 
-public class Order_current extends JPanel {
+public class Order_current_panel extends JPanel {
 	
-	public Order_current() {
+	public Order_current_panel() {
 	SpringLayout sl_order_current = new SpringLayout();
 	setLayout(sl_order_current);
 	

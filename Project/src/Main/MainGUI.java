@@ -48,10 +48,9 @@ public class MainGUI {
 	
 	
 	private JFrame frame;
-	private BufferedImage icon;
-	private JTable table;
+	
 	private String menuList;
-	private OrderPanel orderPanel = new OrderPanel();
+	
 	private JPanel mainPanel;
 	
 	
@@ -126,7 +125,7 @@ public class MainGUI {
 		
 		
 		//order_current
-		Order_current order_current = new Order_current();
+		Order_current_panel order_current = new Order_current_panel();
 		mainPanel.add(order_current, "order_current");
 		
 		//payment panel
