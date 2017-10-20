@@ -6,33 +6,23 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.SpringLayout;
+import javax.swing.JTable;
+import java.awt.CardLayout;
+import javax.swing.JScrollPane;
 
 
 public class OrderPanel extends JPanel{
+	private JTable table;
 
 	public OrderPanel() {
-	
-		SpringLayout sl_order_panel = new SpringLayout();
-		setLayout(sl_order_panel);
+		setLayout(new CardLayout(0, 0));
 		
-		JButton btnNewButton_4 = new JButton("New button");
-		sl_order_panel.putConstraint(SpringLayout.NORTH, btnNewButton_4, 62, SpringLayout.NORTH, this);
-		sl_order_panel.putConstraint(SpringLayout.WEST, btnNewButton_4, 35, SpringLayout.WEST, this);
-		sl_order_panel.putConstraint(SpringLayout.SOUTH, btnNewButton_4, 95, SpringLayout.NORTH, this);
-		sl_order_panel.putConstraint(SpringLayout.EAST, btnNewButton_4, 151, SpringLayout.WEST, this);
-		add(btnNewButton_4);
+		JScrollPane scrollPane = new JScrollPane();
+		add(scrollPane, "name_20212705738031");
 		
-		JButton btnNewButton_5 = new JButton("New button");
-		sl_order_panel.putConstraint(SpringLayout.WEST, btnNewButton_5, 207, SpringLayout.WEST, this);
-		sl_order_panel.putConstraint(SpringLayout.SOUTH, btnNewButton_5, -139, SpringLayout.SOUTH, this);
-		add(btnNewButton_5);
-		
-		JRadioButton rdbtnNewRadioButton = new JRadioButton("New radio button");
-		sl_order_panel.putConstraint(SpringLayout.WEST, rdbtnNewRadioButton, 266, SpringLayout.WEST, this);
-		sl_order_panel.putConstraint(SpringLayout.SOUTH, rdbtnNewRadioButton, -87, SpringLayout.NORTH, btnNewButton_5);
-		add(rdbtnNewRadioButton);
+		table = new JTable();
+		scrollPane.setViewportView(table);
 	
 	
 	}
-	
 }

@@ -1,58 +1,34 @@
 package Main;
 
-import java.awt.EventQueue;
-import java.awt.Graphics;
-
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import java.awt.Dimension;
-
-import javax.swing.JLabel;
-import java.awt.GridLayout;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Vector;
-
-import javax.imageio.ImageIO;
-import javax.swing.BoxLayout;
-import javax.swing.Icon;
-import javax.swing.JInternalFrame;
-import javax.swing.JSplitPane;
-import javax.swing.SpringLayout;
-import javax.swing.JTextField;
-import javax.swing.JFormattedTextField;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JTextPane;
 import java.awt.Color;
+import java.awt.EventQueue;
 import java.awt.Font;
-import javax.swing.SwingConstants;
-import javax.swing.JRadioButton;
-import javax.swing.JDesktopPane;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.SpringLayout;
+
+import User.ChangeInfoGUI;
+import User.LoginGUI;
+import javax.swing.SwingConstants;
 
 
 public class MainGUI {
 
-	
-	
-	
 	private JFrame frame;
-	
+
 	private String menuList;
-	
+
 	private JPanel mainPanel;
-	
 	
 	/**
 	 * Launch the application.
@@ -129,7 +105,7 @@ public class MainGUI {
 		mainPanel.add(order_current, "order_current");
 		
 		//payment panel
-		PaymentPanel paymentPanel = new PaymentPanel();
+		MyOrderPanel paymentPanel = new MyOrderPanel();
 		mainPanel.add(paymentPanel,"paymentPanel");
 		//game panel
 		GamePanel gamePanel = new GamePanel();
@@ -172,7 +148,7 @@ public class MainGUI {
 		sl_menuPanel.putConstraint(SpringLayout.EAST, btnNewButton, 104, SpringLayout.WEST, menuPanel);
 		menuPanel.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("\uACB0\uC81C\uD655\uC778");
+		JButton btnNewButton_1 = new JButton("\uB0B4 \uC8FC\uBB38");
 		btnNewButton_1.setFont(new Font("나눔바른고딕", Font.BOLD, 15));
 		btnNewButton_1.addMouseListener(new MouseAdapter() {
 			@Override
@@ -187,7 +163,7 @@ public class MainGUI {
 		});
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				lblNewLabel.setText("결제확인");
+				lblNewLabel.setText("내 주문");
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "paymentPanel");
 			}
 		});
@@ -257,7 +233,48 @@ public class MainGUI {
 		menuPanel.add(btnNewButton_3);
 		panel.add(titlePanel);
 		
+		JButton logoutButton = new JButton("\uB85C\uADF8\uC544\uC6C3");
+		sl_titlePanel.putConstraint(SpringLayout.WEST, logoutButton, 695, SpringLayout.WEST, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.SOUTH, logoutButton, -32, SpringLayout.SOUTH, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.EAST, logoutButton, -10, SpringLayout.EAST, titlePanel);
+		logoutButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				
+				JOptionPane.showMessageDialog(frame, "로그아웃 되었습니다.");
+				LoginGUI login = new LoginGUI();
+				login.main(null);
+			}
+		});
+		logoutButton.setBackground(Color.WHITE);
+		logoutButton.setFont(new Font("고도 B", Font.PLAIN, 10));
+		titlePanel.add(logoutButton);
 		
+		JButton changeInfoButton = new JButton("\uC815\uBCF4\uC218\uC815");
+		sl_titlePanel.putConstraint(SpringLayout.NORTH, changeInfoButton, 0, SpringLayout.NORTH, logoutButton);
+		sl_titlePanel.putConstraint(SpringLayout.WEST, changeInfoButton, 614, SpringLayout.WEST, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.EAST, changeInfoButton, -6, SpringLayout.WEST, logoutButton);
+		changeInfoButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				ChangeInfoGUI changeInfoGUI = new ChangeInfoGUI();
+				changeInfoGUI.main(null);
+			}
+		});
+		changeInfoButton.setFont(new Font("고도 B", Font.PLAIN, 10));
+		changeInfoButton.setBackground(Color.WHITE);
+		titlePanel.add(changeInfoButton);
+		
+		JLabel timeLabel = new JLabel("\"\"");
+		sl_titlePanel.putConstraint(SpringLayout.NORTH, timeLabel, 10, SpringLayout.NORTH, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.WEST, timeLabel, 564, SpringLayout.WEST, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.SOUTH, timeLabel, -8, SpringLayout.NORTH, logoutButton);
+		sl_titlePanel.putConstraint(SpringLayout.EAST, timeLabel, 0, SpringLayout.EAST, logoutButton);
+		timeLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		timeLabel.setFont(new Font("나눔바른고딕 Light", Font.ITALIC, 14));
+		titlePanel.add(timeLabel);
+		
+		Clock clock = new Clock(timeLabel);
 		
 		
 		

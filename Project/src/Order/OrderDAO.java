@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
-import Login.LoginGUI;
+import User.LoginGUI;
 
 public class OrderDAO {
 
@@ -237,7 +237,7 @@ public class OrderDAO {
 	public ArrayList<OrderVO> myOrder() {
 		//========================id¹Þ±â============================
 		// String myID = login.getMyID();
-		String myID = "d";
+		String myID = login.getMyID();
 		ArrayList<OrderVO> list = new ArrayList<>();
 
 		try {

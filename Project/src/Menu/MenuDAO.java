@@ -27,9 +27,7 @@ public class MenuDAO {
 		try {
 			
 			int lastMenuNumber = getLastMenuNumber()+1;
-			
 			getConnection();
-
 			String sql = "Insert into itemInfo values(?,?,?)";
 			psmt = con.prepareStatement(sql);
 			
@@ -129,6 +127,5 @@ public class MenuDAO {
 			}
 		}
 	}
-	
 	
 }

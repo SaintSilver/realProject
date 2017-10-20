@@ -1,17 +1,7 @@
-package Login;
+package User;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.ButtonGroup;
@@ -21,36 +11,50 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+
+import java.awt.Graphics;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
+import javax.swing.plaf.basic.BasicBorders.RadioButtonBorder;
 
-import User.Clock;
-import User.UserDAO;
-import User.UserVO;
-import javax.swing.JPasswordField;
+import Main.Clock;
 
-public class JoinGUI {
+public class ChangeInfoGUI {
 
-	private JFrame frame;
 	private BufferedImage icon;
 	private JLabel label;
-	private JTextField idField;
 	private JTextField nameField;
 	private JTextField contactField;
 	private JLabel timeLabel;
-	private UserVO user = new UserVO();
+	private UserVO user;
 	private UserDAO dao = new UserDAO();
-	private boolean checkID = true;
 	private JPasswordField pwField;
 	private JPasswordField pwConField;
+	private JFrame frame;
+	private LoginGUI login = new LoginGUI();
+	private JPasswordField passwordField;
 
+	/**
+	 * Launch the application.
+	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					JoinGUI window = new JoinGUI();
+					ChangeInfoGUI window = new ChangeInfoGUI();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -59,10 +63,16 @@ public class JoinGUI {
 		});
 	}
 
-	public JoinGUI() {
+	/**
+	 * Create the application.
+	 */
+	public ChangeInfoGUI() {
 		initialize();
 	}
 
+	/**
+	 * Initialize the contents of the frame.
+	 */
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 900, 522);
@@ -87,11 +97,15 @@ public class JoinGUI {
 			}
 		};
 
+		String myID = login.getMyID();
+
+		user = dao.viewInfo(myID);
+
 		frame.getContentPane().add(panel, BorderLayout.CENTER);
 		SpringLayout sl_panel = new SpringLayout();
 		panel.setLayout(sl_panel);
 
-		label = new JLabel("\uD68C\uC6D0\uAC00\uC785");
+		label = new JLabel("\uD68C\uC6D0\uC815\uBCF4\uC218\uC815");
 		sl_panel.putConstraint(SpringLayout.NORTH, label, 30, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.WEST, label, 44, SpringLayout.WEST, panel);
 		label.setFont(new Font("굴림", Font.BOLD, 24));
@@ -109,82 +123,29 @@ public class JoinGUI {
 		sl_panel.putConstraint(SpringLayout.WEST, cancelButton, 700, SpringLayout.WEST, panel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, cancelButton, -32, SpringLayout.SOUTH, panel);
 		sl_panel.putConstraint(SpringLayout.EAST, cancelButton, -69, SpringLayout.EAST, panel);
-		cancelButton.setIcon(new ImageIcon(JoinGUI.class.getResource("/Login/cancelBt.png")));
+		cancelButton.setIcon(new ImageIcon(JoinGUI.class.getResource("/User/cancelBt.png")));
 		panel.add(cancelButton);
 
 		JRadioButton radioButton_Man = new JRadioButton("\uB0A8\uC790");
+		radioButton_Man.setOpaque(false);
 		JRadioButton radioButton_Woman = new JRadioButton("\uC5EC\uC790");
+		radioButton_Woman.setOpaque(false);
 
 		ButtonGroup group = new ButtonGroup(); // 라디오버튼 그룹화를 위한 버튼그룹 설정
 		group.add(radioButton_Man);
 		group.add(radioButton_Woman);
 
-		JButton idCheck = new JButton("\uC911\uBCF5\uAC80\uC0AC");
-		idCheck.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-				char ch = idField.getText().charAt(0);
-				// 아이디 중복검사 실행
-				checkID = dao.imPossibleJoin(idField.getText());
-				if (checkID) {
-					warning.setText("이미 존재하는 아이디입니다.");
-				} else if (idField.getText().equals("")) {
-					warning.setText("아이디를 입력해주세요.");
-					checkID = true;
-					
-				} else if(idField.getText().contains(" ")){
-					warning.setText("유효하지 않은 아이디입니다.");
-					checkID = true;
-				}else if(!(Character.isLowerCase(ch))){
-					warning.setText("ID는 영어 소문자로 시작해야 합니다.");
-					checkID = true;
-				}else {
-					warning.setText("사용 가능한 아이디입니다.");
-				}
-			}
-		});
-
 		JButton confirmButton = new JButton("");
-		confirmButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-				String pw = String.valueOf(pwField.getPassword());
-				String pw1 = String.valueOf(pwConField.getPassword());
-				
-				// 성별
-				String gender = "";
-				if (radioButton_Man.isSelected()) {
-					gender = "남";
-				} else if (radioButton_Woman.isSelected()) {
-					gender = "여";
-					
-				}
-				if (idField.getText().equals("") || contactField.getText().equals("") || pw.equals("")
-						|| pw1.equals("") || nameField.getText().equals("")
-						|| contactField.getText().equals("")) {
-					warning.setText("빈 항목이 있습니다.");
-				} else if (checkID) {
-					warning.setText("아이디 중복검사를 해주세요.");
-				} else if (!(pw.equals(pw1))) {
-					warning.setText("비밀번호가 일치하지 않습니다.");
-				} else {
-					
-					user = new UserVO(user.getUserNumber(), "일반", idField.getText(), pw,
-							nameField.getText(), contactField.getText(), gender);
-					dao.join(user);
-					JOptionPane.showMessageDialog(frame, "가입완료, 로그인 해주세요.");
-					frame.dispose();
-				}
-			}
-		});
+
 		sl_panel.putConstraint(SpringLayout.NORTH, confirmButton, 395, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.WEST, confirmButton, 562, SpringLayout.WEST, panel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, confirmButton, 0, SpringLayout.SOUTH, cancelButton);
 		sl_panel.putConstraint(SpringLayout.EAST, confirmButton, -23, SpringLayout.WEST, cancelButton);
-		confirmButton.setIcon(new ImageIcon(JoinGUI.class.getResource("/Login/cnfrimBt.png")));
+		confirmButton.setIcon(new ImageIcon(JoinGUI.class.getResource("/User/cnfrimBt.png")));
 		panel.add(confirmButton);
 
 		JPanel panel_1 = new JPanel();
+		panel_1.setOpaque(false);
 		panel_1.setBackground(new Color(255, 0, 0, 0));
 		sl_panel.putConstraint(SpringLayout.NORTH, panel_1, 124, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.WEST, panel_1, 259, SpringLayout.WEST, panel);
@@ -201,13 +162,6 @@ public class JoinGUI {
 		label_2.setFont(new Font("맑은 고딕", Font.BOLD, 13));
 		panel_1.add(label_2);
 
-		idField = new JTextField();
-		sl_panel_1.putConstraint(SpringLayout.NORTH, idField, 0, SpringLayout.NORTH, label_2);
-		sl_panel_1.putConstraint(SpringLayout.EAST, idField, -19, SpringLayout.WEST, idCheck);
-		idField.setHorizontalAlignment(SwingConstants.CENTER);
-		idField.setColumns(10);
-		panel_1.add(idField);
-
 		JLabel label_3 = new JLabel("\uBE44\uBC00\uBC88\uD638");
 		sl_panel_1.putConstraint(SpringLayout.NORTH, label_3, 26, SpringLayout.SOUTH, label_2);
 		sl_panel_1.putConstraint(SpringLayout.WEST, label_3, 0, SpringLayout.WEST, label_2);
@@ -216,19 +170,21 @@ public class JoinGUI {
 		panel_1.add(label_3);
 
 		JLabel label_4 = new JLabel("\uBE44\uBC00\uBC88\uD638 \uD655\uC778");
-		sl_panel_1.putConstraint(SpringLayout.NORTH, label_4, 25, SpringLayout.SOUTH, idCheck);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, label_4, 58, SpringLayout.NORTH, panel_1);
 		sl_panel_1.putConstraint(SpringLayout.WEST, label_4, 169, SpringLayout.EAST, label_3);
 		label_4.setHorizontalAlignment(SwingConstants.CENTER);
 		label_4.setFont(new Font("굴림", Font.BOLD, 12));
 		panel_1.add(label_4);
-		
+
 		pwField = new JPasswordField();
-		sl_panel_1.putConstraint(SpringLayout.NORTH, pwField, 24, SpringLayout.SOUTH, idField);
-		sl_panel_1.putConstraint(SpringLayout.WEST, pwField, 0, SpringLayout.WEST, idField);
-		sl_panel_1.putConstraint(SpringLayout.EAST, pwField, 0, SpringLayout.EAST, idField);
+		pwField.setOpaque(false);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, pwField, 55, SpringLayout.NORTH, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.WEST, pwField, 34, SpringLayout.EAST, label_3);
+		sl_panel_1.putConstraint(SpringLayout.EAST, pwField, -19, SpringLayout.WEST, label_4);
 		panel_1.add(pwField);
-		
+
 		pwConField = new JPasswordField();
+		pwConField.setOpaque(false);
 		sl_panel_1.putConstraint(SpringLayout.NORTH, pwConField, 55, SpringLayout.NORTH, panel_1);
 		sl_panel_1.putConstraint(SpringLayout.WEST, pwConField, 26, SpringLayout.EAST, label_4);
 		sl_panel_1.putConstraint(SpringLayout.EAST, pwConField, 142, SpringLayout.EAST, label_4);
@@ -242,8 +198,9 @@ public class JoinGUI {
 		panel_1.add(label_5);
 
 		nameField = new JTextField();
+		nameField.setOpaque(false);
 		sl_panel_1.putConstraint(SpringLayout.NORTH, nameField, -3, SpringLayout.NORTH, label_5);
-		sl_panel_1.putConstraint(SpringLayout.EAST, nameField, 0, SpringLayout.EAST, idField);
+		sl_panel_1.putConstraint(SpringLayout.WEST, nameField, 60, SpringLayout.EAST, label_5);
 		nameField.setColumns(10);
 		panel_1.add(nameField);
 
@@ -255,6 +212,7 @@ public class JoinGUI {
 		panel_1.add(label_6);
 
 		contactField = new JTextField();
+		contactField.setOpaque(false);
 		sl_panel_1.putConstraint(SpringLayout.NORTH, contactField, 150, SpringLayout.NORTH, panel_1);
 		sl_panel_1.putConstraint(SpringLayout.WEST, contactField, 47, SpringLayout.EAST, label_6);
 		contactField.setColumns(10);
@@ -269,9 +227,9 @@ public class JoinGUI {
 
 		JPanel panel_3 = new JPanel();
 		sl_panel_1.putConstraint(SpringLayout.NORTH, panel_3, 0, SpringLayout.NORTH, label_1);
-		sl_panel_1.putConstraint(SpringLayout.WEST, panel_3, 0, SpringLayout.WEST, idField);
+		sl_panel_1.putConstraint(SpringLayout.WEST, panel_3, 60, SpringLayout.EAST, label_1);
 		sl_panel_1.putConstraint(SpringLayout.SOUTH, panel_3, 0, SpringLayout.SOUTH, label_1);
-		sl_panel_1.putConstraint(SpringLayout.EAST, panel_3, 6, SpringLayout.EAST, idField);
+		sl_panel_1.putConstraint(SpringLayout.EAST, panel_3, -293, SpringLayout.EAST, panel_1);
 		panel_1.add(panel_3);
 		panel_3.setLayout(new GridLayout(1, 0, 0, 0));
 
@@ -302,12 +260,65 @@ public class JoinGUI {
 		sl_panel.putConstraint(SpringLayout.NORTH, warning, 32, SpringLayout.SOUTH, panel_1);
 		sl_panel.putConstraint(SpringLayout.WEST, warning, 0, SpringLayout.WEST, panel_1);
 
-		sl_panel_1.putConstraint(SpringLayout.NORTH, idCheck, 0, SpringLayout.NORTH, label_2);
-		sl_panel_1.putConstraint(SpringLayout.WEST, idCheck, 0, SpringLayout.WEST, label_4);
-		panel_1.add(idCheck);
+		JLabel idLabel = new JLabel("");
+		idLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, idLabel, 14, SpringLayout.NORTH, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.WEST, idLabel, 48, SpringLayout.EAST, label_2);
+		sl_panel_1.putConstraint(SpringLayout.SOUTH, idLabel, 35, SpringLayout.NORTH, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.EAST, idLabel, 164, SpringLayout.EAST, label_2);
+		panel_1.add(idLabel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, warning, 0, SpringLayout.SOUTH, cancelButton);
 		sl_panel.putConstraint(SpringLayout.EAST, warning, -30, SpringLayout.WEST, confirmButton);
 		panel.add(warning);
+
+		idLabel.setText(login.getMyID());
+		nameField.setText(user.getName());
+		contactField.setText(user.getContact());
+		radioButton_Man.setEnabled(user.getGender().equals("남"));
+		radioButton_Woman.setEnabled(user.getGender().equals("여"));
+
+		passwordField = new JPasswordField();
+		passwordField.setOpaque(false);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, passwordField, 14, SpringLayout.NORTH, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.SOUTH, passwordField, 35, SpringLayout.NORTH, panel_1);
+		panel_1.add(passwordField);
+
+		JLabel label_7 = new JLabel("\uAE30\uC874 \uBE44\uBC00\uBC88\uD638");
+		sl_panel_1.putConstraint(SpringLayout.WEST, passwordField, 26, SpringLayout.EAST, label_7);
+		sl_panel_1.putConstraint(SpringLayout.EAST, passwordField, 142, SpringLayout.EAST, label_7);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, label_7, 10, SpringLayout.NORTH, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.WEST, label_7, 0, SpringLayout.WEST, label_4);
+		sl_panel_1.putConstraint(SpringLayout.SOUTH, label_7, 38, SpringLayout.NORTH, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.EAST, label_7, 0, SpringLayout.EAST, label_4);
+		label_7.setHorizontalAlignment(SwingConstants.CENTER);
+		label_7.setFont(new Font("굴림", Font.BOLD, 12));
+		panel_1.add(label_7);
+
+		confirmButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String pw = String.valueOf(passwordField.getPassword());
+				String pw1 = String.valueOf(pwField.getPassword());
+				String pw2 = String.valueOf(pwConField.getPassword());
+
+				if (!(pw.equals(user.getPassword()))) {
+					warning.setText("비밀번호가 틀립니다.");
+				} else if (!(pw1.equals(pw2))) {
+					warning.setText("변경할 비밀번호가 일치하지 않습니다.");
+				} else if(pw.equals(pw1)){
+					warning.setText("기존 비밀번호와 같습니다.");
+				}else{
+
+					user = new UserVO(user.getUserNumber(), user.getUserType(), user.getId(), pw, nameField.getText(),
+							contactField.getText(), user.getGender());
+
+					dao.ChangeInfo(user);
+
+					JOptionPane.showMessageDialog(frame, "수정이 완료되었습니다.");
+					frame.dispose();
+				}
+			}
+
+		});
 
 	}
 }

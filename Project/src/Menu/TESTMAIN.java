@@ -1,17 +1,17 @@
 package Menu;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class TESTMAIN {
 
 	public static void main(String[] args) {
 		
-		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss");
-		String time = sf.format(new Date());
+		MenuVO menu = new MenuVO(99,"°£½Ä",4000);
+		MenuDAO dao = new MenuDAO();
 		
-		String aa = time.substring(8,10);
-		System.out.println(aa);
+		dao.addMenu(menu);
+		
+		
+		
+		
 
 	}
 

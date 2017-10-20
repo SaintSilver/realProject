@@ -193,10 +193,11 @@ public class UserDAO {
 				int resultUserNumber = rs.getInt(1);
 				String resultUserType = rs.getString(2);
 				String resultID = rs.getString(3);
+				String resultPW = rs.getString(4);
 				String resultName = rs.getString(5);
 				String resultContact = rs.getString(6);
 				String resultGender = rs.getString(7);
-				userInfo = new UserVO(resultUserNumber, resultUserType, resultID, "", resultName, resultContact,
+				userInfo = new UserVO(resultUserNumber, resultUserType, resultID, resultPW, resultName, resultContact,
 						resultGender);
 			}
 
@@ -229,8 +230,40 @@ public class UserDAO {
 	}
 
 	// 회원정보수정
-	public void ChangeInfo() {
+	public void ChangeInfo(UserVO user) {
 
+		try {
+			getConnection();
+
+			String sql = "update userinfo set password =? , name = ? , contact = ? where id = ?";
+			psmt = con.prepareStatement(sql);
+			
+			psmt.setString(1, user.getPassword());
+			psmt.setString(2, user.getName());
+			psmt.setString(3, user.getContact());
+			psmt.setString(4, user.getId());
+
+			// 꺼내올때, 변경할때 execute 두가지
+			// 변경할때는 :
+			psmt.executeUpdate();
+
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// 연결 끊기 - 열기 순서의 반대
+			try {
+				if (psmt != null)
+					psmt.close();
+
+				if (con != null)
+					con.close();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	// 관리자용

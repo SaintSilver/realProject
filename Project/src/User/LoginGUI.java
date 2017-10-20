@@ -1,4 +1,4 @@
-package Login;
+package User;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -23,8 +23,9 @@ import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
-import User.Clock;
-import User.UserDAO;
+import Main.Clock;
+import Main.MainGUI;
+
 import javax.swing.JPasswordField;
 
 public class LoginGUI {
@@ -39,7 +40,7 @@ public class LoginGUI {
 	private UserDAO dao = new UserDAO();
 	private JLabel lblNewLabel_3;
 	private JLabel timeLabel;
-	private String myID;
+	private static String myID;
 	private JPasswordField pwField;
 	
 	public static void main(String[] args) {
@@ -55,6 +56,7 @@ public class LoginGUI {
 		});
 	}
 
+	//로그인한 아이디
 	public String getMyID() {
 		return myID;
 	}
@@ -122,6 +124,8 @@ public class LoginGUI {
 					JOptionPane.showMessageDialog(frame, idField.getText().trim()+"님, 환영합니다.");
 					//새창 띄우고, 로그인 창 닫기
 					myID = idField.getText();
+					MainGUI main = new MainGUI();
+					main.main(null);
 					
 					frame.dispose();
 					
@@ -133,7 +137,7 @@ public class LoginGUI {
 		sl_panel.putConstraint(SpringLayout.SOUTH, panel_2, 0, SpringLayout.SOUTH, LoginButton);
 		sl_panel.putConstraint(SpringLayout.NORTH, LoginButton, 149, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.EAST, LoginButton, -115, SpringLayout.EAST, panel);
-		LoginButton.setIcon(new ImageIcon(LoginGUI.class.getResource("/Login/loginbt.png")));
+		LoginButton.setIcon(new ImageIcon(LoginGUI.class.getResource("/User/loginbt.png")));
 		panel.add(LoginButton);
 		
 		JButton JoinButton = new JButton("");
@@ -143,6 +147,8 @@ public class LoginGUI {
 				//회원가입 새창 띄우기
 				JoinGUI join = new JoinGUI();
 				join.main(null);
+				
+				
 			}
 		});
 		sl_panel.putConstraint(SpringLayout.NORTH, JoinButton, 274, SpringLayout.NORTH, panel);
@@ -151,7 +157,7 @@ public class LoginGUI {
 		sl_panel.putConstraint(SpringLayout.SOUTH, JoinButton, -155, SpringLayout.SOUTH, panel);
 		sl_panel.putConstraint(SpringLayout.EAST, JoinButton, -115, SpringLayout.EAST, panel);
 		sl_panel.putConstraint(SpringLayout.WEST, LoginButton, 0, SpringLayout.WEST, JoinButton);
-		JoinButton.setIcon(new ImageIcon(LoginGUI.class.getResource("/Login/joinbt.png")));
+		JoinButton.setIcon(new ImageIcon(LoginGUI.class.getResource("/User/joinbt.png")));
 		panel.add(JoinButton);
 		
 		idField = new JTextField();
