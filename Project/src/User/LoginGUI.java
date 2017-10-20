@@ -40,7 +40,7 @@ public class LoginGUI {
 	private UserDAO dao = new UserDAO();
 	private JLabel lblNewLabel_3;
 	private JLabel timeLabel;
-	private String myID;
+	private static String myID;
 	private JPasswordField pwField;
 	
 	public static void main(String[] args) {
@@ -56,6 +56,7 @@ public class LoginGUI {
 		});
 	}
 
+	//로그인한 아이디
 	public String getMyID() {
 		return myID;
 	}
@@ -125,6 +126,7 @@ public class LoginGUI {
 					myID = idField.getText();
 					MainGUI main = new MainGUI();
 					main.main(null);
+					
 					frame.dispose();
 					
 				}else {
@@ -145,6 +147,8 @@ public class LoginGUI {
 				//회원가입 새창 띄우기
 				JoinGUI join = new JoinGUI();
 				join.main(null);
+				
+				
 			}
 		});
 		sl_panel.putConstraint(SpringLayout.NORTH, JoinButton, 274, SpringLayout.NORTH, panel);
