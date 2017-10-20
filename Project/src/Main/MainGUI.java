@@ -1,48 +1,23 @@
 package Main;
 
-import java.awt.EventQueue;
-import java.awt.Graphics;
-
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import java.awt.Dimension;
-
-import javax.swing.JLabel;
-import java.awt.GridLayout;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Vector;
-
-import javax.imageio.ImageIO;
-import javax.swing.BoxLayout;
-import javax.swing.Icon;
-import javax.swing.JInternalFrame;
-import javax.swing.JSplitPane;
-import javax.swing.SpringLayout;
-import javax.swing.JTextField;
-import javax.swing.JFormattedTextField;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JTextPane;
 import java.awt.Color;
+import java.awt.EventQueue;
 import java.awt.Font;
-import javax.swing.SwingConstants;
-
-import User.LoginGUI;
-
-import javax.swing.JRadioButton;
-import javax.swing.JDesktopPane;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SpringLayout;
+
+import User.ChangeInfoGUI;
+import User.LoginGUI;
 
 
 public class MainGUI {
@@ -255,6 +230,7 @@ public class MainGUI {
 		panel.add(titlePanel);
 		
 		JButton logoutButton = new JButton("\uB85C\uADF8\uC544\uC6C3");
+		sl_titlePanel.putConstraint(SpringLayout.WEST, logoutButton, -85, SpringLayout.EAST, titlePanel);
 		logoutButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
@@ -264,11 +240,25 @@ public class MainGUI {
 			}
 		});
 		sl_titlePanel.putConstraint(SpringLayout.NORTH, logoutButton, 10, SpringLayout.NORTH, titlePanel);
-		sl_titlePanel.putConstraint(SpringLayout.WEST, logoutButton, -95, SpringLayout.EAST, titlePanel);
 		sl_titlePanel.putConstraint(SpringLayout.EAST, logoutButton, -10, SpringLayout.EAST, titlePanel);
 		logoutButton.setBackground(Color.WHITE);
 		logoutButton.setFont(new Font("고도 B", Font.PLAIN, 10));
 		titlePanel.add(logoutButton);
+		
+		JButton changeInfoButton = new JButton("\uC815\uBCF4\uC218\uC815");
+		changeInfoButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				ChangeInfoGUI changeInfoGUI = new ChangeInfoGUI();
+				changeInfoGUI.main(null);
+			}
+		});
+		sl_titlePanel.putConstraint(SpringLayout.NORTH, changeInfoButton, 0, SpringLayout.NORTH, logoutButton);
+		sl_titlePanel.putConstraint(SpringLayout.WEST, changeInfoButton, 614, SpringLayout.WEST, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.EAST, changeInfoButton, -6, SpringLayout.WEST, logoutButton);
+		changeInfoButton.setFont(new Font("고도 B", Font.PLAIN, 10));
+		changeInfoButton.setBackground(Color.WHITE);
+		titlePanel.add(changeInfoButton);
 		
 		
 		
