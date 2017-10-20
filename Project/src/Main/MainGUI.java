@@ -44,16 +44,9 @@ import java.awt.event.MouseEvent;
 
 public class MainGUI {
 
-	
-	
-	
 	private JFrame frame;
-	private BufferedImage icon;
-	private JTable table;
 	private String menuList;
-	private OrderPanel orderPanel = new OrderPanel();
 	private JPanel mainPanel;
-	
 	
 	/**
 	 * Launch the application.
@@ -130,7 +123,7 @@ public class MainGUI {
 		mainPanel.add(order_current, "order_current");
 		
 		//payment panel
-		PaymentPanel paymentPanel = new PaymentPanel();
+		MyOrderPanel paymentPanel = new MyOrderPanel();
 		mainPanel.add(paymentPanel,"paymentPanel");
 		//game panel
 		GamePanel gamePanel = new GamePanel();
@@ -173,7 +166,7 @@ public class MainGUI {
 		sl_menuPanel.putConstraint(SpringLayout.EAST, btnNewButton, 104, SpringLayout.WEST, menuPanel);
 		menuPanel.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("\uACB0\uC81C\uD655\uC778");
+		JButton btnNewButton_1 = new JButton("\uB0B4 \uC8FC\uBB38");
 		btnNewButton_1.setFont(new Font("나눔바른고딕", Font.BOLD, 15));
 		btnNewButton_1.addMouseListener(new MouseAdapter() {
 			@Override
@@ -188,7 +181,7 @@ public class MainGUI {
 		});
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				lblNewLabel.setText("결제확인");
+				lblNewLabel.setText("내 주문");
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "paymentPanel");
 			}
 		});

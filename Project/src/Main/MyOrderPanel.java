@@ -12,14 +12,15 @@ import java.util.Vector;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
-public class Order_current extends JPanel {
+public class MyOrderPanel extends JPanel {
 	private JTable table;
+
 	
-	public Order_current() {
+	public MyOrderPanel() {
 		setLayout(new CardLayout(0, 0));
 		
 		JScrollPane scrollPane = new JScrollPane();
-		add(scrollPane, "name_20467953020667");
+		add(scrollPane, "name_21044171286389");
 		
 		Vector<Object> columnNames = new Vector<>();
 	      columnNames.add("아이디");
@@ -31,7 +32,8 @@ public class Order_current extends JPanel {
 	      
 	      Vector<Object> data = new Vector<>();
 	      OrderDAO orderDAO = new OrderDAO();
-	      ArrayList<OrderVO> list = orderDAO.todayOrderList();
+	      ArrayList<OrderVO> list = orderDAO.myOrder();
+	      
 	      //최근 내역부터 보여주도록 한다.
 	      for (int i = list.size()-1; i >= 0; i--) {
 	         
@@ -49,6 +51,6 @@ public class Order_current extends JPanel {
 	      table = new JTable(data, columnNames);
 
 	      scrollPane.setViewportView(table);
+		
 	}
-	
 }

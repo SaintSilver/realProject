@@ -122,8 +122,9 @@ public class JoinGUI {
 		JButton idCheck = new JButton("\uC911\uBCF5\uAC80\uC0AC");
 		idCheck.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+
 				char ch = idField.getText().charAt(0);
+
 				// 아이디 중복검사 실행
 				checkID = dao.imPossibleJoin(idField.getText());
 				if (checkID) {
@@ -131,14 +132,13 @@ public class JoinGUI {
 				} else if (idField.getText().equals("")) {
 					warning.setText("아이디를 입력해주세요.");
 					checkID = true;
-					
-				} else if(idField.getText().contains(" ")){
+				} else if (idField.getText().contains(" ")) {
 					warning.setText("유효하지 않은 아이디입니다.");
 					checkID = true;
-				}else if(!(Character.isLowerCase(ch))){
+				} else if (!(Character.isLowerCase(ch))) {
 					warning.setText("ID는 영어 소문자로 시작해야 합니다.");
 					checkID = true;
-				}else {
+				} else {
 					warning.setText("사용 가능한 아이디입니다.");
 				}
 			}
@@ -147,30 +147,29 @@ public class JoinGUI {
 		JButton confirmButton = new JButton("");
 		confirmButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+
 				String pw = String.valueOf(pwField.getPassword());
 				String pw1 = String.valueOf(pwConField.getPassword());
-				
+
 				// 성별
 				String gender = "";
 				if (radioButton_Man.isSelected()) {
 					gender = "남";
 				} else if (radioButton_Woman.isSelected()) {
 					gender = "여";
-					
+
 				}
-				if (idField.getText().equals("") || contactField.getText().equals("") || pw.equals("")
-						|| pw1.equals("") || nameField.getText().equals("")
-						|| contactField.getText().equals("")) {
+				if (idField.getText().equals("") || contactField.getText().equals("") || pw.equals("") || pw1.equals("")
+						|| nameField.getText().equals("") || contactField.getText().equals("")) {
 					warning.setText("빈 항목이 있습니다.");
 				} else if (checkID) {
 					warning.setText("아이디 중복검사를 해주세요.");
 				} else if (!(pw.equals(pw1))) {
 					warning.setText("비밀번호가 일치하지 않습니다.");
 				} else {
-					
-					user = new UserVO(user.getUserNumber(), "일반", idField.getText(), pw,
-							nameField.getText(), contactField.getText(), gender);
+
+					user = new UserVO(user.getUserNumber(), "일반", idField.getText(), pw, nameField.getText(),
+							contactField.getText(), gender);
 					dao.join(user);
 					JOptionPane.showMessageDialog(frame, "가입완료, 로그인 해주세요.");
 					frame.dispose();
@@ -221,13 +220,13 @@ public class JoinGUI {
 		label_4.setHorizontalAlignment(SwingConstants.CENTER);
 		label_4.setFont(new Font("굴림", Font.BOLD, 12));
 		panel_1.add(label_4);
-		
+
 		pwField = new JPasswordField();
 		sl_panel_1.putConstraint(SpringLayout.NORTH, pwField, 24, SpringLayout.SOUTH, idField);
 		sl_panel_1.putConstraint(SpringLayout.WEST, pwField, 0, SpringLayout.WEST, idField);
 		sl_panel_1.putConstraint(SpringLayout.EAST, pwField, 0, SpringLayout.EAST, idField);
 		panel_1.add(pwField);
-		
+
 		pwConField = new JPasswordField();
 		sl_panel_1.putConstraint(SpringLayout.NORTH, pwConField, 55, SpringLayout.NORTH, panel_1);
 		sl_panel_1.putConstraint(SpringLayout.WEST, pwConField, 26, SpringLayout.EAST, label_4);

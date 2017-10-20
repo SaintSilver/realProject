@@ -23,6 +23,7 @@ import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
+import Main.MainGUI;
 import User.Clock;
 import User.UserDAO;
 import javax.swing.JPasswordField;
@@ -122,7 +123,8 @@ public class LoginGUI {
 					JOptionPane.showMessageDialog(frame, idField.getText().trim()+"님, 환영합니다.");
 					//새창 띄우고, 로그인 창 닫기
 					myID = idField.getText();
-					
+					MainGUI main = new MainGUI();
+					main.main(null);
 					frame.dispose();
 					
 				}else {
