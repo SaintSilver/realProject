@@ -10,6 +10,8 @@ public class MenuVO {
       this.itemName = itemName;
       this.itemPrice = itemPrice;
    }
+   
+   
 
    public int getItemNumber() {
       return itemNumber;
