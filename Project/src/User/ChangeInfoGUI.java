@@ -293,6 +293,44 @@ public class ChangeInfoGUI {
 		label_7.setHorizontalAlignment(SwingConstants.CENTER);
 		label_7.setFont(new Font("굴림", Font.BOLD, 12));
 		panel_1.add(label_7);
+		
+		JPanel panel_4 = new JPanel();
+		sl_panel.putConstraint(SpringLayout.NORTH, panel_4, -61, SpringLayout.SOUTH, panel);
+		sl_panel.putConstraint(SpringLayout.WEST, panel_4, 44, SpringLayout.WEST, panel);
+		sl_panel.putConstraint(SpringLayout.SOUTH, panel_4, -32, SpringLayout.SOUTH, panel);
+		sl_panel.putConstraint(SpringLayout.EAST, panel_4, 125, SpringLayout.WEST, panel);
+		panel.add(panel_4);
+		
+		JButton closeAccountButton = new JButton("\uD68C\uC6D0\uD0C8\uD1F4");
+		closeAccountButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String pw = String.valueOf(passwordField.getPassword());
+				String pw1 = String.valueOf(pwField.getPassword());
+				String pw2 = String.valueOf(pwConField.getPassword());
+				if (!(pw.equals(user.getPassword()))) {
+					warning.setText("비밀번호가 틀립니다.");
+				}else {
+					// yes option
+					if (JOptionPane.showConfirmDialog(null, "정말 탈퇴하실건가요?", "ㅠ_ㅠ",
+					        JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
+						user = new UserVO(user.getUserNumber(), user.getUserType(), user.getId(), pw, nameField.getText(),
+								contactField.getText(), user.getGender());
+						
+						dao.closeAccount(user);
+						
+						JOptionPane.showMessageDialog(frame, "탈퇴가 완료되었습니다.");
+						System.exit(0);
+						
+					} else {
+					    // no option
+					}
+
+				}
+				
+			}
+		});
+		closeAccountButton.setFont(new Font("고도 M", Font.PLAIN, 12));
+		panel_4.add(closeAccountButton);
 
 		confirmButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

@@ -25,9 +25,7 @@ import javax.swing.SwingConstants;
 public class MainGUI {
 
 	private JFrame frame;
-
 	private String menuList;
-
 	private JPanel mainPanel;
 	
 	/**

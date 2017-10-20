@@ -19,8 +19,6 @@ import Main.PickNameVO;
 import Order.OrderDAO;
 import Order.OrderVO;
 
-
-
 public class GamePanel extends JPanel{
 	
 	static JLabel lbl_pickName;
@@ -36,7 +34,6 @@ public class GamePanel extends JPanel{
 	      btnStart.addActionListener(new ActionListener() {
 	         
 	         public void actionPerformed(ActionEvent arg0) {
-	            // textField.setText("TEST");
 	            t = new ThreadStart();
 	            t.start();
 	         }

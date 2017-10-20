@@ -150,7 +150,6 @@ public class UserDAO {
 			psmt.setString(2, userVo.getPassword());
 
 			psmt.executeUpdate();
-			System.out.println("탈퇴성공");
 
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
@@ -222,11 +221,6 @@ public class UserDAO {
 
 		return userInfo;
 
-	}
-
-	// 비밀번호 체크
-	public boolean isRightPw(String pw) {
-		return false;
 	}
 
 	// 회원정보수정

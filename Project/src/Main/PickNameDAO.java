@@ -64,7 +64,7 @@ public class PickNameDAO {
 	// 추첨된 사람 보기 ( 일반 유저용)
 	public PickNameVO pickedName() {
 
-		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss");
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd a hh:mm");
 		String today = (sf.format(new Date())).substring(8, 10);
 		PickNameVO pickName = null; 
 		try {
