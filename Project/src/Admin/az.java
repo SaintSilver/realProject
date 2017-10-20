@@ -45,8 +45,6 @@ public class az {
 		ImageIcon aboutIcon = new ImageIcon(
 				"http://bulgogibros.com/wp-content/uploads/2017/02/9%EC%B1%84%EB%81%9D%EB%93%B1%EC%8B%AC%EB%8F%84%EC%8B%9C%EB%9D%BD.jpg");
 
-		
-		
 		ImageIcon image = new ImageIcon("http://bulgogibros.com/wp-content/uploads/2017/02/9%EC%B1%84%EB%81%9D%EB%93%B1%EC%8B%AC%EB%8F%84%EC%8B%9C%EB%9D%BD.jpg");
 		JLabel label = new JLabel("", image, JLabel.CENTER);
 		JPanel panel = new JPanel(new BorderLayout());
