@@ -19,6 +19,7 @@ import javax.swing.SpringLayout;
 
 import User.ChangeInfoGUI;
 import User.LoginGUI;
+import javax.swing.SwingConstants;
 
 
 public class MainGUI {
@@ -231,7 +232,9 @@ public class MainGUI {
 		panel.add(titlePanel);
 		
 		JButton logoutButton = new JButton("\uB85C\uADF8\uC544\uC6C3");
-		sl_titlePanel.putConstraint(SpringLayout.WEST, logoutButton, -85, SpringLayout.EAST, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.WEST, logoutButton, 695, SpringLayout.WEST, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.SOUTH, logoutButton, -32, SpringLayout.SOUTH, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.EAST, logoutButton, -10, SpringLayout.EAST, titlePanel);
 		logoutButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
@@ -241,13 +244,14 @@ public class MainGUI {
 				login.main(null);
 			}
 		});
-		sl_titlePanel.putConstraint(SpringLayout.NORTH, logoutButton, 10, SpringLayout.NORTH, titlePanel);
-		sl_titlePanel.putConstraint(SpringLayout.EAST, logoutButton, -10, SpringLayout.EAST, titlePanel);
 		logoutButton.setBackground(Color.WHITE);
 		logoutButton.setFont(new Font("°íµµ B", Font.PLAIN, 10));
 		titlePanel.add(logoutButton);
 		
 		JButton changeInfoButton = new JButton("\uC815\uBCF4\uC218\uC815");
+		sl_titlePanel.putConstraint(SpringLayout.NORTH, changeInfoButton, 0, SpringLayout.NORTH, logoutButton);
+		sl_titlePanel.putConstraint(SpringLayout.WEST, changeInfoButton, 614, SpringLayout.WEST, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.EAST, changeInfoButton, -6, SpringLayout.WEST, logoutButton);
 		changeInfoButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -255,14 +259,20 @@ public class MainGUI {
 				changeInfoGUI.main(null);
 			}
 		});
-		sl_titlePanel.putConstraint(SpringLayout.NORTH, changeInfoButton, 0, SpringLayout.NORTH, logoutButton);
-		sl_titlePanel.putConstraint(SpringLayout.WEST, changeInfoButton, 614, SpringLayout.WEST, titlePanel);
-		sl_titlePanel.putConstraint(SpringLayout.EAST, changeInfoButton, -6, SpringLayout.WEST, logoutButton);
 		changeInfoButton.setFont(new Font("°íµµ B", Font.PLAIN, 10));
 		changeInfoButton.setBackground(Color.WHITE);
 		titlePanel.add(changeInfoButton);
 		
+		JLabel timeLabel = new JLabel("\"\"");
+		sl_titlePanel.putConstraint(SpringLayout.NORTH, timeLabel, 10, SpringLayout.NORTH, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.WEST, timeLabel, 564, SpringLayout.WEST, titlePanel);
+		sl_titlePanel.putConstraint(SpringLayout.SOUTH, timeLabel, -8, SpringLayout.NORTH, logoutButton);
+		sl_titlePanel.putConstraint(SpringLayout.EAST, timeLabel, 0, SpringLayout.EAST, logoutButton);
+		timeLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		timeLabel.setFont(new Font("³ª´®¹Ù¸¥°íµñ Light", Font.ITALIC, 14));
+		titlePanel.add(timeLabel);
 		
+		Clock clock = new Clock(timeLabel);
 		
 		
 		
