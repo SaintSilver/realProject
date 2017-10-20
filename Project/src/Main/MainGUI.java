@@ -13,6 +13,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 
@@ -235,6 +236,7 @@ public class MainGUI {
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
 				
+				JOptionPane.showMessageDialog(frame, "로그아웃 되었습니다.");
 				LoginGUI login = new LoginGUI();
 				login.main(null);
 			}

@@ -105,7 +105,7 @@ public class ChangeInfoGUI {
 		SpringLayout sl_panel = new SpringLayout();
 		panel.setLayout(sl_panel);
 
-		label = new JLabel("\uD68C\uC6D0\uAC00\uC785");
+		label = new JLabel("\uD68C\uC6D0\uC815\uBCF4\uC218\uC815");
 		sl_panel.putConstraint(SpringLayout.NORTH, label, 30, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.WEST, label, 44, SpringLayout.WEST, panel);
 		label.setFont(new Font("±¼¸²", Font.BOLD, 24));
