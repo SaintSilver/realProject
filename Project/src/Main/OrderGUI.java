@@ -38,6 +38,7 @@ public class OrderGUI {
 	private UserVO user;
 	private UserDAO dao = new UserDAO();
 	private OrderDAO orderDAO = new OrderDAO();
+	private MainGUI mainGUI = new MainGUI();
 
 	/**
 	 * Launch the application.
@@ -2924,7 +2925,6 @@ public class OrderGUI {
 						JOptionPane.showMessageDialog(frame, "주문이 완료되었습니다.");
 						frame.dispose();
 						
-						MainGUI mainGUI = new MainGUI();
 						mainGUI.main(null);
 						
 					} else {
@@ -2944,6 +2944,21 @@ public class OrderGUI {
 		springLayout.putConstraint(SpringLayout.NORTH, btnNewButton, 0, SpringLayout.NORTH, timeLabel);
 		springLayout.putConstraint(SpringLayout.WEST, btnNewButton, 10, SpringLayout.WEST, frame.getContentPane());
 		frame.getContentPane().add(btnNewButton);
+		
+		JButton exitButton = new JButton("\uB098\uAC00\uAE30");
+		springLayout.putConstraint(SpringLayout.EAST, exitButton, 100, SpringLayout.EAST, btnNewButton);
+		exitButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				mainGUI.main(null);
+				
+			}
+		});
+		springLayout.putConstraint(SpringLayout.NORTH, exitButton, 0, SpringLayout.NORTH, timeLabel);
+		springLayout.putConstraint(SpringLayout.WEST, exitButton, 14, SpringLayout.EAST, btnNewButton);
+		exitButton.setFont(new Font("고도 M", Font.BOLD, 16));
+		exitButton.setBackground(Color.WHITE);
+		frame.getContentPane().add(exitButton);
 		
 		ImageIcon img = new ImageIcon("D:\\\uC774\uBBF8\uC9C0\\\uACE0\uAD6C\uB9C8\uC0D0\uB7EC\uB4DC.jpg");
 		Image img1 = img.getImage();

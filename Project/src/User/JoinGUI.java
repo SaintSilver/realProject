@@ -154,6 +154,10 @@ public class JoinGUI {
 
 				String pw = String.valueOf(pwField.getPassword());
 				String pw1 = String.valueOf(pwConField.getPassword());
+				
+				//전화번호 유효검사
+				char[] array = contactField.getText().toCharArray();
+				boolean contactCheck = dao.checkInputOnlyNumber(contactField.getText());
 
 				// 성별
 				String gender = "";
@@ -172,6 +176,10 @@ public class JoinGUI {
 					warning.setText("비밀번호가 일치하지 않습니다.");
 				} else if(pw.length()<4){
 					warning.setText("비밀번호를 4자리 이상 설정해주세요.");
+				}else if(!contactCheck){
+						warning.setText("잘못된 전화번호입니다.");
+				}else if(contactField.getText().length()<10 ||contactField.getText().length()>14){
+						warning.setText("잘못된 전화번호입니다.");
 				}else {
 
 					user = new UserVO(user.getUserNumber(), "일반", idField.getText(), pw, nameField.getText(),

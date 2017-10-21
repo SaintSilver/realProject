@@ -28,6 +28,7 @@ public class ManagementPanel extends JPanel {
 	private JTextField type_textField;
 	private JTextField name_textField;
 	private JTextField contact_textField;
+	private JPanel mainPanel;
 
 	public ManagementPanel() {
 		SpringLayout springLayout = new SpringLayout();

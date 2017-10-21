@@ -23,9 +23,10 @@ public class GamePanel extends JPanel{
       
       PickNameVO pickName = dao.pickedName();
       
-      String date = pickName.getTime().substring(5, 10);
+      
       
       if(pickName != null) {
+    	  String date = pickName.getTime().substring(5, 10);
       nameLabel.setText(date+"일: "+pickName.getName()+" 당첨! 결제금액은 "+pickName.getPrice()+"원입니다.");
       }else {
          nameLabel.setText("아직 추첨 전입니다.");

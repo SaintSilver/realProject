@@ -47,7 +47,7 @@ public class Admin_MainGUI {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 900, 522);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.WHITE);
@@ -81,10 +81,14 @@ public class Admin_MainGUI {
 		panel.add(mainPanel);
 		mainPanel.setLayout(new CardLayout(0, 0));
 		
+		//main panel
+		SystemPanel systemPanel = new SystemPanel();
+		systemPanel.setBackground(Color.white);
+		SpringLayout springLayout = (SpringLayout) systemPanel.getLayout();
+		mainPanel.add(systemPanel, "SystemPanel");
+		
 		//order panel
 		ManagementPanel ManagementPanel = new ManagementPanel();
-		ManagementPanel.setBackground(Color.WHITE);
-		SpringLayout springLayout = (SpringLayout) ManagementPanel.getLayout();
 		mainPanel.add(ManagementPanel, "ManagementPanel");
 		
 		//order_current

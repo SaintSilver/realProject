@@ -13,11 +13,14 @@ import javax.swing.ImageIcon;
 public class SystemPanel extends JPanel {
 
    public SystemPanel() {
-      setLayout(new CardLayout(0, 0));
+      SpringLayout springLayout = new SpringLayout();
+      setLayout(springLayout);
       
       JLabel lblNewLabel = new JLabel("");
+      springLayout.putConstraint(SpringLayout.NORTH, lblNewLabel, 0, SpringLayout.NORTH, this);
+      springLayout.putConstraint(SpringLayout.WEST, lblNewLabel, 0, SpringLayout.WEST, this);
       lblNewLabel.setIcon(new ImageIcon(SystemPanel.class.getResource("/image/admin1.jpg")));
-      add(lblNewLabel, "name_21456473539416");
+      add(lblNewLabel);
    }
    
 }

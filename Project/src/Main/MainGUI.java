@@ -93,10 +93,15 @@ public class MainGUI {
 		panel.add(mainPanel);
 		mainPanel.setLayout(new CardLayout(0, 0));
 		
+		//main panel
+		UserMainPanel userMainPanel = new UserMainPanel();
+		userMainPanel.setBackground(Color.WHITE);
+		SpringLayout springLayout = (SpringLayout) userMainPanel.getLayout();
+		mainPanel.add(userMainPanel, "UserMainPanel");
+		
 		//order panel
 		OrderPanel order_panel = new OrderPanel();
 		mainPanel.add(order_panel, "order");
-		
 		
 		//order_current
 		Order_current order_current = new Order_current();

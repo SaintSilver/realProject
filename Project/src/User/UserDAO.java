@@ -71,6 +71,7 @@ public class UserDAO {
 	private int getLastUserNumber() {
 
 		int result = 1;
+		int temp = 0;
 
 		try {
 
@@ -80,7 +81,10 @@ public class UserDAO {
 
 			rs = psmt.executeQuery();
 			while (rs.next()) {
-				result = rs.getInt("usernumber");
+				temp = rs.getInt("usernumber");
+				if(temp > result) {
+					result = temp;
+				}
 			}
 
 		} catch (ClassNotFoundException | SQLException e) {
@@ -396,6 +400,25 @@ public class UserDAO {
 
 		return true;
 	}
+	
+	public boolean checkInputOnlyNumber(String textInput) {
+
+		char chrInput;
+
+		for (int i = 0; i < textInput.length(); i++) {
+
+			chrInput = textInput.charAt(i);
+
+			if (chrInput >= 0x30 && chrInput <= 0x39) {
+				// 숫자
+			} else {
+				return false; // 영문자도 아니고 숫자도 아님!
+			}
+		}
+
+		return true;
+	}
+	
 	
 
 }
