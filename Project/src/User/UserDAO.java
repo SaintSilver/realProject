@@ -139,16 +139,15 @@ public class UserDAO {
 		return false;
 	}
 
-	public void closeAccount(UserVO userVo) {
+	public void closeAccount(String id) {
 		try {
 			getConnection();
 
-			String sql = "delete userinfo where id = ? and password = ?";
+			String sql = "delete userinfo where id = ?";
 			psmt = con.prepareStatement(sql);
 			// ? 순번(1부터시작), 넣을 값
-			psmt.setString(1, userVo.getId());
-			psmt.setString(2, userVo.getPassword());
-
+			psmt.setString(1, id);
+			
 			psmt.executeUpdate();
 
 		} catch (ClassNotFoundException e) {
@@ -236,6 +235,43 @@ public class UserDAO {
 			psmt.setString(2, user.getName());
 			psmt.setString(3, user.getContact());
 			psmt.setString(4, user.getId());
+
+			// 꺼내올때, 변경할때 execute 두가지
+			// 변경할때는 :
+			psmt.executeUpdate();
+
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// 연결 끊기 - 열기 순서의 반대
+			try {
+				if (psmt != null)
+					psmt.close();
+
+				if (con != null)
+					con.close();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	//관리자용 수정
+	public void ChangeInfoAdmin(UserVO user) {
+		try {
+			getConnection();
+
+			String sql = "update userinfo set usernumber =?, usertype=?, name = ? , contact = ? where id = ?";
+			psmt = con.prepareStatement(sql);
+
+			psmt.setInt(1, user.getUserNumber());
+			psmt.setString(2, user.getUserType());
+			psmt.setString(3, user.getName());
+			psmt.setString(4, user.getContact());
+			psmt.setString(5, user.getId());
 
 			// 꺼내올때, 변경할때 execute 두가지
 			// 변경할때는 :
@@ -361,12 +397,5 @@ public class UserDAO {
 		return true;
 	}
 	
-	public String getUserName(String id) {
-		
-		
-		
-		
-		return "";
-	}
 
 }

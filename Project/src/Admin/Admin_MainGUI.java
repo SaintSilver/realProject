@@ -82,10 +82,10 @@ public class Admin_MainGUI {
 		mainPanel.setLayout(new CardLayout(0, 0));
 		
 		//order panel
-		MenuManagementPanel menuManagementPanel = new MenuManagementPanel();
-		menuManagementPanel.setBackground(Color.WHITE);
-		SpringLayout springLayout = (SpringLayout) menuManagementPanel.getLayout();
-		mainPanel.add(menuManagementPanel, "menuManagementPanel");
+		ManagementPanel ManagementPanel = new ManagementPanel();
+		ManagementPanel.setBackground(Color.WHITE);
+		SpringLayout springLayout = (SpringLayout) ManagementPanel.getLayout();
+		mainPanel.add(ManagementPanel, "ManagementPanel");
 		
 		//order_current
 		Order_current_panel order_current = new Order_current_panel();
@@ -191,7 +191,7 @@ public class Admin_MainGUI {
 		btnGame.setBackground(new Color(254, 194, 15));
 		menuPanel.add(btnGame);
 		
-		JButton btnMenuMange = new JButton("\uBA54\uB274\uAD00\uB9AC");
+		JButton btnMenuMange = new JButton("\uD68C\uC6D0\uAD00\uB9AC");
 		sl_menuPanel.putConstraint(SpringLayout.NORTH, btnMenuMange, 70, SpringLayout.NORTH, menuPanel);
 		sl_menuPanel.putConstraint(SpringLayout.WEST, btnMenuMange, 0, SpringLayout.WEST, menuPanel);
 		sl_menuPanel.putConstraint(SpringLayout.SOUTH, btnMenuMange, -56, SpringLayout.NORTH, btnOrder_current);
@@ -209,10 +209,10 @@ public class Admin_MainGUI {
 		});
 		btnMenuMange.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				lblNewLabel.setText("皋春包府");
+				lblNewLabel.setText("雀盔包府");
 				mainPanel.setBackground(Color.BLUE);
 				mainPanel.setVisible(true);
-				((CardLayout)mainPanel.getLayout()).show(mainPanel, "menuManagementPanel");	
+				((CardLayout)mainPanel.getLayout()).show(mainPanel, "ManagementPanel");	
 			}
 		});
 		btnMenuMange.setBackground(new Color(254, 194, 15));

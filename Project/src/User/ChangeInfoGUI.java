@@ -313,10 +313,8 @@ public class ChangeInfoGUI {
 					// yes option
 					if (JOptionPane.showConfirmDialog(null, "Á¤¸» Å»ÅðÇÏ½Ç°Ç°¡¿ä?", "¤Ð_¤Ð",
 					        JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
-						user = new UserVO(user.getUserNumber(), user.getUserType(), user.getId(), pw, nameField.getText(),
-								contactField.getText(), user.getGender());
 						
-						dao.closeAccount(user);
+						dao.closeAccount(myID);
 						
 						JOptionPane.showMessageDialog(frame, "Å»Åð°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
 						System.exit(0);
