@@ -216,7 +216,11 @@ public class Admin_MainGUI {
 				lblNewLabel.setText("회원관리");
 				mainPanel.setBackground(Color.BLUE);
 				mainPanel.setVisible(true);
-				((CardLayout)mainPanel.getLayout()).show(mainPanel, "ManagementPanel");	
+				//((CardLayout)mainPanel.getLayout()).show(mainPanel, "ManagementPanel");	
+				
+				frame.dispose();
+				UserManagementGUI userManagementGUI = new UserManagementGUI();
+				userManagementGUI.main(null);
 			}
 		});
 		btnMenuMange.setBackground(new Color(254, 194, 15));
