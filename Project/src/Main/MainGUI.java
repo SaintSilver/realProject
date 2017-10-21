@@ -221,6 +221,7 @@ public class MainGUI {
 				mainPanel.setVisible(true);
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "order");	
 				
+				frame.dispose();
 				OrderGUI order = new OrderGUI();
 				order.main(null);
 				

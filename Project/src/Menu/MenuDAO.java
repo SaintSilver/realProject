@@ -130,9 +130,7 @@ public class MenuDAO {
 	
 	//메뉴가격 가져오기
 	public int menuPrice(String itemName) {
-		System.out.println(2);
 		int result = 0; 
-		System.out.println(itemName);
 		try {
 			
 			String sql = "select itemprice from iteminfo where itemname = ?";

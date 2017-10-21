@@ -2924,6 +2924,9 @@ public class OrderGUI {
 						JOptionPane.showMessageDialog(frame, "주문이 완료되었습니다.");
 						frame.dispose();
 						
+						MainGUI mainGUI = new MainGUI();
+						mainGUI.main(null);
+						
 					} else {
 					    // no option
 					}

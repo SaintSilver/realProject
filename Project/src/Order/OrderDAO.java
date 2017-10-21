@@ -106,8 +106,6 @@ public class OrderDAO {
 			item = key;
 			count = hashmap.get(key);
 			
-			System.out.println(1);
-			
 			price = menuDAO.menuPrice(item);
 			
 			psmt.setString(1, id);
