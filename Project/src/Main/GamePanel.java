@@ -19,8 +19,11 @@ public class GamePanel extends JPanel{
 		
 		PickNameVO pickName = dao.pickedName();
 		
+		if(pickName != null) {
 		nameLabel.setText(pickName.getName()+"님이 "+pickName.getTime()+"에 "+pickName.getPrice()+"당첨!!!!");
-		
+		}else {
+			nameLabel.setText("아직 추첨 전입니다.");
+		}
 		
 	}
 }

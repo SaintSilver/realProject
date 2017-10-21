@@ -337,14 +337,16 @@ public class ChangeInfoGUI {
 				String pw = String.valueOf(passwordField.getPassword());
 				String pw1 = String.valueOf(pwField.getPassword());
 				String pw2 = String.valueOf(pwConField.getPassword());
-
+				
 				if (!(pw.equals(user.getPassword()))) {
 					warning.setText("비밀번호가 틀립니다.");
 				} else if (!(pw1.equals(pw2))) {
 					warning.setText("변경할 비밀번호가 일치하지 않습니다.");
 				} else if(pw.equals(pw1)){
 					warning.setText("기존 비밀번호와 같습니다.");
-				}else{
+				}else if(pw1.length()<4){
+					warning.setText("비밀번호는 최소 4자리 이상입니다.");
+				}else {
 
 					user = new UserVO(user.getUserNumber(), user.getUserType(), user.getId(), pw, nameField.getText(),
 							contactField.getText(), user.getGender());
