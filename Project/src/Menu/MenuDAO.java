@@ -128,4 +128,39 @@ public class MenuDAO {
 		}
 	}
 	
+	//메뉴가격 가져오기
+	public int menuPrice(String itemName) {
+		System.out.println(2);
+		int result = 0; 
+		System.out.println(itemName);
+		try {
+			
+			String sql = "select itemprice from iteminfo where itemname = ?";
+			getConnection();
+			psmt = con.prepareStatement(sql);
+			psmt.setString(1, itemName);
+
+			rs = psmt.executeQuery();
+			while (rs.next()) {
+				result = rs.getInt("itemprice");
+			}
+
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// 연결 끊기 - 열기 순서의 반대
+			try {
+				if (psmt != null)
+					psmt.close();
+
+				if (con != null)
+					con.close();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
+	
 }

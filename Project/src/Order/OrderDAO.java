@@ -10,7 +10,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
+import Menu.MenuDAO;
+import Menu.MenuVO;
 import User.LoginGUI;
+import User.UserDAO;
+import User.UserVO;
 
 public class OrderDAO {
 
@@ -21,6 +25,9 @@ public class OrderDAO {
 	private Connection con = null;
 	private PreparedStatement psmt = null;
 	private ResultSet rs = null;
+	private UserDAO dao ;
+	private UserVO user ;
+	private MenuVO menu ;
 
 	public void getConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -29,18 +36,16 @@ public class OrderDAO {
 	}
 
 	// 주문자 정보 받아오기
-	public HashMap<String, String> whosOrder() {
+	public String whosOrder() {
 
-		String myID = login.getMyID();
-		HashMap<String, String> map = new HashMap<>();
+		String myID = login.getMyID(); 
 		String resultName = "";
-		String resultNum = "";
 
 		try {
 
 			getConnection();
 
-			String sql = "select id, name from userinfo where id=?";
+			String sql = "select name from userinfo where id=?";
 
 			psmt = con.prepareStatement(sql);
 			psmt.setString(1, myID);
@@ -50,9 +55,7 @@ public class OrderDAO {
 			// 다음 데이터가 있으면 true 아니면 false
 			while (rs.next()) {
 				// 인덱스도가능 컬럼이름도가능
-				resultName = rs.getString("id");
-				resultNum = rs.getString("name");
-				map.put(resultName, resultNum);
+				resultName = rs.getString("name");
 			}
 
 		} catch (ClassNotFoundException e) {
@@ -73,41 +76,53 @@ public class OrderDAO {
 				e.printStackTrace();
 			}
 		}
-		return map;
+		return resultName;
 
 	}
 
 	// 주문하기
-	public void Order(HashMap<String, String> hashmap) {
-
-		String id = "";
-		String name = "";
-
-		for (String key : hashmap.keySet()) {
-			id = key;
-			name = hashmap.get(key);
-		}
-
+	public void Order(HashMap<String, Integer> hashmap, String id) {
+		//주문한 사람의 유저정보를 가져옴
+		//user = dao.viewInfo(id);
+		//String name = user.getName();
+		OrderDAO orderDAO = new OrderDAO();
+		MenuDAO menuDAO = new MenuDAO();
+		
+		String name = orderDAO.whosOrder(); //주문자 이름
+		String item = "";//상품이름
+		int count = 0 ; //상품개수
+		int price = 0; // 상품가격
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss");
-		String time = sf.format(new Date());
-
+		String time = sf.format(new Date()); //주문 시간
+		
 		try {
 
 			getConnection();
 
 			String sql = "Insert into orderlist values(?,?,?,?,?,?)";
 			psmt = con.prepareStatement(sql);
-
+			
+			for (String key : hashmap.keySet()) {
+			item = key;
+			count = hashmap.get(key);
+			
+			System.out.println(1);
+			
+			price = menuDAO.menuPrice(item);
+			
 			psmt.setString(1, id);
 			psmt.setString(2, name);
-			psmt.setString(3, "상품");
-			psmt.setInt(4, 2);
-			psmt.setInt(5, 5000);
+			psmt.setString(3, item);
+			psmt.setInt(4, count);
+			psmt.setInt(5, count*price);
 			psmt.setString(6, time);
-
+			
 			// 꺼내올때, 변경할때 execute 두가지
 			// 변경할때는 :
 			psmt.executeUpdate();
+			}
+
+
 
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();

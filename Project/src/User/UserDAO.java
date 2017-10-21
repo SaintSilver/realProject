@@ -360,5 +360,13 @@ public class UserDAO {
 
 		return true;
 	}
+	
+	public String getUserName(String id) {
+		
+		
+		
+		
+		return "";
+	}
 
 }

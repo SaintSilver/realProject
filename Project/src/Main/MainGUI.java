@@ -220,6 +220,11 @@ public class MainGUI {
 				mainPanel.setBackground(Color.BLUE);
 				mainPanel.setVisible(true);
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "order");	
+				
+				OrderGUI order = new OrderGUI();
+				order.main(null);
+				
+				
 			}
 		});
 		btnNewButton_3.setBackground(new Color(254, 194, 15));
