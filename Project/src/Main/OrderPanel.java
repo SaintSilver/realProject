@@ -11,6 +11,7 @@ import java.awt.CardLayout;
 import javax.swing.JScrollPane;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
+import java.awt.Font;
 
 
 public class OrderPanel extends JPanel{
@@ -23,6 +24,7 @@ public class OrderPanel extends JPanel{
 		panel.setLayout(new CardLayout(0, 0));
 		
 		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setFont(new Font("³ª´®°íµñ", Font.PLAIN, 12));
 		panel.add(lblNewLabel, "name_7096025282227");
 	
 	

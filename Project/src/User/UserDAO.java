@@ -419,12 +419,42 @@ public class UserDAO {
 			if (chrInput >= 0x30 && chrInput <= 0x39) {
 				// 숫자
 			} else {
-				return false; // 영문자도 아니고 숫자도 아님!
+				return false; // 숫자가 아님!
 			}
+		}
+		
+		if(textInput.length()>=9 && textInput.length()<=11) {
+			//9~11자리
+		}else {
+			return false;
 		}
 
 		return true;
 	}
+	
+	//이름 유효검사(음절)
+	public boolean isHangulSyllables(String name) { 
+		char c;
+		
+		for (int i = 0; i < name.length(); i++) {
+
+			c = name.charAt(i);
+
+			if (c >= (char) 0xAC00 && c <= (char) 0xD7A3) {
+				// 한글
+			} else {
+				return false; // 제대로된 한글음절이 아님!
+			}
+		}
+		
+		if(name.length()>=2 && name.length()<=7) {
+			
+		}else {
+			return false; //이름 길이가 비정상
+		}
+		
+		return true; 
+		}
 	
 	
 
