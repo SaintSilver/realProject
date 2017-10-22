@@ -31,6 +31,7 @@ import javax.swing.SwingConstants;
 import javax.swing.plaf.basic.BasicBorders.RadioButtonBorder;
 
 import Main.Clock;
+import Start.LoginGUI;
 
 public class ChangeInfoGUI {
 

@@ -419,8 +419,14 @@ public class UserDAO {
 			if (chrInput >= 0x30 && chrInput <= 0x39) {
 				// 숫자
 			} else {
-				return false; // 영문자도 아니고 숫자도 아님!
+				return false; // 숫자가 아님!
 			}
+		}
+		
+		if(textInput.length()>=9 && textInput.length()<=11) {
+			//9~11자리
+		}else {
+			return false;
 		}
 
 		return true;

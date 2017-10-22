@@ -124,6 +124,7 @@ public class JoinGUI {
 		group.add(radioButton_Woman);
 
 		JButton idCheck = new JButton("\uC911\uBCF5\uAC80\uC0AC");
+		idCheck.setBackground(Color.WHITE);
 		idCheck.setFont(new Font("³ª´®°íµñ", Font.PLAIN, 12));
 		idCheck.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

@@ -19,7 +19,8 @@ import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
 import Main.Clock;
-import User.LoginGUI;
+import Start.LoginGUI;
+
 import java.awt.GridLayout;
 import java.awt.SystemColor;
 
@@ -263,6 +264,7 @@ public class Admin_MainGUI {
 			public void actionPerformed(ActionEvent e) {
 				
 				JOptionPane.showMessageDialog(frame, "로그아웃 되었습니다.");
+				frame.dispose();
 				LoginGUI login = new LoginGUI();
 				login.main(null);
 				
