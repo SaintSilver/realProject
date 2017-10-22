@@ -74,7 +74,7 @@ public class LoginGUI {
 			public void paintComponent(Graphics g) {
 				try {
 					String path = A.class.getResource("").getPath();// aÅ¬·¡½º À§Ä¡ °¡Áö°í¿À±â
-					File fileInSamePackage = new File(path + "BackGround.jpg");
+					File fileInSamePackage = new File(path + "BackGround2.jpg");
 					icon = ImageIO.read(fileInSamePackage);
 					Dimension d = getSize();// ÀüÃ¼È­¸é
 					g.drawImage(icon, 0, 0, d.width, d.height, null);
@@ -108,6 +108,7 @@ public class LoginGUI {
 		};
 		sl_panel.putConstraint(SpringLayout.NORTH, panel_2, 149, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.WEST, panel_2, 38, SpringLayout.WEST, panel);
+		sl_panel.putConstraint(SpringLayout.EAST, panel_2, -743, SpringLayout.EAST, panel);
 		panel.add(panel_2);
 
 		JButton LoginButton = new JButton("");
@@ -173,49 +174,51 @@ public class LoginGUI {
 		idField.setColumns(10);
 
 		pwField = new JPasswordField();
+		sl_panel.putConstraint(SpringLayout.NORTH, pwField, 23, SpringLayout.SOUTH, idField);
 		pwField.setOpaque(false);
 		sl_panel.putConstraint(SpringLayout.WEST, pwField, 0, SpringLayout.WEST, idField);
 		sl_panel.putConstraint(SpringLayout.EAST, pwField, 0, SpringLayout.EAST, idField);
 		panel.add(pwField);
 
 		lblLogin = new JLabel("\uD55C\uC1A5 \uB85C\uADF8\uC778");
+		sl_panel.putConstraint(SpringLayout.NORTH, lblLogin, 149, SpringLayout.NORTH, panel);
+		sl_panel.putConstraint(SpringLayout.WEST, lblLogin, 34, SpringLayout.EAST, panel_2);
 		lblLogin.setHorizontalAlignment(SwingConstants.CENTER);
-		sl_panel.putConstraint(SpringLayout.EAST, panel_2, -34, SpringLayout.WEST, lblLogin);
-		sl_panel.putConstraint(SpringLayout.WEST, lblLogin, 175, SpringLayout.WEST, panel);
-		lblLogin.setFont(new Font("±¼¸²", Font.BOLD, 24));
+		lblLogin.setFont(new Font("³ª´®°íµñ", Font.BOLD, 30));
 		lblLogin.setForeground(new Color(227, 108, 9));
 		panel.add(lblLogin);
 
 		lblNewLabel = new JLabel("\uC6B0\uB9AC\uB294 \uD55C\uC1A5\uBC25\uBA39\uB294 \uC0AC\uC774!");
-		sl_panel.putConstraint(SpringLayout.NORTH, pwField, 0, SpringLayout.NORTH, lblNewLabel);
-		sl_panel.putConstraint(SpringLayout.NORTH, lblNewLabel, 218, SpringLayout.NORTH, panel);
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		sl_panel.putConstraint(SpringLayout.SOUTH, lblLogin, -18, SpringLayout.NORTH, lblNewLabel);
 		sl_panel.putConstraint(SpringLayout.WEST, lblNewLabel, 34, SpringLayout.EAST, panel_2);
-		sl_panel.putConstraint(SpringLayout.SOUTH, lblLogin, -26, SpringLayout.NORTH, lblNewLabel);
-		lblNewLabel.setFont(new Font("¸¼Àº °íµñ", Font.PLAIN, 13));
+		sl_panel.putConstraint(SpringLayout.EAST, lblNewLabel, 0, SpringLayout.EAST, lblLogin);
+		sl_panel.putConstraint(SpringLayout.SOUTH, lblNewLabel, 0, SpringLayout.SOUTH, panel_2);
+		lblNewLabel.setFont(new Font("³ª´®°íµñ", Font.BOLD, 13));
 		panel.add(lblNewLabel);
 
 		lblNewLabel_1 = new JLabel("\uC544\uC774\uB514");
+		sl_panel.putConstraint(SpringLayout.EAST, lblLogin, -64, SpringLayout.WEST, lblNewLabel_1);
 		sl_panel.putConstraint(SpringLayout.NORTH, lblNewLabel_1, 171, SpringLayout.NORTH, panel);
-		lblNewLabel_1.setFont(new Font("¸¼Àº °íµñ", Font.PLAIN, 13));
+		lblNewLabel_1.setFont(new Font("³ª´®°íµñ", Font.BOLD, 14));
 		sl_panel.putConstraint(SpringLayout.EAST, lblNewLabel_1, -47, SpringLayout.WEST, idField);
 		panel.add(lblNewLabel_1);
 
 		lblNewLabel_2 = new JLabel("\uBE44\uBC00\uBC88\uD638");
-		sl_panel.putConstraint(SpringLayout.EAST, lblNewLabel, -66, SpringLayout.WEST, lblNewLabel_2);
-		sl_panel.putConstraint(SpringLayout.NORTH, lblNewLabel_2, 0, SpringLayout.NORTH, lblNewLabel);
+		sl_panel.putConstraint(SpringLayout.NORTH, lblNewLabel_2, 28, SpringLayout.SOUTH, lblNewLabel_1);
 		sl_panel.putConstraint(SpringLayout.EAST, lblNewLabel_2, 0, SpringLayout.EAST, lblNewLabel_1);
-		lblNewLabel_2.setFont(new Font("¸¼Àº °íµñ", Font.PLAIN, 13));
+		lblNewLabel_2.setFont(new Font("³ª´®°íµñ", Font.BOLD, 14));
 		panel.add(lblNewLabel_2);
 
 		lblNewLabel_3 = new JLabel("");
-		sl_panel.putConstraint(SpringLayout.SOUTH, pwField, -16, SpringLayout.NORTH, lblNewLabel_3);
-		sl_panel.putConstraint(SpringLayout.NORTH, lblNewLabel_3, 37, SpringLayout.SOUTH, lblNewLabel);
+		sl_panel.putConstraint(SpringLayout.NORTH, lblNewLabel_3, 274, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, lblNewLabel_3, -166, SpringLayout.SOUTH, panel);
+		sl_panel.putConstraint(SpringLayout.SOUTH, pwField, -16, SpringLayout.NORTH, lblNewLabel_3);
+		sl_panel.putConstraint(SpringLayout.WEST, lblNewLabel_3, 175, SpringLayout.WEST, panel);
+		sl_panel.putConstraint(SpringLayout.EAST, lblNewLabel_3, -20, SpringLayout.WEST, JoinButton);
 		lblNewLabel_3.setForeground(Color.RED);
 		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_3.setFont(new Font("°íµµ M", Font.PLAIN, 20));
-		sl_panel.putConstraint(SpringLayout.WEST, lblNewLabel_3, 0, SpringLayout.WEST, lblLogin);
-		sl_panel.putConstraint(SpringLayout.EAST, lblNewLabel_3, 0, SpringLayout.EAST, idField);
 		panel.add(lblNewLabel_3);
 
 		timeLabel = new JLabel("\"\"");

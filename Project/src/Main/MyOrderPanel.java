@@ -11,6 +11,7 @@ import java.util.Vector;
 
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import java.awt.Font;
 
 public class MyOrderPanel extends JPanel {
 	private JTable table;
@@ -49,6 +50,7 @@ public class MyOrderPanel extends JPanel {
 	      }
 	      
 	      table = new JTable(data, columnNames);
+	      table.setFont(new Font("°íµµ M", Font.PLAIN, 12));
 
 	      scrollPane.setViewportView(table);
 		
