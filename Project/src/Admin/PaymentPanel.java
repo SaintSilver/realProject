@@ -10,6 +10,7 @@ import javax.swing.JTable;
 
 import Order.OrderDAO;
 import Order.OrderVO;
+import java.awt.Font;
 
 public class PaymentPanel extends JPanel {
 	private JTable table;
@@ -47,6 +48,7 @@ public class PaymentPanel extends JPanel {
 	      }
 	      
 	      table = new JTable(data, columnNames);
+	      table.setFont(new Font("³ª´®°íµñ", Font.PLAIN, 12));
 
 	      scrollPane.setViewportView(table);
 		

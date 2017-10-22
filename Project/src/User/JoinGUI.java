@@ -128,14 +128,12 @@ public class JoinGUI {
 				char[] array = idField.getText().toCharArray();
 				// 아이디 중복검사 실행
 				checkID = dao.isPossibleJoin(idField.getText());
-				
+				// 아이디 영문/숫자검사 
 				boolean checkID2 = dao.checkInputOnlyNumberAndAlphabet(idField.getText());
 				
 				if(idField.getText().equals("")) {
 					warning.setText("아이디를 입력해주세요.");
-				}else if (idField.getText().contains(" ")) {
-					warning.setText("유효하지 않은 아이디입니다.");
-				} else if (!(Character.isLowerCase(ch))) {
+				}else if (!(Character.isLowerCase(ch))) {
 					warning.setText("ID는 영어 소문자로 시작해야 합니다.");
 				}else if(array.length>10 || array.length<4) {
 					warning.setText("4자 이상, 10자 이하로 설정해주세요.");
@@ -179,9 +177,11 @@ public class JoinGUI {
 				} else if(pw.length()<4){
 					warning.setText("비밀번호를 4자리 이상 설정해주세요.");
 				}else if(!contactCheck){
-						warning.setText("잘못된 전화번호입니다.");
+						warning.setText("전화번호는 숫자로만 입력해주세요.");
 				}else if(contactField.getText().length()<10 ||contactField.getText().length()>14){
 						warning.setText("잘못된 전화번호입니다.");
+				}else if((!radioButton_Man.isSelected()) && (!radioButton_Woman.isSelected())){
+					warning.setText("성별을 선택하세요.");
 				}else {
 
 					user = new UserVO(user.getUserNumber(), "일반", idField.getText(), pw, nameField.getText(),
