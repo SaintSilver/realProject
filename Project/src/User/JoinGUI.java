@@ -172,9 +172,10 @@ public class JoinGUI {
 				String pw1 = String.valueOf(pwConField.getPassword());
 				
 				//전화번호 유효검사
-				char[] array = contactField.getText().toCharArray();
 				boolean contactCheck = dao.checkInputOnlyNumber(contactField.getText());
-
+				//이름 유효검사
+				boolean nameCheck = dao.isHangulSyllables(nameField.getText());
+				
 				// 성별
 				String gender = "";
 				if (radioButton_Man.isSelected()) {
@@ -193,11 +194,11 @@ public class JoinGUI {
 				} else if(pw.length()<4){
 					warning.setText("비밀번호를 4자리 이상 설정해주세요.");
 				}else if(!contactCheck){
-						warning.setText("전화번호는 숫자로만 입력해주세요.");
-				}else if(contactField.getText().length()<10 ||contactField.getText().length()>14){
-						warning.setText("잘못된 전화번호입니다.");
+						warning.setText("전화번호를 확인하세요.");
 				}else if((!radioButton_Man.isSelected()) && (!radioButton_Woman.isSelected())){
 					warning.setText("성별을 선택하세요.");
+				}else if(!nameCheck){
+					warning.setText("잘못된 이름입니다.");
 				}else {
 
 					user = new UserVO(user.getUserNumber(), "일반", idField.getText(), pw, nameField.getText(),
