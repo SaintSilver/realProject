@@ -24,6 +24,7 @@ public class GamePanel extends JPanel {
 
 	static JLabel lbl_pickName;
 	private ThreadStart t;
+	private boolean check = false;
 
 	public GamePanel() {
 
@@ -40,9 +41,11 @@ public class GamePanel extends JPanel {
 		btnStart.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
+				if(check == false) {
 					t = new ThreadStart();
 					t.start();
-
+					check =  true;
+				}
 			}
 
 		});
@@ -70,6 +73,7 @@ public class GamePanel extends JPanel {
 		btnStop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
+				if(check == true) {
 				t.stop();
 				
 				PickNameDAO dao = new PickNameDAO();
@@ -79,10 +83,10 @@ public class GamePanel extends JPanel {
 				String timeNow = sf.format(new Date());
 
 				PickNameVO pickName = new PickNameVO(lbl_pickName.getText(), timeNow, resultPrice);
-				
 
 				dao.insertName(pickName);
-
+				check = false;
+				}
 			}
 		});
 		btnStop.setFont(new Font("°íµµ M", Font.PLAIN, 25));
