@@ -18,8 +18,11 @@ import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 
 import User.ChangeInfoGUI;
-import User.LoginGUI;
+
 import javax.swing.SwingConstants;
+
+import Start.LoginGUI;
+
 import java.awt.GridLayout;
 
 

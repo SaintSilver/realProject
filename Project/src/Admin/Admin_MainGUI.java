@@ -19,7 +19,8 @@ import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
 import Main.Clock;
-import User.LoginGUI;
+import Start.LoginGUI;
+
 import java.awt.GridLayout;
 import java.awt.SystemColor;
 

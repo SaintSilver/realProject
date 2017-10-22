@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 import Menu.MenuDAO;
 import Menu.MenuVO;
-import User.LoginGUI;
+import Start.LoginGUI;
 import User.UserDAO;
 import User.UserVO;
 

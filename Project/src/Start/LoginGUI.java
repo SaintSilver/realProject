@@ -1,4 +1,4 @@
-package User;
+package Start;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -27,6 +27,9 @@ import javax.swing.SwingConstants;
 import Admin.Admin_MainGUI;
 import Main.Clock;
 import Main.MainGUI;
+import User.A;
+import User.JoinGUI;
+import User.UserDAO;
 
 public class LoginGUI {
 
