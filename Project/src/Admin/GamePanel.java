@@ -69,8 +69,9 @@ public class GamePanel extends JPanel {
 		sl_GamePanel.putConstraint(SpringLayout.EAST, btnStop, 0, SpringLayout.EAST, lbl_pickName);
 		btnStop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
 				t.stop();
-
+				
 				SimpleDateFormat sf = new SimpleDateFormat("yyyy≥‚MMø˘dd¿œ a hh:mm");
 				String timeNow = sf.format(new Date());
 

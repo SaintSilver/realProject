@@ -20,6 +20,7 @@ public class Clock implements Runnable {
     }
 
     public static void main(String[] args){
+    	
     }
 
     public void run() {

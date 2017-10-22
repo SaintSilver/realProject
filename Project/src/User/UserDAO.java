@@ -432,7 +432,7 @@ public class UserDAO {
 		return true;
 	}
 	
-	//이름 유효검사(음절)
+	//이름 유효검사(음절단위)
 	public boolean isHangulSyllables(String name) { 
 		char c;
 		

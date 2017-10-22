@@ -8,7 +8,10 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.SystemColor;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.swing.ImageIcon;
@@ -27,9 +30,6 @@ import Order.OrderDAO;
 import User.LoginGUI;
 import User.UserDAO;
 import User.UserVO;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class OrderGUI {
 	private JFrame frame;
@@ -128,7 +128,7 @@ public class OrderGUI {
 		panel_5.add(panel_8);
 		panel_8.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_10 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_10 = new JLabel("");
 		lblNewLabel_10.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uAE50\uAE50\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_10.setHorizontalAlignment(SwingConstants.LEFT);
 		panel_8.add(lblNewLabel_10, "name_42806277536259");
@@ -158,7 +158,7 @@ public class OrderGUI {
 		panel_5.add(panel_10);
 		panel_10.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_12 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_12 = new JLabel("");
 		lblNewLabel_12.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB098\uC2DC\uACE0\uB7AD.jpg")));
 		lblNewLabel_12.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_10.add(lblNewLabel_12, "name_42806277536259");
@@ -187,7 +187,7 @@ public class OrderGUI {
 		panel_5.add(panel_12);
 		panel_12.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_14 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_14 = new JLabel("");
 		lblNewLabel_14.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB370\uBBF8\uADF8\uB77C\uC2A4\uD568\uBC15\uC2A4\uD14C\uC774\uD06C.jpg")));
 		lblNewLabel_14.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_12.add(lblNewLabel_14, "name_42806277536259");
@@ -216,7 +216,7 @@ public class OrderGUI {
 		panel_5.add(panel_14);
 		panel_14.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_16 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_16 = new JLabel("");
 		lblNewLabel_16.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uACE0\uB4F1\uC5B4\uC870\uB9BC \uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_16.setHorizontalAlignment(SwingConstants.LEFT);
 		panel_14.add(lblNewLabel_16, "name_42806277536259");
@@ -245,7 +245,7 @@ public class OrderGUI {
 		panel_5.add(panel_16);
 		panel_16.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_18 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_18 = new JLabel("");
 		lblNewLabel_18.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB9E4\uD654\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_18.setHorizontalAlignment(SwingConstants.LEFT);
 		panel_16.add(lblNewLabel_18, "name_42806277536259");
@@ -275,7 +275,7 @@ public class OrderGUI {
 		panel_5.add(panel_18);
 		panel_18.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_20 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_20 = new JLabel("");
 		lblNewLabel_20.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uAC1C\uB098\uB9AC\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_20.setHorizontalAlignment(SwingConstants.LEFT);
 		panel_18.add(lblNewLabel_20, "name_42806277536259");
@@ -304,7 +304,7 @@ public class OrderGUI {
 		panel_5.add(panel_20);
 		panel_20.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_22 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_22 = new JLabel("");
 		lblNewLabel_22.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC9C4\uB2EC\uB798\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_22.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_20.add(lblNewLabel_22, "name_42806277536259");
@@ -334,7 +334,7 @@ public class OrderGUI {
 		panel_5.add(panel_22);
 		panel_22.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_24 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_24 = new JLabel("");
 		lblNewLabel_24.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uACE0\uAE30\uACE0\uAE30\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_24.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_22.add(lblNewLabel_24, "name_42806277536259");
@@ -364,7 +364,7 @@ public class OrderGUI {
 		panel_5.add(panel_24);
 		panel_24.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_26 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_26 = new JLabel("");
 		lblNewLabel_26.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uD584\uCE58\uACE0\uAE30\uACE0\uAE30\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_26.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_24.add(lblNewLabel_26, "name_42806277536259");
@@ -394,7 +394,7 @@ public class OrderGUI {
 		panel_5.add(panel_26);
 		panel_26.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_28 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_28 = new JLabel("");
 		lblNewLabel_28.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB3C8\uCE58\uACE0\uAE30\uACE0\uAE30\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_28.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_26.add(lblNewLabel_28, "name_42806277536259");
@@ -425,7 +425,7 @@ public class OrderGUI {
 		panel_5.add(panel_28);
 		panel_28.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_30 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_30 = new JLabel("");
 		lblNewLabel_30.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC0C8\uCE58\uACE0\uAE30\uACE0\uAE30\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_30.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_28.add(lblNewLabel_30, "name_42806277536259");
@@ -455,7 +455,7 @@ public class OrderGUI {
 		panel_5.add(panel_30);
 		panel_30.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_32 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_32 = new JLabel("");
 		lblNewLabel_32.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE60\uB9AC\uD3EC\uD06C\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_32.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_30.add(lblNewLabel_32, "name_42806277536259");
@@ -485,7 +485,7 @@ public class OrderGUI {
 		panel_5.add(panel_32);
 		panel_32.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_34 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_34 = new JLabel("");
 		lblNewLabel_34.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB3C4\uB828\uB2D8\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_34.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_32.add(lblNewLabel_34, "name_42806277536259");
@@ -514,7 +514,7 @@ public class OrderGUI {
 		panel_5.add(panel_34);
 		panel_34.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_36 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_36 = new JLabel("");
 		lblNewLabel_36.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uAD6D\uD654\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_36.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_34.add(lblNewLabel_36, "name_42806277536259");
@@ -544,7 +544,7 @@ public class OrderGUI {
 		panel_5.add(panel_36);
 		panel_36.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_38 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_38 = new JLabel("");
 		lblNewLabel_38.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE58\uD0A8\uC81C\uC721\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_38.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_36.add(lblNewLabel_38, "name_42806277536259");
@@ -572,8 +572,7 @@ public class OrderGUI {
 		JPanel panel_38 = new JPanel();
 		panel_5.add(panel_38);
 		panel_38.setLayout(new CardLayout(0, 0));
-		
-		JLabel lblNewLabel_40 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_40 = new JLabel("");
 		lblNewLabel_40.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB3C8\uCE58\uBD88\uACE0\uAE30\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_40.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_38.add(lblNewLabel_40, "name_42806277536259");
@@ -604,7 +603,7 @@ public class OrderGUI {
 		panel_5.add(panel_40);
 		panel_40.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_42 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_42 = new JLabel("");
 		lblNewLabel_42.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB3D9\uBC31\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_42.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_40.add(lblNewLabel_42, "name_42806277536259");
@@ -633,7 +632,7 @@ public class OrderGUI {
 		panel_5.add(panel_42);
 		panel_42.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_44 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_44 = new JLabel("");
 		lblNewLabel_44.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uD574\uD53C\uBC15\uC2A4.jpg")));
 		lblNewLabel_44.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_42.add(lblNewLabel_44, "name_42806277536259");
@@ -663,7 +662,7 @@ public class OrderGUI {
 		panel_5.add(panel_44);
 		panel_44.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_46 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_46 = new JLabel("");
 		lblNewLabel_46.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB3C4\uB828\uB2D8\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_46.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_44.add(lblNewLabel_46, "name_42806277536259");
@@ -692,7 +691,7 @@ public class OrderGUI {
 		panel_5.add(panel_46);
 		panel_46.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_48 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_48 = new JLabel("");
 		lblNewLabel_48.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB514\uB7ED\uC2A4\uC81C\uC721\uBCF6\uC74C\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_48.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_46.add(lblNewLabel_48, "name_42806277536259");
@@ -722,7 +721,7 @@ public class OrderGUI {
 		panel_5.add(panel_48);
 		panel_48.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_50 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_50 = new JLabel("");
 		lblNewLabel_50.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE74\uB808\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_50.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_48.add(lblNewLabel_50, "name_42806277536259");
@@ -752,7 +751,7 @@ public class OrderGUI {
 		panel_5.add(panel_50);
 		panel_50.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_52 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_52 = new JLabel("");
 		lblNewLabel_52.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB3C8\uAE4C\uC2A4\uCE74\uB808.jpg")));
 		lblNewLabel_52.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_50.add(lblNewLabel_52, "name_42806277536259");
@@ -782,7 +781,7 @@ public class OrderGUI {
 		panel_5.add(panel_52);
 		panel_52.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_54 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_54 = new JLabel("");
 		lblNewLabel_54.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uD3F4\uB9AC\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_54.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_52.add(lblNewLabel_54, "name_42806277536259");
@@ -813,7 +812,7 @@ public class OrderGUI {
 		panel_5.add(panel_54);
 		panel_54.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_56 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_56 = new JLabel("");
 		lblNewLabel_56.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCC38\uCE58\uC640\uC0AC\uB9C8\uC694.jpg")));
 		lblNewLabel_56.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_54.add(lblNewLabel_56, "name_42806277536259");
@@ -843,7 +842,7 @@ public class OrderGUI {
 		panel_5.add(panel_56);
 		panel_56.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_58 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_58 = new JLabel("");
 		lblNewLabel_58.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCC38\uCE58\uC640\uC0AC\uB9C8\uC694.jpg")));
 		lblNewLabel_58.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_56.add(lblNewLabel_58, "name_42806277536259");
@@ -873,7 +872,7 @@ public class OrderGUI {
 		panel_5.add(panel_58);
 		panel_58.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_60 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_60 = new JLabel("");
 		lblNewLabel_60.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE58\uD0A8\uC0D0\uB7EC\uB4DC\uC640\uC0AC\uB9C8\uC694.jpg")));
 		lblNewLabel_60.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_58.add(lblNewLabel_60, "name_42806277536259");
@@ -902,7 +901,7 @@ public class OrderGUI {
 		panel_5.add(panel_60);
 		panel_60.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_62 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_62 = new JLabel("");
 		lblNewLabel_62.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCC38\uCE58\uC0D0\uB7EC\uB4DC\uC640\uC0AC\uB9C8\uC694.jpg")));
 		lblNewLabel_62.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_60.add(lblNewLabel_62, "name_42806277536259");
@@ -932,7 +931,7 @@ public class OrderGUI {
 		panel_5.add(panel_62);
 		panel_62.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_64 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_64 = new JLabel("");
 		lblNewLabel_64.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBE45\uCE58\uD0A8\uC640\uC0AC\uB9C8\uC694.jpg")));
 		lblNewLabel_64.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_62.add(lblNewLabel_64, "name_42806277536259");
@@ -961,7 +960,7 @@ public class OrderGUI {
 		panel_5.add(panel_64);
 		panel_64.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_66 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_66 = new JLabel("");
 		lblNewLabel_66.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB3C8\uCE58\uC640\uC0AC\uB9C8\uC694.jpg")));
 		lblNewLabel_66.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_64.add(lblNewLabel_66, "name_42806277536259");
@@ -990,7 +989,7 @@ public class OrderGUI {
 		panel_5.add(panel_66);
 		panel_66.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_68 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_68 = new JLabel("");
 		lblNewLabel_68.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE58\uD0A8\uB9C8\uC694.jpg")));
 		lblNewLabel_68.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_66.add(lblNewLabel_68, "name_42806277536259");
@@ -1019,7 +1018,7 @@ public class OrderGUI {
 		panel_5.add(panel_68);
 		panel_68.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_70 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_70 = new JLabel("");
 		lblNewLabel_70.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCC38\uCE58\uB9C8\uC694.jpg")));
 		lblNewLabel_70.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_68.add(lblNewLabel_70, "name_42806277536259");
@@ -1049,7 +1048,7 @@ public class OrderGUI {
 		panel_5.add(panel_70);
 		panel_70.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_72 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_72 = new JLabel("");
 		lblNewLabel_72.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE58\uD0A8\uC0D0\uB7EC\uB4DC\uB9C8\uC694.jpg")));
 		lblNewLabel_72.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_70.add(lblNewLabel_72, "name_42806277536259");
@@ -1078,7 +1077,7 @@ public class OrderGUI {
 		panel_5.add(panel_72);
 		panel_72.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_74 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_74 = new JLabel("");
 		lblNewLabel_74.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCC38\uCE58\uC0D0\uB7EC\uB4DC\uB9C8\uC694.jpg")));
 		lblNewLabel_74.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_72.add(lblNewLabel_74, "name_42806277536259");
@@ -1108,7 +1107,7 @@ public class OrderGUI {
 		panel_5.add(panel_74);
 		panel_74.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_76 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_76 = new JLabel("");
 		lblNewLabel_76.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBE45\uCE58\uD0A8\uB9C8\uC694.jpg")));
 		lblNewLabel_76.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_74.add(lblNewLabel_76, "name_42806277536259");
@@ -1138,7 +1137,7 @@ public class OrderGUI {
 		panel_5.add(panel_76);
 		panel_76.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_78 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_78 = new JLabel("");
 		lblNewLabel_78.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB3C8\uCE58\uB9C8\uC694.jpg")));
 		lblNewLabel_78.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_76.add(lblNewLabel_78, "name_42806277536259");
@@ -1168,7 +1167,7 @@ public class OrderGUI {
 		panel_5.add(panel_78);
 		panel_78.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_80 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_80 = new JLabel("");
 		lblNewLabel_80.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB3C8\uAE4C\uC2A4\uB36E\uBC25'.jpg")));
 		lblNewLabel_80.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_78.add(lblNewLabel_80, "name_42806277536259");
@@ -1199,7 +1198,7 @@ public class OrderGUI {
 		panel_5.add(panel_80);
 		panel_80.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_82 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_82 = new JLabel("");
 		lblNewLabel_82.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC0C8\uC6B0\uB3C8\uAE4C\uC2A4\uB36E\uBC25.jpg")));
 		lblNewLabel_82.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_80.add(lblNewLabel_82, "name_42806277536259");
@@ -1229,7 +1228,7 @@ public class OrderGUI {
 		panel_5.add(panel_82);
 		panel_82.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_84 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_84 = new JLabel("");
 		lblNewLabel_84.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uAE40\uCE58\uBCF6\uC74C\uBC25.jpg")));
 		lblNewLabel_84.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_82.add(lblNewLabel_84, "name_42806277536259");
@@ -1259,7 +1258,7 @@ public class OrderGUI {
 		panel_5.add(panel_84);
 		panel_84.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_86 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_86 = new JLabel("");
 		lblNewLabel_86.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBD88\uACE0\uAE30\uAE40\uCE58\uBCF6\uC74C\uBC25.jpg")));
 		lblNewLabel_86.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_84.add(lblNewLabel_86, "name_42806277536259");
@@ -1288,7 +1287,7 @@ public class OrderGUI {
 		panel_5.add(panel_86);
 		panel_86.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_88 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_88 = new JLabel("");
 		lblNewLabel_88.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBD88\uB2ED\uBE44\uBE54\uBC25.jpg")));
 		lblNewLabel_88.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_86.add(lblNewLabel_88, "name_42806277536259");
@@ -1318,7 +1317,7 @@ public class OrderGUI {
 		panel_5.add(panel_88);
 		panel_88.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_90 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_90 = new JLabel("");
 		lblNewLabel_90.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC5F4\uBB34\uAC15\uB41C\uC7A5\uBE44\uBE54\uBC25.jpg")));
 		lblNewLabel_90.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_88.add(lblNewLabel_90, "name_42806277536259");
@@ -1347,7 +1346,7 @@ public class OrderGUI {
 		panel_5.add(panel_90);
 		panel_90.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_92 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_92 = new JLabel("");
 		lblNewLabel_92.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBD88\uACE0\uAE30\uBE44\uBE54\uBC25.jpg")));
 		lblNewLabel_92.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_90.add(lblNewLabel_92, "name_42806277536259");
@@ -1378,7 +1377,7 @@ public class OrderGUI {
 		panel_5.add(panel_92);
 		panel_92.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_94 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_94 = new JLabel("");
 		lblNewLabel_94.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC81C\uC721\uAC15\uB41C\uC7A5\uBE44\uBE54\uBC25.jpg")));
 		lblNewLabel_94.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_92.add(lblNewLabel_94, "name_42806277536259");
@@ -1407,7 +1406,7 @@ public class OrderGUI {
 		panel_5.add(panel_94);
 		panel_94.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_96 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_96 = new JLabel("");
 		lblNewLabel_96.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCC38\uCE58\uC57C\uCC44\uACE0\uCD94\uC7A5.jpg")));
 		lblNewLabel_96.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_94.add(lblNewLabel_96, "name_42806277536259");
@@ -1437,7 +1436,7 @@ public class OrderGUI {
 		panel_5.add(panel_96);
 		panel_96.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_98 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_98 = new JLabel("");
 		lblNewLabel_98.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uAE40\uCE58\uCC0C\uAC1C\uB3C4\uC2DC\uB77D.jpg")));
 		lblNewLabel_98.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_96.add(lblNewLabel_98, "name_42806277536259");
@@ -1466,7 +1465,7 @@ public class OrderGUI {
 		panel_5.add(panel_98);
 		panel_98.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_100 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_100 = new JLabel("");
 		lblNewLabel_100.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC721\uAC1C\uC7A5.jpg")));
 		lblNewLabel_100.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_98.add(lblNewLabel_100, "name_42806277536259");
@@ -1496,7 +1495,7 @@ public class OrderGUI {
 		panel_5.add(panel_100);
 		panel_100.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_102 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_102 = new JLabel("");
 		lblNewLabel_102.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uAE50\uAE50\uCF64\uBE44.jpg")));
 		lblNewLabel_102.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_100.add(lblNewLabel_102, "name_42806277536259");
@@ -1526,7 +1525,7 @@ public class OrderGUI {
 		panel_5.add(panel_104);
 		panel_104.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_106 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_106 = new JLabel("");
 		lblNewLabel_106.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uAE50\uC1FC\uCE60\uB9AC\uC0C8\uC6B0.jpg")));
 		lblNewLabel_106.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_104.add(lblNewLabel_106, "name_42806277536259");
@@ -1556,7 +1555,7 @@ public class OrderGUI {
 		panel_5.add(panel_106);
 		panel_106.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_108 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_108 = new JLabel("");
 		lblNewLabel_108.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uAE50\uD48D\uAE30.jpg")));
 		lblNewLabel_108.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_106.add(lblNewLabel_108, "name_42806277536259");
@@ -1587,7 +1586,7 @@ public class OrderGUI {
 		panel_5.add(panel_108);
 		panel_108.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_110 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_110 = new JLabel("");
 		lblNewLabel_110.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uB370\uBBF8\uD568\uBC15.jpg")));
 		lblNewLabel_110.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_108.add(lblNewLabel_110, "name_42806277536259");
@@ -1617,7 +1616,7 @@ public class OrderGUI {
 		panel_5.add(panel_110);
 		panel_110.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_112 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_112 = new JLabel("");
 		lblNewLabel_112.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uACE0\uB4F1\uC5B4\uC870\uB9BC.jpg")));
 		lblNewLabel_112.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_110.add(lblNewLabel_112, "name_42806277536259");
@@ -1646,7 +1645,7 @@ public class OrderGUI {
 		panel_5.add(panel_112);
 		panel_112.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_114 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_114 = new JLabel("");
 		lblNewLabel_114.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uC21C\uC0B4\uACE0\uB4F1\uC5B4\uB370\uB9AC\uC57C\uB07C.jpg")));
 		lblNewLabel_114.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_112.add(lblNewLabel_114, "name_42806277536259");
@@ -1675,7 +1674,7 @@ public class OrderGUI {
 		panel_5.add(panel_114);
 		panel_114.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_116 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_116 = new JLabel("");
 		lblNewLabel_116.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uBD88\uACE0\uAE30.jpg")));
 		lblNewLabel_116.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_114.add(lblNewLabel_116, "name_42806277536259");
@@ -1705,7 +1704,7 @@ public class OrderGUI {
 		panel_5.add(panel_116);
 		panel_116.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_118 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_118 = new JLabel("");
 		lblNewLabel_118.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uACE0\uAE30\uACE0\uAE30.jpg")));
 		lblNewLabel_118.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_116.add(lblNewLabel_118, "name_42806277536259");
@@ -1734,7 +1733,7 @@ public class OrderGUI {
 		panel_5.add(panel_118);
 		panel_118.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_120 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_120 = new JLabel("");
 		lblNewLabel_120.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uC81C\uC721\uBCF6\uC74C.jpg")));
 		lblNewLabel_120.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_118.add(lblNewLabel_120, "name_42806277536259");
@@ -1763,7 +1762,7 @@ public class OrderGUI {
 		panel_5.add(panel_120);
 		panel_120.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_122 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_122 = new JLabel("");
 		lblNewLabel_122.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uCE58\uD0A8.jpg")));
 		lblNewLabel_122.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_120.add(lblNewLabel_122, "name_42806277536259");
@@ -1793,7 +1792,7 @@ public class OrderGUI {
 		panel_5.add(panel_124);
 		panel_124.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_126 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_126 = new JLabel("");
 		lblNewLabel_126.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uB3C8\uAE4C\uC2A4\uB3C4\uB828\uB2D8.jpg")));
 		lblNewLabel_126.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_124.add(lblNewLabel_126, "name_42806277536259");
@@ -1822,7 +1821,7 @@ public class OrderGUI {
 		panel_5.add(panel_126);
 		panel_126.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_128 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_128 = new JLabel("");
 		lblNewLabel_128.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uCE60\uB9AC\uD0D5\uC218\uC721.jpg")));
 		lblNewLabel_128.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_126.add(lblNewLabel_128, "name_42806277536259");
@@ -1852,7 +1851,7 @@ public class OrderGUI {
 		panel_5.add(panel_128);
 		panel_128.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_130 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_130 = new JLabel("");
 		lblNewLabel_130.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uCC2C\uB3C8\uAE4C\uC2A4.jpg")));
 		lblNewLabel_130.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_128.add(lblNewLabel_130, "name_42806277536259");
@@ -1882,7 +1881,7 @@ public class OrderGUI {
 		panel_5.add(panel_130);
 		panel_130.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_132 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_132 = new JLabel("");
 		lblNewLabel_132.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uAE40\uCE58.jpg")));
 		lblNewLabel_132.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_130.add(lblNewLabel_132, "name_42806277536259");
@@ -1912,7 +1911,7 @@ public class OrderGUI {
 		panel_5.add(panel_132);
 		panel_132.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_134 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_134 = new JLabel("");
 		lblNewLabel_134.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBCF6\uC74C\uAE40\uCE58.jpg")));
 		lblNewLabel_134.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_132.add(lblNewLabel_134, "name_42806277536259");
@@ -1943,7 +1942,7 @@ public class OrderGUI {
 		panel_5.add(panel_134);
 		panel_134.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_136 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_136 = new JLabel("");
 		lblNewLabel_136.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBB34\uB9D0\uB7AD\uC774.jpg")));
 		lblNewLabel_136.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_134.add(lblNewLabel_136, "name_42806277536259");
@@ -1973,7 +1972,7 @@ public class OrderGUI {
 		panel_5.add(panel_136);
 		panel_136.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_138 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_138 = new JLabel("");
 		lblNewLabel_138.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC5F4\uBB34\uC5BC\uAC08\uC774\uAE40\uCE58.jpg")));
 		lblNewLabel_138.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_136.add(lblNewLabel_138, "name_42806277536259");
@@ -2003,7 +2002,7 @@ public class OrderGUI {
 		panel_5.add(panel_138);
 		panel_138.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_140 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_140 = new JLabel("");
 		lblNewLabel_140.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBB34\uC0DD\uCC44.jpg")));
 		lblNewLabel_140.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_138.add(lblNewLabel_140, "name_42806277536259");
@@ -2032,7 +2031,7 @@ public class OrderGUI {
 		panel_5.add(panel_140);
 		panel_140.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_142 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_142 = new JLabel("");
 		lblNewLabel_142.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uD55C\uC1A5\uBC25.jpg")));
 		lblNewLabel_142.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_140.add(lblNewLabel_142, "name_42806277536259");
@@ -2062,7 +2061,7 @@ public class OrderGUI {
 		panel_5.add(panel_142);
 		panel_142.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_144 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_144 = new JLabel("");
 		lblNewLabel_144.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uD604\uBBF8\uBC25.jpg")));
 		lblNewLabel_144.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_142.add(lblNewLabel_144, "name_42806277536259");
@@ -2091,7 +2090,7 @@ public class OrderGUI {
 		panel_5.add(panel_144);
 		panel_144.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_146 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_146 = new JLabel("");
 		lblNewLabel_146.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC601\uC591\uBC25.jpg")));
 		lblNewLabel_146.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_144.add(lblNewLabel_146, "name_42806277536259");
@@ -2122,7 +2121,7 @@ public class OrderGUI {
 		panel_5.add(panel_146);
 		panel_146.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_148 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_148 = new JLabel("");
 		lblNewLabel_148.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uACE0\uAD6C\uB9C8\uBE60\uC2A4.jpg")));
 		lblNewLabel_148.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_146.add(lblNewLabel_148, "name_42806277536259");
@@ -2151,7 +2150,7 @@ public class OrderGUI {
 		panel_5.add(panel_148);
 		panel_148.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_150 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_150 = new JLabel("");
 		lblNewLabel_150.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE58\uD0A8BOXwith\uBC18\uB2EC\uAC10\uC790\uD280\uAE40(\uB300).jpg")));
 		lblNewLabel_150.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_148.add(lblNewLabel_150, "name_42806277536259");
@@ -2181,7 +2180,7 @@ public class OrderGUI {
 		panel_5.add(panel_150);
 		panel_150.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_152 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_152 = new JLabel("");
 		lblNewLabel_152.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE58\uD0A8BOXwith\uBC18\uB2EC\uAC10\uC790\uD280\uAE40(\uC911).jpg")));
 		lblNewLabel_152.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_150.add(lblNewLabel_152, "name_42806277536259");
@@ -2210,7 +2209,7 @@ public class OrderGUI {
 		panel_5.add(panel_152);
 		panel_152.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_154 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_154 = new JLabel("");
 		lblNewLabel_154.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE58\uD0A8BOXwith\uBC18\uB2EC\uAC10\uC790\uD280\uAE40(\uC18C).jpg")));
 		lblNewLabel_154.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_152.add(lblNewLabel_154, "name_42806277536259");
@@ -2240,7 +2239,7 @@ public class OrderGUI {
 		panel_5.add(panel_154);
 		panel_154.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_156 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_156 = new JLabel("");
 		lblNewLabel_156.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE60\uB9AC\uD0D5\uC218\uC721BOX(\uB300).jpg")));
 		lblNewLabel_156.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_154.add(lblNewLabel_156, "name_42806277536259");
@@ -2270,7 +2269,7 @@ public class OrderGUI {
 		panel_5.add(panel_156);
 		panel_156.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_158 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_158 = new JLabel("");
 		lblNewLabel_158.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE60\uB9AC\uD0D5\uC218\uC721BOX(\uC911).jpg")));
 		lblNewLabel_158.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_156.add(lblNewLabel_158, "name_42806277536259");
@@ -2300,7 +2299,7 @@ public class OrderGUI {
 		panel_5.add(panel_158);
 		panel_158.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_160 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_160 = new JLabel("");
 		lblNewLabel_160.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB2ED\uAC15\uC815(\uC911).jpg")));
 		lblNewLabel_160.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_158.add(lblNewLabel_160, "name_42806277536259");
@@ -2331,7 +2330,7 @@ public class OrderGUI {
 		panel_5.add(panel_160);
 		panel_160.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_162 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_162 = new JLabel("");
 		lblNewLabel_162.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB2ED\uAC15\uC815(\uC18C).jpg")));
 		lblNewLabel_162.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_160.add(lblNewLabel_162, "name_42806277536259");
@@ -2361,7 +2360,7 @@ public class OrderGUI {
 		panel_5.add(panel_162);
 		panel_162.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_164 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_164 = new JLabel("");
 		lblNewLabel_164.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBC18\uB2EC\uAC10\uC790\uD280\uAE40.jpg")));
 		lblNewLabel_164.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_162.add(lblNewLabel_164, "name_42806277536259");
@@ -2391,7 +2390,7 @@ public class OrderGUI {
 		panel_5.add(panel_164);
 		panel_164.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_166 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_166 = new JLabel("");
 		lblNewLabel_166.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC218\uC81C\uACE0\uB85C\uCF00.jpg")));
 		lblNewLabel_166.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_164.add(lblNewLabel_166, "name_42806277536259");
@@ -2420,7 +2419,7 @@ public class OrderGUI {
 		panel_5.add(panel_166);
 		panel_166.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_168 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_168 = new JLabel("");
 		lblNewLabel_168.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB9E4\uCF64\uAD70\uB9CC\uB450.jpg")));
 		lblNewLabel_168.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_166.add(lblNewLabel_168, "name_42806277536259");
@@ -2450,7 +2449,7 @@ public class OrderGUI {
 		panel_5.add(panel_168);
 		panel_168.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_170 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_170 = new JLabel("");
 		lblNewLabel_170.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC2A4\uB0B5\uBAA8\uB4EC\uD280\uAE40.jpg")));
 		lblNewLabel_170.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_168.add(lblNewLabel_170, "name_42806277536259");
@@ -2479,7 +2478,7 @@ public class OrderGUI {
 		panel_5.add(panel_170);
 		panel_170.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_172 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_172 = new JLabel("");
 		lblNewLabel_172.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCE58\uD0A8\uC0D0\uB7EC\uB4DC.jpg")));
 		lblNewLabel_172.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_170.add(lblNewLabel_172, "name_42806277536259");
@@ -2508,7 +2507,7 @@ public class OrderGUI {
 		panel_5.add(panel_172);
 		panel_172.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_174 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_174 = new JLabel("");
 		lblNewLabel_174.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uADF8\uB9B0\uC0D0\uB7EC\uB4DC.jpg")));
 		lblNewLabel_174.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_172.add(lblNewLabel_174, "name_42806277536259");
@@ -2537,7 +2536,7 @@ public class OrderGUI {
 		panel_5.add(panel_174);
 		panel_174.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_176 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_176 = new JLabel("");
 		lblNewLabel_176.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBBF8\uB2C8\uC0D0\uB7EC\uB4DC.jpg")));
 		lblNewLabel_176.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_174.add(lblNewLabel_176, "name_42806277536259");
@@ -2567,7 +2566,7 @@ public class OrderGUI {
 		panel_5.add(panel_176);
 		panel_176.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_178 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_178 = new JLabel("");
 		lblNewLabel_178.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uBCF6\uC74C\uACE0\uCD94\uC7A5.jpg")));
 		lblNewLabel_178.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_176.add(lblNewLabel_178, "name_42806277536259");
@@ -2596,7 +2595,7 @@ public class OrderGUI {
 		panel_5.add(panel_178);
 		panel_178.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_180 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_180 = new JLabel("");
 		lblNewLabel_180.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uCF69\uB098\uBB3C\uBD81\uC5B4\uAD6D.jpg")));
 		lblNewLabel_180.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_178.add(lblNewLabel_180, "name_42806277536259");
@@ -2626,7 +2625,7 @@ public class OrderGUI {
 		panel_5.add(panel_180);
 		panel_180.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_182 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_182 = new JLabel("");
 		lblNewLabel_182.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uC2DC\uAE08\uCE58\uB41C\uC7A5\uAD6D.jpg")));
 		lblNewLabel_182.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_180.add(lblNewLabel_182, "name_42806277536259");
@@ -2656,7 +2655,7 @@ public class OrderGUI {
 		panel_5.add(panel_182);
 		panel_182.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_184 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_184 = new JLabel("");
 		lblNewLabel_184.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/H\uC2A4\uD398\uC15C\uD2F0 \uCE74\uD398\uB77C\uB5BC.jpg")));
 		lblNewLabel_184.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_182.add(lblNewLabel_184, "name_42806277536259");
@@ -2686,7 +2685,7 @@ public class OrderGUI {
 		panel_5.add(panel_184);
 		panel_184.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_186 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_186 = new JLabel("");
 		lblNewLabel_186.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uACE0\uAD6C\uB9C8\uC0D0\uB7EC\uB4DC.jpg")));
 		lblNewLabel_186.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_184.add(lblNewLabel_186, "name_42806277536259");
@@ -2717,7 +2716,7 @@ public class OrderGUI {
 		panel_5.add(panel_186);
 		panel_186.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_188 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_188 = new JLabel("");
 		lblNewLabel_188.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uAC10\uC790\uC0D0\uB7EC\uB4DC.jpg")));
 		lblNewLabel_188.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_186.add(lblNewLabel_188, "name_42806277536259");
@@ -2748,7 +2747,7 @@ public class OrderGUI {
 		panel_5.add(panel_188);
 		panel_188.setLayout(new CardLayout(0, 0));
 		
-		JLabel lblNewLabel_278 = new JLabel("\uC0AC\uC9C4");
+		JLabel lblNewLabel_278 = new JLabel("");
 		lblNewLabel_278.setIcon(new ImageIcon(OrderGUI.class.getResource("/image/\uB2E8\uD638\uBC15\uC0D0\uB7EC\uB4DC.jpg")));
 		lblNewLabel_278.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_188.add(lblNewLabel_278, "name_42806277536259");
@@ -2876,9 +2875,6 @@ public class OrderGUI {
 		map.put("감자샐러드",spinner90);
 		map.put("단호박샐러드",spinner91);
 		
-		
-		
-		
 		/*ArrayList<JSpinner> list = new ArrayList<>();
 		list.add(spinner);list.add(spinner2);list.add(spinner3);list.add(spinner4);list.add(spinner5);list.add(spinner6);list.add(spinner7);list.add(spinner8);list.add(spinner9);list.add(spinner10);
 		list.add(spinner11);list.add(spinner12);list.add(spinner13);list.add(spinner14);list.add(spinner15);list.add(spinner16);list.add(spinner17);list.add(spinner18);list.add(spinner19);list.add(spinner20);
@@ -2889,8 +2885,6 @@ public class OrderGUI {
 		list.add(spinner61);list.add(spinner62);list.add(spinner63);list.add(spinner64);list.add(spinner65);list.add(spinner66);list.add(spinner67);list.add(spinner68);list.add(spinner69);list.add(spinner70);
 		list.add(spinner71);list.add(spinner72);list.add(spinner73);list.add(spinner74);list.add(spinner75);list.add(spinner76);list.add(spinner77);list.add(spinner78);list.add(spinner79);list.add(spinner80);
 		list.add(spinner81);list.add(spinner82);list.add(spinner83);list.add(spinner84);list.add(spinner85);list.add(spinner86);list.add(spinner87);list.add(spinner88);list.add(spinner89);list.add(spinner90);*/
-
-		
 		
 		JButton btnNewButton = new JButton("\uC8FC\uBB38");
 		btnNewButton.addActionListener(new ActionListener() {

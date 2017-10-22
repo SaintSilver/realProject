@@ -44,6 +44,7 @@ public class JoinGUI {
 	private boolean checkID = false;
 	private JPasswordField pwField;
 	private JPasswordField pwConField;
+	private String joinID;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -151,6 +152,7 @@ public class JoinGUI {
 					}else {
 						warning.setText("사용가능한 아이디입니다.");
 						checkID =true;
+						joinID = idField.getText();
 					}
 				}
 				
@@ -195,6 +197,8 @@ public class JoinGUI {
 					warning.setText("성별을 선택하세요.");
 				}else if(!nameCheck){
 					warning.setText("잘못된 이름입니다.");
+				}else if(!joinID.equals(idField.getText())){
+					warning.setText("아이디 중복검사를 다시 하세요.");
 				}else {
 
 					user = new UserVO(user.getUserNumber(), "일반", idField.getText(), pw, nameField.getText(),
