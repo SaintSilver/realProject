@@ -264,6 +264,7 @@ public class Admin_MainGUI {
 			public void actionPerformed(ActionEvent e) {
 				
 				JOptionPane.showMessageDialog(frame, "로그아웃 되었습니다.");
+				frame.dispose();
 				LoginGUI login = new LoginGUI();
 				login.main(null);
 				

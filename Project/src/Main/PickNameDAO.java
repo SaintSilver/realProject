@@ -112,10 +112,58 @@ public class PickNameDAO {
 
 		return pickName;
 
-	}// todayOrderList
+	}
 	
-	//3일이 지난 추첨데이터는 삭제한다
-	
+	// 당일 누적금액 계산
+		public int todayOrderPrice() {
+			int count = 0;
+			int price = 0;
+			int result = 0;
+
+			SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss");
+			String today = (sf.format(new Date())).substring(8, 10);
+
+			try {
+				getConnection();
+
+				String sql = "select * from orderlist";
+
+				psmt = con.prepareStatement(sql);
+				rs = psmt.executeQuery();
+				
+				while (rs.next()) {
+
+					// 오늘날짜만 보여주기.
+					if (rs.getString(6).substring(8, 10).equals(today)) {
+						count = rs.getInt(4);
+						price = rs.getInt(5);
+						result += count*price;
+					}
+
+				} // while
+
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				// 연결 끊기 - 열기 순서의 반대
+				try {
+					if (rs != null)
+						rs.close();
+					if (psmt != null)
+						psmt.close();
+					if (con != null)
+						con.close();
+
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			} // finally
+
+			return result;
+
+		}// todayOrderList
 	
 
 }

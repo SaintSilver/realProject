@@ -72,11 +72,14 @@ public class GamePanel extends JPanel {
 				
 				t.stop();
 				
+				PickNameDAO dao = new PickNameDAO();
+				int resultPrice = dao.todayOrderPrice();
+				
 				SimpleDateFormat sf = new SimpleDateFormat("yyyy≥‚MMø˘dd¿œ a hh:mm");
 				String timeNow = sf.format(new Date());
 
-				PickNameVO pickName = new PickNameVO(lbl_pickName.getText(), timeNow, 10000);
-				PickNameDAO dao = new PickNameDAO();
+				PickNameVO pickName = new PickNameVO(lbl_pickName.getText(), timeNow, resultPrice);
+				
 
 				dao.insertName(pickName);
 
