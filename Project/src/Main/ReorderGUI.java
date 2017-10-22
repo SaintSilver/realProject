@@ -258,7 +258,7 @@ public class ReorderGUI {
 		
 		
 		// 주문리스트
-		for (int i = 1; i < list.size(); i++) {
+		for (int i = 0; i < list.size(); i++) {
 			comboBox.addItem(list.get(i).getItem());
 		}
 
@@ -274,7 +274,7 @@ public class ReorderGUI {
 				String time= "";
 
 				// 주문리스트
-				for (int i = 1; i < list.size(); i++) {
+				for (int i = 0; i < list.size(); i++) {
 					if(item.equals(list.get(i).getItem())) {
 						count = list.get(i).getEa();
 						time = list.get(i).getTime();
@@ -297,7 +297,7 @@ public class ReorderGUI {
 				String time= "";
 
 				// 주문리스트
-				for (int i = 1; i < list.size(); i++) {
+				for (int i = 0; i < list.size(); i++) {
 					if(item.equals(list.get(i).getItem())) {
 						time = list.get(i).getTime();
 					}
@@ -332,7 +332,7 @@ public class ReorderGUI {
 					String time= "";
 
 					// 주문리스트
-					for (int i = 1; i < list.size(); i++) {
+					for (int i = 0; i < list.size(); i++) {
 						if(item.equals(list.get(i).getItem())) {
 							time = list.get(i).getTime();
 						}

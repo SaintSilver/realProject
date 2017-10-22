@@ -338,7 +338,21 @@ public class ChangeInfoGUI {
 				String pw1 = String.valueOf(pwField.getPassword());
 				String pw2 = String.valueOf(pwConField.getPassword());
 				
-				if (!(pw.equals(user.getPassword()))) {
+				//전화번호 유효검사
+				boolean contactCheck = dao.checkInputOnlyNumber(contactField.getText());
+				//이름 유효검사
+				boolean nameCheck = dao.isHangulSyllables(nameField.getText());
+				
+				if (contactField.getText().equals("") || pw.equals("") || pw1.equals("") || pw2.equals("")
+						|| nameField.getText().equals("") || contactField.getText().equals("")) {
+					warning.setText("빈 항목이 있습니다.");
+				} else if(!(contactField.getText().length()>=9 && contactField.getText().length()<=11)){
+					warning.setText("전화번호를 확인하세요.");
+				}else if((!radioButton_Man.isSelected()) && (!radioButton_Woman.isSelected())){
+					warning.setText("성별을 선택하세요.");
+				}else if(!nameCheck){
+					warning.setText("잘못된 이름입니다.");
+				}else if (!(pw.equals(user.getPassword()))) {
 					warning.setText("비밀번호가 틀립니다.");
 				} else if (!(pw1.equals(pw2))) {
 					warning.setText("변경할 비밀번호가 일치하지 않습니다.");
@@ -346,9 +360,11 @@ public class ChangeInfoGUI {
 					warning.setText("기존 비밀번호와 같습니다.");
 				}else if(pw1.length()<4){
 					warning.setText("비밀번호는 최소 4자리 이상입니다.");
+				}else if(!contactCheck) {
+					warning.setText("전화번호는 '-'없는 숫자입니다.");
 				}else {
 
-					user = new UserVO(user.getUserNumber(), user.getUserType(), user.getId(), pw, nameField.getText(),
+					user = new UserVO(user.getUserNumber(), user.getUserType(), user.getId(), pw1, nameField.getText(),
 							contactField.getText(), user.getGender());
 
 					dao.ChangeInfo(user);

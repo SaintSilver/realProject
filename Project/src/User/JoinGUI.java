@@ -198,7 +198,7 @@ public class JoinGUI {
 					warning.setText("비밀번호를 4자리 이상 설정해주세요.");
 				}else if(!contactCheck){
 						warning.setText("전화번호는 '-'없는 숫자입니다.");
-				}else if(contactField.getText().length()>=9 && contactField.getText().length()<=11){
+				}else if(!(contactField.getText().length()>=9 && contactField.getText().length()<=11)){
 					warning.setText("전화번호를 확인하세요.");
 				}else if((!radioButton_Man.isSelected()) && (!radioButton_Woman.isSelected())){
 					warning.setText("성별을 선택하세요.");
