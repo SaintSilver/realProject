@@ -87,9 +87,9 @@ public class Admin_MainGUI {
 		SpringLayout springLayout = (SpringLayout) systemPanel.getLayout();
 		mainPanel.add(systemPanel, "SystemPanel");
 		
-		//order panel
+		/*//order panel
 		ManagementPanel ManagementPanel = new ManagementPanel();
-		mainPanel.add(ManagementPanel, "ManagementPanel");
+		mainPanel.add(ManagementPanel, "ManagementPanel");*/
 		
 		//order_current
 		Order_current_panel order_current = new Order_current_panel();
@@ -176,7 +176,6 @@ public class Admin_MainGUI {
 				lblNewLabel.setText("회원관리");
 				mainPanel.setBackground(Color.BLUE);
 				mainPanel.setVisible(true);
-				//((CardLayout)mainPanel.getLayout()).show(mainPanel, "ManagementPanel");	
 				
 				frame.dispose();
 				UserManagementGUI userManagementGUI = new UserManagementGUI();

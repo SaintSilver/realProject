@@ -113,5 +113,9 @@ public class PickNameDAO {
 		return pickName;
 
 	}// todayOrderList
+	
+	//3일이 지난 추첨데이터는 삭제한다
+	
+	
 
 }

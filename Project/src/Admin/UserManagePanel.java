@@ -59,7 +59,7 @@ public class UserManagePanel extends JPanel  {
 	      
 	      table = new JTable(data, columnNames);
 	      table.setBackground(Color.WHITE);
-	      table.setFont(new Font("°íµµ M", Font.PLAIN, 12));
+	      table.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 12));
 
 	      scrollPane.setViewportView(table);
 		

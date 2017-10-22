@@ -26,6 +26,7 @@ public class UserDAO {
 		con = DriverManager.getConnection(url, id, pw);
 	}
 
+	//회원가입
 	public void join(UserVO user) {
 
 		try {
@@ -67,7 +68,8 @@ public class UserDAO {
 			}
 		}
 	}
-
+	
+	// 마지막 가입한 유저의 유저넘버 가져오기
 	private int getLastUserNumber() {
 
 		int result = 1;
@@ -105,6 +107,7 @@ public class UserDAO {
 		return result;
 	}
 
+	// 사용자가 입력한 id와 pw db와 매칭 
 	public boolean login(String id, String password) {
 
 		try {
@@ -142,7 +145,8 @@ public class UserDAO {
 		}
 		return false;
 	}
-
+	
+	//회원탈퇴
 	public void closeAccount(String id) {
 		try {
 			getConnection();
@@ -173,7 +177,8 @@ public class UserDAO {
 		}
 
 	}
-
+	
+	//회원정보보기
 	public UserVO viewInfo(String id) {
 
 		UserVO userInfo = null;
@@ -300,7 +305,7 @@ public class UserDAO {
 		}
 	}
 
-	// 관리자용
+	// 관리자용 전체유저리스트 
 	public ArrayList<UserVO> getUserList() {
 
 		ArrayList<UserVO> list = new ArrayList<>();
@@ -350,7 +355,8 @@ public class UserDAO {
 		return list;
 
 	}
-
+	
+	//이미 존재하는 아이디인지 확인
 	public boolean isPossibleJoin(String id) {
 
 		try {
@@ -380,7 +386,8 @@ public class UserDAO {
 		}
 		return false;
 	}
-
+	
+	//아이디 영문검사 
 	public boolean checkInputOnlyNumberAndAlphabet(String textInput) {
 
 		char chrInput;
@@ -400,7 +407,7 @@ public class UserDAO {
 
 		return true;
 	}
-	
+	//전화번호 유효검사
 	public boolean checkInputOnlyNumber(String textInput) {
 
 		char chrInput;
