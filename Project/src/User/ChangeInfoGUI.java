@@ -179,7 +179,6 @@ public class ChangeInfoGUI {
 		pwField = new JPasswordField();
 		pwField.setOpaque(false);
 		sl_panel_1.putConstraint(SpringLayout.NORTH, pwField, 55, SpringLayout.NORTH, panel_1);
-		sl_panel_1.putConstraint(SpringLayout.WEST, pwField, 34, SpringLayout.EAST, label_3);
 		sl_panel_1.putConstraint(SpringLayout.EAST, pwField, -19, SpringLayout.WEST, label_4);
 		panel_1.add(pwField);
 
@@ -198,6 +197,7 @@ public class ChangeInfoGUI {
 		panel_1.add(label_5);
 
 		nameField = new JTextField();
+		sl_panel_1.putConstraint(SpringLayout.WEST, pwField, 0, SpringLayout.WEST, nameField);
 		nameField.setOpaque(false);
 		sl_panel_1.putConstraint(SpringLayout.NORTH, nameField, -3, SpringLayout.NORTH, label_5);
 		sl_panel_1.putConstraint(SpringLayout.WEST, nameField, 60, SpringLayout.EAST, label_5);
@@ -212,9 +212,10 @@ public class ChangeInfoGUI {
 		panel_1.add(label_6);
 
 		contactField = new JTextField();
+		sl_panel_1.putConstraint(SpringLayout.WEST, contactField, 0, SpringLayout.WEST, pwField);
+		sl_panel_1.putConstraint(SpringLayout.EAST, contactField, 116, SpringLayout.WEST, pwField);
 		contactField.setOpaque(false);
 		sl_panel_1.putConstraint(SpringLayout.NORTH, contactField, 150, SpringLayout.NORTH, panel_1);
-		sl_panel_1.putConstraint(SpringLayout.WEST, contactField, 47, SpringLayout.EAST, label_6);
 		contactField.setColumns(10);
 		panel_1.add(contactField);
 
