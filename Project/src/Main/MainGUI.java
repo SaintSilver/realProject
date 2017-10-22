@@ -125,7 +125,7 @@ public class MainGUI {
 		
 		
 		JButton btnNewButton = new JButton("\uC8FC\uBB38\uD604\uD669");
-		btnNewButton.setFont(new Font("함초롬돋움", Font.BOLD, 14));
+		btnNewButton.setFont(new Font("고도 M", Font.PLAIN, 16));
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -176,13 +176,13 @@ public class MainGUI {
 			}
 		});
 		btnNewButton_3.setBackground(new Color(254, 194, 15));
-		btnNewButton_3.setFont(new Font("함초롬돋움", Font.BOLD, 14));
+		btnNewButton_3.setFont(new Font("고도 M", Font.PLAIN, 16));
 		menuPanel.add(btnNewButton_3);
 		btnNewButton.setBackground(new Color(254, 194, 15));
 		menuPanel.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("\uB0B4 \uC8FC\uBB38");
-		btnNewButton_1.setFont(new Font("함초롬돋움", Font.BOLD, 14));
+		btnNewButton_1.setFont(new Font("고도 M", Font.PLAIN, 16));
 		btnNewButton_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -221,7 +221,7 @@ public class MainGUI {
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "gamePanel");	
 			}
 		});
-		btnNewButton_2.setFont(new Font("함초롬돋움", Font.BOLD, 14));
+		btnNewButton_2.setFont(new Font("고도 M", Font.PLAIN, 16));
 		btnNewButton_2.setBackground(new Color(254, 194, 15));
 		menuPanel.add(btnNewButton_2);
 		panel.add(titlePanel);

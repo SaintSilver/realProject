@@ -108,12 +108,12 @@ public class OrderGUI {
 		panel_7.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_9 = new JLabel("\uAE50\uD48D\uAE30\uB3C4\uC2DC\uB77D");
-		lblNewLabel_9.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_9.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_9.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_7.add(lblNewLabel_9);
 		
 		JLabel lblNewLabel_104 = new JLabel("4300\uC6D0");
-		lblNewLabel_104.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_104.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_104.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_7.add(lblNewLabel_104);
 		
@@ -139,12 +139,12 @@ public class OrderGUI {
 		panel_9.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_11 = new JLabel("\uAE50\uAE50\uB3C4\uC2DC\uB77D");
-		lblNewLabel_11.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_11.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_11.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_9.add(lblNewLabel_11);
 		
 		JLabel lblNewLabel_105 = new JLabel("5800\uC6D0");
-		lblNewLabel_105.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_105.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_105.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_9.add(lblNewLabel_105);
 		
@@ -169,12 +169,12 @@ public class OrderGUI {
 		panel_11.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_13 = new JLabel("\uB098\uC2DC\uACE0\uB7AD");
-		lblNewLabel_13.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_13.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_13.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_11.add(lblNewLabel_13);
 		
 		JLabel lblNewLabel_190 = new JLabel("4500\uC6D0");
-		lblNewLabel_190.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_190.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_190.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_11.add(lblNewLabel_190);
 		
@@ -198,12 +198,12 @@ public class OrderGUI {
 		panel_13.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_15 = new JLabel("\uB370\uBBF8\uADF8\uB77C\uC2A4\uD568\uBC15\uC2A4\uD14C\uC774\uD06C");
-		lblNewLabel_15.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_15.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_15.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_13.add(lblNewLabel_15);
 		
 		JLabel lblNewLabel_191 = new JLabel("5800\uC6D0");
-		lblNewLabel_191.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_191.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_191.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_13.add(lblNewLabel_191);
 		
@@ -227,12 +227,12 @@ public class OrderGUI {
 		panel_15.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_17 = new JLabel("\uACE0\uB4F1\uC5B4\uC870\uB9BC\uB3C4\uC2DC\uB77D");
-		lblNewLabel_17.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_17.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_17.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_15.add(lblNewLabel_17);
 		
 		JLabel lblNewLabel_192 = new JLabel("5800\uC6D0");
-		lblNewLabel_192.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_192.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_192.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_15.add(lblNewLabel_192);
 		
@@ -256,12 +256,12 @@ public class OrderGUI {
 		panel_17.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_19 = new JLabel("\uB9E4\uD654\uB3C4\uC2DC\uB77D");
-		lblNewLabel_19.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_19.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_19.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_17.add(lblNewLabel_19);
 		
 		JLabel lblNewLabel_193 = new JLabel("10000\uC6D0");
-		lblNewLabel_193.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_193.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_193.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_17.add(lblNewLabel_193);
 		
@@ -286,12 +286,12 @@ public class OrderGUI {
 		panel_19.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_21 = new JLabel("\uAC1C\uB098\uB9AC\uB3C4\uC2DC\uB77D");
-		lblNewLabel_21.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_21.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_21.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_19.add(lblNewLabel_21);
 		
 		JLabel lblNewLabel_194 = new JLabel("8000\uC6D0");
-		lblNewLabel_194.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_194.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_194.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_19.add(lblNewLabel_194);
 		
@@ -315,12 +315,12 @@ public class OrderGUI {
 		panel_21.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_23 = new JLabel("\uC9C4\uB2EC\uB798\uB3C4\uC2DC\uB77D");
-		lblNewLabel_23.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_23.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_23.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_21.add(lblNewLabel_23);
 		
 		JLabel lblNewLabel_195 = new JLabel("7000\uC6D0");
-		lblNewLabel_195.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_195.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_195.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_21.add(lblNewLabel_195);
 		
@@ -345,13 +345,13 @@ public class OrderGUI {
 		panel_23.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_25 = new JLabel("\uACE0\uAE30\uACE0\uAE30\uB3C4\uC2DC\uB77D");
-		lblNewLabel_25.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_25.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_25.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_23.add(lblNewLabel_25);
 		
 		JLabel lblNewLabel_196 = new JLabel("3600\uC6D0");
 		lblNewLabel_196.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_196.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_196.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		panel_23.add(lblNewLabel_196);
 		
 		JSpinner spinner9 = new JSpinner();
@@ -375,12 +375,12 @@ public class OrderGUI {
 		panel_25.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_27 = new JLabel("\uD584\uCE58\uACE0\uAE30\uACE0\uAE30\uB3C4\uC2DC\uB77D");
-		lblNewLabel_27.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_27.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_27.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_25.add(lblNewLabel_27);
 		
 		JLabel lblNewLabel_197 = new JLabel("5000\uC6D0");
-		lblNewLabel_197.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_197.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_197.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_25.add(lblNewLabel_197);
 		
@@ -405,12 +405,12 @@ public class OrderGUI {
 		panel_27.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_29 = new JLabel("\uB3C8\uCE58\uACE0\uAE30\uACE0\uAE30\uB3C4\uC2DC\uB77D");
-		lblNewLabel_29.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_29.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_29.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_27.add(lblNewLabel_29);
 		
 		JLabel lblNewLabel_198 = new JLabel("5200\uC6D0");
-		lblNewLabel_198.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_198.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_198.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_27.add(lblNewLabel_198);
 		
@@ -436,12 +436,12 @@ public class OrderGUI {
 		panel_29.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_31 = new JLabel("\uC0C8\uCE58\uACE0\uAE30\uACE0\uAE30\uB3C4\uC2DC\uB77D");
-		lblNewLabel_31.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_31.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_31.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_29.add(lblNewLabel_31);
 		
 		JLabel lblNewLabel_199 = new JLabel("6000\uC6D0");
-		lblNewLabel_199.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_199.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_199.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_29.add(lblNewLabel_199);
 		
@@ -466,12 +466,12 @@ public class OrderGUI {
 		panel_31.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_33 = new JLabel("\uCE60\uB9AC\uD3EC\uD06C\uB3C4\uC2DC\uB77D");
-		lblNewLabel_33.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_33.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_33.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_31.add(lblNewLabel_33);
 		
 		JLabel lblNewLabel_200 = new JLabel("3600\uC6D0");
-		lblNewLabel_200.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_200.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_200.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_31.add(lblNewLabel_200);
 		
@@ -496,13 +496,13 @@ public class OrderGUI {
 		panel_33.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_35 = new JLabel("\uB3C8\uAE4C\uC2A4\uB3C4\uB828\uB2D8\uB3C4\uC2DC\uB77D");
-		lblNewLabel_35.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_35.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_35.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_33.add(lblNewLabel_35);
 		
 		JLabel lblNewLabel_201 = new JLabel("3600\uC6D0");
 		lblNewLabel_201.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_201.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_201.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		panel_33.add(lblNewLabel_201);
 		
 		JSpinner spinner14 = new JSpinner();
@@ -525,13 +525,13 @@ public class OrderGUI {
 		panel_35.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_37 = new JLabel("\uAD6D\uD654\uB3C4\uC2DC\uB77D");
-		lblNewLabel_37.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_37.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_37.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_35.add(lblNewLabel_37);
 		
 		JLabel lblNewLabel_202 = new JLabel("4000\uC6D0");
 		lblNewLabel_202.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_202.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_202.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		panel_35.add(lblNewLabel_202);
 		
 		JSpinner spinner15 = new JSpinner();
@@ -555,12 +555,12 @@ public class OrderGUI {
 		panel_37.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_39 = new JLabel("\uCE58\uD0A8\uC81C\uC721\uB3C4\uC2DC\uB77D");
-		lblNewLabel_39.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_39.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_39.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_37.add(lblNewLabel_39);
 		
 		JLabel lblNewLabel_203 = new JLabel("4300\uC6D0");
-		lblNewLabel_203.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_203.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_203.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_37.add(lblNewLabel_203);
 		
@@ -584,12 +584,12 @@ public class OrderGUI {
 		panel_39.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_41 = new JLabel("\uB3C8\uCE58\uBD88\uACE0\uAE30\uB3C4\uC2DC\uB77D");
-		lblNewLabel_41.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_41.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_41.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_39.add(lblNewLabel_41);
 		
 		JLabel lblNewLabel_204 = new JLabel("4700\uC6D0");
-		lblNewLabel_204.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_204.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_204.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_39.add(lblNewLabel_204);
 		
@@ -615,12 +615,12 @@ public class OrderGUI {
 		panel_41.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_43 = new JLabel("\uB3D9\uBC31\uB3C4\uC2DC\uB77D");
-		lblNewLabel_43.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_43.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_43.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_41.add(lblNewLabel_43);
 		
 		JLabel lblNewLabel_205 = new JLabel("5000\uC6D0");
-		lblNewLabel_205.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_205.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_205.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_41.add(lblNewLabel_205);
 		
@@ -644,12 +644,12 @@ public class OrderGUI {
 		panel_43.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_45 = new JLabel("\uD574\uD53C\uBC15\uC2A4");
-		lblNewLabel_45.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_45.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_45.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_43.add(lblNewLabel_45);
 		
 		JLabel lblNewLabel_206 = new JLabel("3000\uC6D0");
-		lblNewLabel_206.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_206.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_206.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_43.add(lblNewLabel_206);
 		
@@ -674,12 +674,12 @@ public class OrderGUI {
 		panel_45.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_47 = new JLabel("\uB3C4\uB828\uB2D8\uB3C4\uC2DC\uB77D");
-		lblNewLabel_47.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_47.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_47.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_45.add(lblNewLabel_47);
 		
 		JLabel lblNewLabel_207 = new JLabel("3400\uC6D0");
-		lblNewLabel_207.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_207.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_207.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_45.add(lblNewLabel_207);
 		
@@ -703,13 +703,13 @@ public class OrderGUI {
 		panel_47.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_49 = new JLabel("\uB514\uB7ED\uC2A4\uC81C\uC721\uBCF6\uC74C\uB3C4\uC2DC\uB77D");
-		lblNewLabel_49.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_49.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_49.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_47.add(lblNewLabel_49);
 		
 		JLabel lblNewLabel_208 = new JLabel("3500\uC6D0");
 		lblNewLabel_208.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_208.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_208.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		panel_47.add(lblNewLabel_208);
 		
 		JSpinner spinner21 = new JSpinner();
@@ -733,12 +733,12 @@ public class OrderGUI {
 		panel_49.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_51 = new JLabel("\uCE74\uB808\uB3C4\uC2DC\uB77D");
-		lblNewLabel_51.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_51.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_51.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_49.add(lblNewLabel_51);
 		
 		JLabel lblNewLabel_209 = new JLabel("2700\uC6D0");
-		lblNewLabel_209.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_209.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_209.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_49.add(lblNewLabel_209);
 		
@@ -763,13 +763,13 @@ public class OrderGUI {
 		panel_51.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_53 = new JLabel("\uB3C8\uAE4C\uC2A4\uCE74\uB808");
-		lblNewLabel_53.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_53.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_53.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_51.add(lblNewLabel_53);
 		
 		JLabel lblNewLabel_210 = new JLabel("3800\uC6D0");
 		lblNewLabel_210.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_210.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_210.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		panel_51.add(lblNewLabel_210);
 		
 		JSpinner spinner23 = new JSpinner();
@@ -793,12 +793,12 @@ public class OrderGUI {
 		panel_53.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_55 = new JLabel("\uD3F4\uB9AC\uB3C4\uC2DC\uB77D");
-		lblNewLabel_55.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_55.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_55.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_53.add(lblNewLabel_55);
 		
 		JLabel lblNewLabel_211 = new JLabel("3800\uC6D0");
-		lblNewLabel_211.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_211.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_211.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_53.add(lblNewLabel_211);
 		
@@ -824,12 +824,12 @@ public class OrderGUI {
 		panel_55.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_57 = new JLabel("\uCE58\uD0A8\uC640\uC0AC\uB9C8\uC694");
-		lblNewLabel_57.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_57.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_57.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_55.add(lblNewLabel_57);
 		
 		JLabel lblNewLabel_212 = new JLabel("3200\uC6D0");
-		lblNewLabel_212.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_212.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_212.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_55.add(lblNewLabel_212);
 		
@@ -854,13 +854,13 @@ public class OrderGUI {
 		panel_57.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_59 = new JLabel("\uCC38\uCE58\uC640\uC0AC\uB9C8\uC694");
-		lblNewLabel_59.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_59.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_59.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_57.add(lblNewLabel_59);
 		
 		JLabel lblNewLabel_213 = new JLabel("3200\uC6D0");
 		lblNewLabel_213.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_213.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_213.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		panel_57.add(lblNewLabel_213);
 		
 		JSpinner spinner26 = new JSpinner();
@@ -884,12 +884,12 @@ public class OrderGUI {
 		panel_59.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_61 = new JLabel("\uCE58\uD0A8\uC0D0\uB7EC\uB4DC\uC640\uC0AC\uB9C8\uC694");
-		lblNewLabel_61.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_61.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_61.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_59.add(lblNewLabel_61);
 		
 		JLabel lblNewLabel_214 = new JLabel("3700\uC6D0");
-		lblNewLabel_214.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_214.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_214.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_59.add(lblNewLabel_214);
 		
@@ -913,12 +913,12 @@ public class OrderGUI {
 		panel_61.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_63 = new JLabel("\uCC38\uCE58\uC0D0\uB7EC\uB4DC\uC640\uC0AC\uB9C8\uC694");
-		lblNewLabel_63.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_63.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_63.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_61.add(lblNewLabel_63);
 		
 		JLabel lblNewLabel_215 = new JLabel("3700\uC6D0");
-		lblNewLabel_215.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_215.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_215.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_61.add(lblNewLabel_215);
 		
@@ -943,12 +943,12 @@ public class OrderGUI {
 		panel_63.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_65 = new JLabel("\uBE45\uCE58\uD0A8\uC640\uC0AC\uB9C8\uC694");
-		lblNewLabel_65.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_65.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_65.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_63.add(lblNewLabel_65);
 		
 		JLabel lblNewLabel_216 = new JLabel("3800\uC6D0");
-		lblNewLabel_216.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_216.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_216.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_63.add(lblNewLabel_216);
 		
@@ -972,12 +972,12 @@ public class OrderGUI {
 		panel_65.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_67 = new JLabel("\uB3C8\uCE58\uC640\uC0AC\uB9C8\uC694");
-		lblNewLabel_67.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_67.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_67.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_65.add(lblNewLabel_67);
 		
 		JLabel lblNewLabel_217 = new JLabel("3800\uC6D0");
-		lblNewLabel_217.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_217.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_217.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_65.add(lblNewLabel_217);
 		
@@ -1001,12 +1001,12 @@ public class OrderGUI {
 		panel_67.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_69 = new JLabel("\uCE58\uD0A8\uB9C8\uC694");
-		lblNewLabel_69.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_69.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_69.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_67.add(lblNewLabel_69);
 		
 		JLabel lblNewLabel_218 = new JLabel("2700\uC6D0");
-		lblNewLabel_218.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_218.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_218.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_67.add(lblNewLabel_218);
 		
@@ -1030,12 +1030,12 @@ public class OrderGUI {
 		panel_69.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_71 = new JLabel("\uCC38\uCE58\uB9C8\uC694");
-		lblNewLabel_71.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_71.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_71.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_69.add(lblNewLabel_71);
 		
 		JLabel lblNewLabel_219 = new JLabel("2700\uC6D0");
-		lblNewLabel_219.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_219.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_219.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_69.add(lblNewLabel_219);
 		
@@ -1060,12 +1060,12 @@ public class OrderGUI {
 		panel_71.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_73 = new JLabel("\uCE58\uD0A8\uC0D0\uB7EC\uB4DC\uB9C8\uC694");
-		lblNewLabel_73.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_73.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_73.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_71.add(lblNewLabel_73);
 		
 		JLabel lblNewLabel_220 = new JLabel("3200\uC6D0");
-		lblNewLabel_220.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_220.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_220.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_71.add(lblNewLabel_220);
 		
@@ -1089,12 +1089,12 @@ public class OrderGUI {
 		panel_73.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_75 = new JLabel("\uCC38\uCE58\uC0D0\uB7EC\uB4DC\uB9C8\uC694");
-		lblNewLabel_75.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_75.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_75.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_73.add(lblNewLabel_75);
 		
 		JLabel lblNewLabel_221 = new JLabel("3200\uC6D0");
-		lblNewLabel_221.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_221.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_221.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_73.add(lblNewLabel_221);
 		
@@ -1119,12 +1119,12 @@ public class OrderGUI {
 		panel_75.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_77 = new JLabel("\uBE45\uCE58\uD0A8\uB9C8\uC694");
-		lblNewLabel_77.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_77.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_77.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_75.add(lblNewLabel_77);
 		
 		JLabel lblNewLabel_222 = new JLabel("3300\uC6D0");
-		lblNewLabel_222.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_222.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_222.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_75.add(lblNewLabel_222);
 		
@@ -1149,12 +1149,12 @@ public class OrderGUI {
 		panel_77.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_79 = new JLabel("\uB3C8\uCE58\uB9C8\uC694");
-		lblNewLabel_79.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_79.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_79.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_77.add(lblNewLabel_79);
 		
 		JLabel lblNewLabel_223 = new JLabel("3300\uC6D0");
-		lblNewLabel_223.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_223.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_223.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_77.add(lblNewLabel_223);
 		
@@ -1179,12 +1179,12 @@ public class OrderGUI {
 		panel_79.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_81 = new JLabel("\uB3C8\uAE4C\uC2A4\uB36E\uBC25");
-		lblNewLabel_81.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_81.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_81.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_79.add(lblNewLabel_81);
 		
 		JLabel lblNewLabel_224 = new JLabel("3400\uC6D0");
-		lblNewLabel_224.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_224.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_224.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_79.add(lblNewLabel_224);
 		
@@ -1210,12 +1210,12 @@ public class OrderGUI {
 		panel_81.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_83 = new JLabel("\uC0C8\uC6B0\uB3C8\uAE4C\uC2A4\uB36E\uBC25");
-		lblNewLabel_83.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_83.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_83.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_81.add(lblNewLabel_83);
 		
 		JLabel lblNewLabel_225 = new JLabel("3600\uC6D0");
-		lblNewLabel_225.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_225.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_225.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_81.add(lblNewLabel_225);
 		
@@ -1240,12 +1240,12 @@ public class OrderGUI {
 		panel_83.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_85 = new JLabel("\uAE40\uCE58\uBCF6\uC74C\uBC25");
-		lblNewLabel_85.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_85.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_85.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_83.add(lblNewLabel_85);
 		
 		JLabel lblNewLabel_226 = new JLabel("2900\uC6D0");
-		lblNewLabel_226.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_226.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_226.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_83.add(lblNewLabel_226);
 		
@@ -1270,12 +1270,12 @@ public class OrderGUI {
 		panel_85.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_87 = new JLabel("\uBD88\uACE0\uAE30\uAE40\uCE58\uBCF6\uC74C\uBC25");
-		lblNewLabel_87.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_87.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_87.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_85.add(lblNewLabel_87);
 		
 		JLabel lblNewLabel_227 = new JLabel("3700\uC6D0");
-		lblNewLabel_227.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_227.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_227.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_85.add(lblNewLabel_227);
 		
@@ -1299,12 +1299,12 @@ public class OrderGUI {
 		panel_87.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_89 = new JLabel("\uBD88\uB2ED\uBE44\uBE54\uBC25");
-		lblNewLabel_89.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_89.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_89.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_87.add(lblNewLabel_89);
 		
 		JLabel lblNewLabel_228 = new JLabel("4500\uC6D0");
-		lblNewLabel_228.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_228.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_228.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_87.add(lblNewLabel_228);
 		
@@ -1329,12 +1329,12 @@ public class OrderGUI {
 		panel_89.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_91 = new JLabel("\uC5F4\uBB34\uAC15\uB41C\uC7A5\uBE44\uBE54\uBC25");
-		lblNewLabel_91.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_91.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_91.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_89.add(lblNewLabel_91);
 		
 		JLabel lblNewLabel_229 = new JLabel("3500\uC6D0");
-		lblNewLabel_229.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_229.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_229.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_89.add(lblNewLabel_229);
 		
@@ -1358,12 +1358,12 @@ public class OrderGUI {
 		panel_91.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_93 = new JLabel("\uBD88\uACE0\uAE30\uBE44\uBE54\uBC25");
-		lblNewLabel_93.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_93.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_93.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_91.add(lblNewLabel_93);
 		
 		JLabel lblNewLabel_230 = new JLabel("4500\uC6D0");
-		lblNewLabel_230.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_230.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_230.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_91.add(lblNewLabel_230);
 		
@@ -1389,12 +1389,12 @@ public class OrderGUI {
 		panel_93.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_95 = new JLabel("\uC81C\uC721\uAC15\uB41C\uC7A5\uBE44\uBE54\uBC25");
-		lblNewLabel_95.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_95.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_95.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_93.add(lblNewLabel_95);
 		
 		JLabel lblNewLabel_231 = new JLabel("4500\uC6D0");
-		lblNewLabel_231.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_231.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_231.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_93.add(lblNewLabel_231);
 		
@@ -1418,12 +1418,12 @@ public class OrderGUI {
 		panel_95.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_97 = new JLabel("\uCC38\uCE58\uC57C\uCC44\uACE0\uCD94\uC7A5");
-		lblNewLabel_97.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_97.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_97.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_95.add(lblNewLabel_97);
 		
 		JLabel lblNewLabel_232 = new JLabel("2800\uC6D0");
-		lblNewLabel_232.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_232.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_232.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_95.add(lblNewLabel_232);
 		
@@ -1448,12 +1448,12 @@ public class OrderGUI {
 		panel_97.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_99 = new JLabel("\uAE40\uCE58\uCC0C\uAC1C\uB3C4\uC2DC\uB77D");
-		lblNewLabel_99.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_99.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_99.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_97.add(lblNewLabel_99);
 		
 		JLabel lblNewLabel_233 = new JLabel("3000\uC6D0");
-		lblNewLabel_233.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_233.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_233.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_97.add(lblNewLabel_233);
 		
@@ -1477,12 +1477,12 @@ public class OrderGUI {
 		panel_99.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_101 = new JLabel("\uC721\uAC1C\uC7A5");
-		lblNewLabel_101.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_101.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_101.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_99.add(lblNewLabel_101);
 		
 		JLabel lblNewLabel_234 = new JLabel("3500\uC6D0");
-		lblNewLabel_234.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_234.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_234.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_99.add(lblNewLabel_234);
 		
@@ -1507,12 +1507,12 @@ public class OrderGUI {
 		panel_101.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_103 = new JLabel("\uBC18\uCC2C\uAE50\uAE50\uCF64\uBE44");
-		lblNewLabel_103.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_103.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_103.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_101.add(lblNewLabel_103);
 		
 		JLabel lblNewLabel_235 = new JLabel("4800\uC6D0");
-		lblNewLabel_235.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_235.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_235.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_101.add(lblNewLabel_235);
 		
@@ -1537,12 +1537,12 @@ public class OrderGUI {
 		panel_105.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_107 = new JLabel("\uBC18\uCC2C\uAE50\uC1FC\uCE60\uB9AC\uC0C8\uC6B0");
-		lblNewLabel_107.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_107.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_107.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_105.add(lblNewLabel_107);
 		
 		JLabel lblNewLabel_236 = new JLabel("6000\uC6D0");
-		lblNewLabel_236.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_236.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_236.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_105.add(lblNewLabel_236);
 		
@@ -1567,12 +1567,12 @@ public class OrderGUI {
 		panel_107.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_109 = new JLabel("\uBC18\uCC2C\uAE50\uD48D\uAE30");
-		lblNewLabel_109.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_109.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_109.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_107.add(lblNewLabel_109);
 		
 		JLabel lblNewLabel_237 = new JLabel("3000\uC6D0");
-		lblNewLabel_237.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_237.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_237.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_107.add(lblNewLabel_237);
 		
@@ -1598,13 +1598,13 @@ public class OrderGUI {
 		panel_109.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_111 = new JLabel("\uBC18\uCC2C\uB370\uBBF8\uD568\uBC15");
-		lblNewLabel_111.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_111.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_111.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_109.add(lblNewLabel_111);
 		
 		JLabel lblNewLabel_238 = new JLabel("4800\uC6D0");
 		lblNewLabel_238.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_238.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_238.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		panel_109.add(lblNewLabel_238);
 		
 		JSpinner spinner51 = new JSpinner();
@@ -1628,12 +1628,12 @@ public class OrderGUI {
 		panel_111.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_113 = new JLabel("\uBC18\uCC2C\uACE0\uB4F1\uC5B4\uC870\uB9BC");
-		lblNewLabel_113.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_113.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_113.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_111.add(lblNewLabel_113);
 		
 		JLabel lblNewLabel_239 = new JLabel("4800\uC6D0");
-		lblNewLabel_239.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_239.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_239.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_111.add(lblNewLabel_239);
 		
@@ -1657,12 +1657,12 @@ public class OrderGUI {
 		panel_113.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_115 = new JLabel("\uBC18\uCC2C\uC21C\uC0B4\uACE0\uB4F1\uC5B4\uB370\uB9AC\uC57C\uB07C");
-		lblNewLabel_115.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_115.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_115.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_113.add(lblNewLabel_115);
 		
 		JLabel lblNewLabel_240 = new JLabel("3400\uC6D0");
-		lblNewLabel_240.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_240.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_240.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_113.add(lblNewLabel_240);
 		
@@ -1686,12 +1686,12 @@ public class OrderGUI {
 		panel_115.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_117 = new JLabel("\uBC18\uCC2C\uBD88\uACE0\uAE30");
-		lblNewLabel_117.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_117.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_117.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_115.add(lblNewLabel_117);
 		
 		JLabel lblNewLabel_241 = new JLabel("3900\uC6D0");
-		lblNewLabel_241.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_241.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_241.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_115.add(lblNewLabel_241);
 		
@@ -1716,12 +1716,12 @@ public class OrderGUI {
 		panel_117.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_119 = new JLabel("\uBC18\uCC2C\uACE0\uAE30\uACE0\uAE30");
-		lblNewLabel_119.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_119.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_119.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_117.add(lblNewLabel_119);
 		
 		JLabel lblNewLabel_242 = new JLabel("2900\uC6D0");
-		lblNewLabel_242.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_242.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_242.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_117.add(lblNewLabel_242);
 		
@@ -1745,12 +1745,12 @@ public class OrderGUI {
 		panel_119.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_121 = new JLabel("\uBC18\uCC2C\uC81C\uC721\uBCF6\uC74C");
-		lblNewLabel_121.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_121.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_121.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_119.add(lblNewLabel_121);
 		
 		JLabel lblNewLabel_243 = new JLabel("2800\uC6D0");
-		lblNewLabel_243.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_243.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_243.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_119.add(lblNewLabel_243);
 		
@@ -1774,12 +1774,12 @@ public class OrderGUI {
 		panel_121.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_123 = new JLabel("\uBC18\uCC2C\uCE58\uD0A8");
-		lblNewLabel_123.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_123.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_123.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_121.add(lblNewLabel_123);
 		
 		JLabel lblNewLabel_280 = new JLabel("3200\uC6D0");
-		lblNewLabel_280.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_280.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_280.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_121.add(lblNewLabel_280);
 		
@@ -1804,12 +1804,12 @@ public class OrderGUI {
 		panel_125.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_127 = new JLabel("\uBC18\uCC2C\uB3C8\uAE4C\uC2A4\uB3C4\uB828\uB2D8");
-		lblNewLabel_127.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_127.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_127.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_125.add(lblNewLabel_127);
 		
 		JLabel lblNewLabel_245 = new JLabel("2900\uC6D0");
-		lblNewLabel_245.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_245.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_245.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_125.add(lblNewLabel_245);
 		
@@ -1833,12 +1833,12 @@ public class OrderGUI {
 		panel_127.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_129 = new JLabel("\uBC18\uCC2C\uCE60\uB9AC\uD0D5\uC218\uC721");
-		lblNewLabel_129.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_129.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_129.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_127.add(lblNewLabel_129);
 		
 		JLabel lblNewLabel_246 = new JLabel("2600\uC6D0");
-		lblNewLabel_246.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_246.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_246.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_127.add(lblNewLabel_246);
 		
@@ -1863,12 +1863,12 @@ public class OrderGUI {
 		panel_129.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_131 = new JLabel("\uBC18\uCC2C\uB3C8\uAE4C\uC2A4");
-		lblNewLabel_131.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_131.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_131.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_129.add(lblNewLabel_131);
 		
 		JLabel lblNewLabel_247 = new JLabel("2500\uC6D0");
-		lblNewLabel_247.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_247.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_247.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_129.add(lblNewLabel_247);
 		
@@ -1893,12 +1893,12 @@ public class OrderGUI {
 		panel_131.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_133 = new JLabel("\uAE40\uCE58");
-		lblNewLabel_133.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_133.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_133.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_131.add(lblNewLabel_133);
 		
 		JLabel lblNewLabel_248 = new JLabel("200\uC6D0");
-		lblNewLabel_248.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_248.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_248.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_131.add(lblNewLabel_248);
 		
@@ -1923,12 +1923,12 @@ public class OrderGUI {
 		panel_133.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_135 = new JLabel("\uBCF6\uC74C\uAE40\uCE58");
-		lblNewLabel_135.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_135.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_135.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_133.add(lblNewLabel_135);
 		
 		JLabel lblNewLabel_249 = new JLabel("300\uC6D0");
-		lblNewLabel_249.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_249.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_249.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_133.add(lblNewLabel_249);
 		
@@ -1954,12 +1954,12 @@ public class OrderGUI {
 		panel_135.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_137 = new JLabel("\uBB34\uB9D0\uB7AD\uC774");
-		lblNewLabel_137.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_137.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_137.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_135.add(lblNewLabel_137);
 		
 		JLabel lblNewLabel_250 = new JLabel("200\uC6D0");
-		lblNewLabel_250.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_250.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_250.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_135.add(lblNewLabel_250);
 		
@@ -1984,12 +1984,12 @@ public class OrderGUI {
 		panel_137.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_139 = new JLabel("\uC5F4\uBB34\uC5BC\uAC08\uC774\uAE40\uCE58");
-		lblNewLabel_139.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_139.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_139.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_137.add(lblNewLabel_139);
 		
 		JLabel lblNewLabel_251 = new JLabel("300\uC6D0");
-		lblNewLabel_251.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_251.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_251.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_137.add(lblNewLabel_251);
 		
@@ -2014,12 +2014,12 @@ public class OrderGUI {
 		panel_139.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_141 = new JLabel("\uBB34\uC0DD\uCC44");
-		lblNewLabel_141.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_141.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_141.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_139.add(lblNewLabel_141);
 		
 		JLabel lblNewLabel_252 = new JLabel("300\uC6D0");
-		lblNewLabel_252.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_252.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_252.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_139.add(lblNewLabel_252);
 		
@@ -2043,12 +2043,12 @@ public class OrderGUI {
 		panel_141.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_143 = new JLabel("\uD55C\uC1A5\uBC25");
-		lblNewLabel_143.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_143.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_143.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_141.add(lblNewLabel_143);
 		
 		JLabel lblNewLabel_253 = new JLabel("900\uC6D0");
-		lblNewLabel_253.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_253.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_253.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_141.add(lblNewLabel_253);
 		
@@ -2073,12 +2073,12 @@ public class OrderGUI {
 		panel_143.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_145 = new JLabel("\uD604\uBBF8\uBC25");
-		lblNewLabel_145.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_145.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_145.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_143.add(lblNewLabel_145);
 		
 		JLabel lblNewLabel_254 = new JLabel("1700\uC6D0");
-		lblNewLabel_254.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_254.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_254.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_143.add(lblNewLabel_254);
 		
@@ -2102,12 +2102,12 @@ public class OrderGUI {
 		panel_145.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_147 = new JLabel("\uC601\uC591\uBC25");
-		lblNewLabel_147.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_147.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_147.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_145.add(lblNewLabel_147);
 		
 		JLabel lblNewLabel_255 = new JLabel("2200\uC6D0");
-		lblNewLabel_255.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_255.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_255.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_145.add(lblNewLabel_255);
 		
@@ -2133,12 +2133,12 @@ public class OrderGUI {
 		panel_147.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_149 = new JLabel("\uACE0\uAD6C\uB9C8\uBE60\uC2A4");
-		lblNewLabel_149.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_149.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_149.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_147.add(lblNewLabel_149);
 		
 		JLabel lblNewLabel_256 = new JLabel("1600\uC6D0");
-		lblNewLabel_256.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_256.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_256.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_147.add(lblNewLabel_256);
 		
@@ -2162,12 +2162,12 @@ public class OrderGUI {
 		panel_149.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_151 = new JLabel("\uCE58\uD0A8BOXwith\uBC18\uB2EC\uAC10\uC790\uD280\uAE40(\uB300)");
-		lblNewLabel_151.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_151.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_151.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_149.add(lblNewLabel_151);
 		
 		JLabel lblNewLabel_257 = new JLabel("10000\uC6D0");
-		lblNewLabel_257.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_257.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_257.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_149.add(lblNewLabel_257);
 		
@@ -2192,12 +2192,12 @@ public class OrderGUI {
 		panel_151.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_153 = new JLabel("\uCE58\uD0A8BOXwith\uBC18\uB2EC\uAC10\uC790\uD280\uAE40(\uC911)");
-		lblNewLabel_153.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_153.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_153.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_151.add(lblNewLabel_153);
 		
 		JLabel lblNewLabel_258 = new JLabel("5000\uC6D0");
-		lblNewLabel_258.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_258.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_258.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_151.add(lblNewLabel_258);
 		
@@ -2221,12 +2221,12 @@ public class OrderGUI {
 		panel_153.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_155 = new JLabel("\uCE58\uD0A8BOXwith\uBC18\uB2EC\uAC10\uC790\uD280\uAE40(\uC18C)");
-		lblNewLabel_155.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_155.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_155.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_153.add(lblNewLabel_155);
 		
 		JLabel lblNewLabel_259 = new JLabel("2500\uC6D0");
-		lblNewLabel_259.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_259.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_259.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_153.add(lblNewLabel_259);
 		
@@ -2251,12 +2251,12 @@ public class OrderGUI {
 		panel_155.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_157 = new JLabel("\uCE60\uB9AC\uD0D5\uC218\uC721BOX(\uB300)");
-		lblNewLabel_157.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_157.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_157.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_155.add(lblNewLabel_157);
 		
 		JLabel lblNewLabel_260 = new JLabel("8000\uC6D0");
-		lblNewLabel_260.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_260.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_260.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_155.add(lblNewLabel_260);
 		
@@ -2281,12 +2281,12 @@ public class OrderGUI {
 		panel_157.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_159 = new JLabel("\uCE60\uB9AC\uD0D5\uC218\uC721BOX(\uC911)");
-		lblNewLabel_159.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_159.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_159.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_157.add(lblNewLabel_159);
 		
 		JLabel lblNewLabel_261 = new JLabel("4000\uC6D0");
-		lblNewLabel_261.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_261.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_261.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_157.add(lblNewLabel_261);
 		
@@ -2311,12 +2311,12 @@ public class OrderGUI {
 		panel_159.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_161 = new JLabel("\uB2ED\uAC15\uC815(\uC911)");
-		lblNewLabel_161.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_161.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_161.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_159.add(lblNewLabel_161);
 		
 		JLabel lblNewLabel_262 = new JLabel("7000\uC6D0");
-		lblNewLabel_262.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_262.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_262.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_159.add(lblNewLabel_262);
 		
@@ -2342,12 +2342,12 @@ public class OrderGUI {
 		panel_161.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_163 = new JLabel("\uB2ED\uAC15\uC815(\uC18C)");
-		lblNewLabel_163.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_163.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_163.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_161.add(lblNewLabel_163);
 		
 		JLabel lblNewLabel_263 = new JLabel("2500\uC6D0");
-		lblNewLabel_263.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_263.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_263.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_161.add(lblNewLabel_263);
 		
@@ -2372,12 +2372,12 @@ public class OrderGUI {
 		panel_163.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_165 = new JLabel("\uBC18\uB2EC\uAC10\uC790\uD280\uAE40");
-		lblNewLabel_165.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_165.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_165.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_163.add(lblNewLabel_165);
 		
 		JLabel lblNewLabel_264 = new JLabel("1200\uC6D0");
-		lblNewLabel_264.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_264.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_264.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_163.add(lblNewLabel_264);
 		
@@ -2402,12 +2402,12 @@ public class OrderGUI {
 		panel_165.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_167 = new JLabel("\uC218\uC81C\uACE0\uB85C\uCF00");
-		lblNewLabel_167.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_167.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_167.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_165.add(lblNewLabel_167);
 		
 		JLabel lblNewLabel_265 = new JLabel("1200\uC6D0");
-		lblNewLabel_265.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_265.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_265.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_165.add(lblNewLabel_265);
 		
@@ -2431,12 +2431,12 @@ public class OrderGUI {
 		panel_167.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_169 = new JLabel("\uB9E4\uCF64\uAD70\uB9CC\uB450");
-		lblNewLabel_169.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_169.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_169.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_167.add(lblNewLabel_169);
 		
 		JLabel lblNewLabel_266 = new JLabel("1300\uC6D0");
-		lblNewLabel_266.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_266.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_266.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_167.add(lblNewLabel_266);
 		
@@ -2461,12 +2461,12 @@ public class OrderGUI {
 		panel_169.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_171 = new JLabel("\uC2A4\uB0B5\uBAA8\uB4EC\uD280\uAE40");
-		lblNewLabel_171.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_171.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_171.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_169.add(lblNewLabel_171);
 		
 		JLabel lblNewLabel_267 = new JLabel("3000\uC6D0");
-		lblNewLabel_267.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_267.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_267.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_169.add(lblNewLabel_267);
 		
@@ -2490,12 +2490,12 @@ public class OrderGUI {
 		panel_171.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_173 = new JLabel("\uCE58\uD0A8\uC0D0\uB7EC\uB4DC");
-		lblNewLabel_173.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_173.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_173.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_171.add(lblNewLabel_173);
 		
 		JLabel lblNewLabel_268 = new JLabel("3600\uC6D0");
-		lblNewLabel_268.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_268.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_268.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_171.add(lblNewLabel_268);
 		
@@ -2519,12 +2519,12 @@ public class OrderGUI {
 		panel_173.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_175 = new JLabel("\uADF8\uB9B0\uC0D0\uB7EC\uB4DC");
-		lblNewLabel_175.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_175.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_175.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_173.add(lblNewLabel_175);
 		
 		JLabel lblNewLabel_269 = new JLabel("2900\uC6D0");
-		lblNewLabel_269.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_269.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_269.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_173.add(lblNewLabel_269);
 		
@@ -2548,12 +2548,12 @@ public class OrderGUI {
 		panel_175.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_177 = new JLabel("\uBBF8\uB2C8\uC0D0\uB7EC\uB4DC");
-		lblNewLabel_177.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_177.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_177.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_175.add(lblNewLabel_177);
 		
 		JLabel lblNewLabel_270 = new JLabel("1500\uC6D0");
-		lblNewLabel_270.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_270.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_270.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_175.add(lblNewLabel_270);
 		
@@ -2578,12 +2578,12 @@ public class OrderGUI {
 		panel_177.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_179 = new JLabel("\uBCF6\uC74C\uACE0\uCD94\uC7A5");
-		lblNewLabel_179.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_179.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_179.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_177.add(lblNewLabel_179);
 		
 		JLabel lblNewLabel_271 = new JLabel("600\uC6D0");
-		lblNewLabel_271.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_271.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_271.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_177.add(lblNewLabel_271);
 		
@@ -2607,12 +2607,12 @@ public class OrderGUI {
 		panel_179.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_181 = new JLabel("\uCF69\uB098\uBB3C\uBCF5\uC5B4\uAD6D");
-		lblNewLabel_181.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_181.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_181.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_179.add(lblNewLabel_181);
 		
 		JLabel lblNewLabel_272 = new JLabel("700\uC6D0");
-		lblNewLabel_272.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_272.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_272.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_179.add(lblNewLabel_272);
 		
@@ -2637,12 +2637,12 @@ public class OrderGUI {
 		panel_181.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_183 = new JLabel("\uC2DC\uAE08\uCE58\uB41C\uC7A5\uAD6D");
-		lblNewLabel_183.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_183.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_183.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_181.add(lblNewLabel_183);
 		
 		JLabel lblNewLabel_273 = new JLabel("700\uC6D0");
-		lblNewLabel_273.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_273.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_273.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_181.add(lblNewLabel_273);
 		
@@ -2667,12 +2667,12 @@ public class OrderGUI {
 		panel_183.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_185 = new JLabel("H\uC2A4\uD398\uC15C\uD2F0\uCE74\uD398\uB77C\uB5BC");
-		lblNewLabel_185.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_185.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_185.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_183.add(lblNewLabel_185);
 		
 		JLabel lblNewLabel_274 = new JLabel("1200\uC6D0");
-		lblNewLabel_274.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_274.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_274.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_183.add(lblNewLabel_274);
 		
@@ -2697,12 +2697,12 @@ public class OrderGUI {
 		panel_185.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_187 = new JLabel("\uACE0\uAD6C\uB9C8\uC0D0\uB7EC\uB4DC");
-		lblNewLabel_187.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_187.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_187.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_185.add(lblNewLabel_187);
 		
 		JLabel lblNewLabel_275 = new JLabel("1500\uC6D0");
-		lblNewLabel_275.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_275.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_275.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_185.add(lblNewLabel_275);
 		
@@ -2728,12 +2728,12 @@ public class OrderGUI {
 		panel_187.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_189 = new JLabel("\uAC10\uC790\uC0D0\uB7EC\uB4DC");
-		lblNewLabel_189.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_189.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_189.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_187.add(lblNewLabel_189);
 		
 		JLabel lblNewLabel_276 = new JLabel("1500\uC6D0");
-		lblNewLabel_276.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_276.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_276.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_187.add(lblNewLabel_276);
 		
@@ -2759,12 +2759,12 @@ public class OrderGUI {
 		panel_189.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		JLabel lblNewLabel_279 = new JLabel("\uB2E8\uD638\uBC15\uC0D0\uB7EC\uB4DC");
-		lblNewLabel_279.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_279.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_279.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_189.add(lblNewLabel_279);
 		
 		JLabel lblNewLabel_277 = new JLabel("1500\uC6D0");
-		lblNewLabel_277.setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 15));
+		lblNewLabel_277.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.PLAIN, 15));
 		lblNewLabel_277.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_189.add(lblNewLabel_277);
 		
@@ -2940,7 +2940,7 @@ public class OrderGUI {
 			}
 		});
 		btnNewButton.setBackground(Color.WHITE);
-		btnNewButton.setFont(new Font("°íµµ M", Font.BOLD, 16));
+		btnNewButton.setFont(new Font("°íµµ M", Font.PLAIN, 16));
 		springLayout.putConstraint(SpringLayout.NORTH, btnNewButton, 0, SpringLayout.NORTH, timeLabel);
 		springLayout.putConstraint(SpringLayout.WEST, btnNewButton, 10, SpringLayout.WEST, frame.getContentPane());
 		frame.getContentPane().add(btnNewButton);
@@ -2956,7 +2956,7 @@ public class OrderGUI {
 		});
 		springLayout.putConstraint(SpringLayout.NORTH, exitButton, 0, SpringLayout.NORTH, timeLabel);
 		springLayout.putConstraint(SpringLayout.WEST, exitButton, 14, SpringLayout.EAST, btnNewButton);
-		exitButton.setFont(new Font("°íµµ M", Font.BOLD, 16));
+		exitButton.setFont(new Font("°íµµ M", Font.PLAIN, 16));
 		exitButton.setBackground(Color.WHITE);
 		frame.getContentPane().add(exitButton);
 		

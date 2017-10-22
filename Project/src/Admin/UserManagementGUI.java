@@ -36,6 +36,7 @@ public class UserManagementGUI {
    private JTextField type_textField;
    private JTextField name_textField;
    private JTextField contact_textField;
+   private Admin_MainGUI admin_MainGUI = new Admin_MainGUI();
 
    /**
     * Launch the application.
@@ -72,6 +73,7 @@ public class UserManagementGUI {
       frame.getContentPane().setLayout(springLayout);
       
       JComboBox comboBox = new JComboBox();
+      comboBox.setFont(new Font("고도 M", Font.PLAIN, 12));
       comboBox.setBackground(new Color(255, 255, 255));
       springLayout.putConstraint(SpringLayout.NORTH, comboBox, 10, SpringLayout.NORTH, frame.getContentPane());
       springLayout.putConstraint(SpringLayout.WEST, comboBox, 10, SpringLayout.WEST, frame.getContentPane());
@@ -102,7 +104,7 @@ public class UserManagementGUI {
       
       JLabel lblNewLabel = new JLabel("\uC0AC\uC6A9\uC790\uBC88\uD638");
       lblNewLabel.setBackground(new Color(255, 255, 255));
-      lblNewLabel.setFont(new Font("함초롬돋움", Font.BOLD, 13));
+      lblNewLabel.setFont(new Font("고도 M", Font.PLAIN, 13));
       lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
       panel.add(lblNewLabel, "name_30161581559921");
       frame.getContentPane().add(panel_2);
@@ -131,7 +133,7 @@ public class UserManagementGUI {
       
       JLabel lblNewLabel_1 = new JLabel("\uC0AC\uC6A9\uC790\uD0C0\uC785");
       lblNewLabel_1.setBackground(new Color(255, 255, 255));
-      lblNewLabel_1.setFont(new Font("함초롬돋움", Font.BOLD, 13));
+      lblNewLabel_1.setFont(new Font("고도 M", Font.PLAIN, 13));
       lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
       panel_2.add(lblNewLabel_1, "name_30163389442269");
       frame.getContentPane().add(panel_4);
@@ -158,7 +160,7 @@ public class UserManagementGUI {
       
       JLabel lblNewLabel_2 = new JLabel("\uC0AC\uC6A9\uC790\uC544\uC774\uB514");
       lblNewLabel_2.setBackground(new Color(255, 255, 255));
-      lblNewLabel_2.setFont(new Font("함초롬돋움", Font.BOLD, 13));
+      lblNewLabel_2.setFont(new Font("고도 M", Font.PLAIN, 13));
       lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
       panel_4.add(lblNewLabel_2, "name_30164597388186");
       frame.getContentPane().add(panel_6);
@@ -185,7 +187,7 @@ public class UserManagementGUI {
       
       JLabel lblNewLabel_3 = new JLabel("\uC0AC\uC6A9\uC790\uC774\uB984");
       lblNewLabel_3.setBackground(new Color(255, 255, 255));
-      lblNewLabel_3.setFont(new Font("함초롬돋움", Font.BOLD, 13));
+      lblNewLabel_3.setFont(new Font("고도 M", Font.PLAIN, 13));
       lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
       panel_6.add(lblNewLabel_3, "name_30165861675869");
       frame.getContentPane().add(panel_8);
@@ -217,22 +219,32 @@ public class UserManagementGUI {
       
       JLabel lblNewLabel_4 = new JLabel("\uC0AC\uC6A9\uC790\uC5F0\uB77D\uCC98");
       lblNewLabel_4.setBackground(new Color(255, 255, 255));
-      lblNewLabel_4.setFont(new Font("함초롬돋움", Font.BOLD, 13));
+      lblNewLabel_4.setFont(new Font("고도 M", Font.PLAIN, 13));
       lblNewLabel_4.setHorizontalAlignment(SwingConstants.CENTER);
       panel_8.add(lblNewLabel_4, "name_30169053020778");
       springLayout.putConstraint(SpringLayout.EAST, panel_10, 234, SpringLayout.WEST, frame.getContentPane());
       frame.getContentPane().add(panel_10);
-      panel_10.setLayout(new GridLayout(0, 2, 0, 0));
+      panel_10.setLayout(new GridLayout(0, 3, 0, 0));
       
-      JButton btnNewButton = new JButton("\uD68C\uC6D0\uC0AD\uC81C");
+      JButton btnNewButton = new JButton("\uC0AD\uC81C");
       
-      btnNewButton.setFont(new Font("함초롬돋움", Font.BOLD, 17));
+      btnNewButton.setFont(new Font("고도 M", Font.PLAIN, 18));
       panel_10.add(btnNewButton);
       
-      JButton btnNewButton_1 = new JButton("\uC815\uBCF4\uC218\uC815");
+      JButton btnNewButton_1 = new JButton("\uC218\uC815");
      
-      btnNewButton_1.setFont(new Font("함초롬돋움", Font.BOLD, 17));
+      btnNewButton_1.setFont(new Font("고도 M", Font.PLAIN, 18));
       panel_10.add(btnNewButton_1);
+      
+      JButton button = new JButton("\uC885\uB8CC");
+      button.addActionListener(new ActionListener() {
+      	public void actionPerformed(ActionEvent e) {
+      		frame.dispose();
+      		admin_MainGUI.main(null);
+      	}
+      });
+      button.setFont(new Font("고도 M", Font.PLAIN, 18));
+      panel_10.add(button);
       
       JPanel panel_11 = new JPanel();
       springLayout.putConstraint(SpringLayout.NORTH, panel_11, 6, SpringLayout.SOUTH, panel_8);
@@ -244,13 +256,13 @@ public class UserManagementGUI {
       
       JRadioButton RadioButton_man = new JRadioButton("\uB0A8\uC790");
       RadioButton_man.setBackground(SystemColor.window);
-      RadioButton_man.setFont(new Font("함초롬돋움", Font.BOLD, 12));
+      RadioButton_man.setFont(new Font("고도 M", Font.PLAIN, 12));
       RadioButton_man.setHorizontalAlignment(SwingConstants.CENTER);
       panel_11.add(RadioButton_man);
       
       JRadioButton RadioButton_woman = new JRadioButton("\uC5EC\uC790");
       RadioButton_woman.setBackground(SystemColor.window);
-      RadioButton_woman.setFont(new Font("함초롬돋움", Font.BOLD, 12));
+      RadioButton_woman.setFont(new Font("고도 M", Font.PLAIN, 12));
       RadioButton_woman.setHorizontalAlignment(SwingConstants.CENTER);
       panel_11.add(RadioButton_woman);
       
@@ -291,7 +303,7 @@ public class UserManagementGUI {
 	      		dao.closeAccount(id_Field.getText());
 				JOptionPane.showMessageDialog(null, "삭제완료");
 				frame.dispose();
-				Admin_MainGUI admin_MainGUI = new Admin_MainGUI();
+				
 				admin_MainGUI.main(null);
 	      	}
 	      });
@@ -313,7 +325,6 @@ public class UserManagementGUI {
 					dao.ChangeInfoAdmin(user);
 					JOptionPane.showMessageDialog(null, "수정완료");
 					frame.dispose();
-					Admin_MainGUI admin_MainGUI = new Admin_MainGUI();
 					admin_MainGUI.main(null);
 		      	}
 		      });

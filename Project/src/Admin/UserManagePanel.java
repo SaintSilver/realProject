@@ -12,6 +12,9 @@ import User.UserVO;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.JTable;
+import java.awt.Font;
+import java.awt.SystemColor;
+import java.awt.Color;
 
 
 public class UserManagePanel extends JPanel  {
@@ -53,9 +56,10 @@ public class UserManagePanel extends JPanel  {
 	         row1.add(m.getGender());
 	         data.add(row1);
 	      }
-
 	      
 	      table = new JTable(data, columnNames);
+	      table.setBackground(Color.WHITE);
+	      table.setFont(new Font("°íµµ M", Font.PLAIN, 12));
 
 	      scrollPane.setViewportView(table);
 		

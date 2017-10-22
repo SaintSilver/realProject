@@ -46,7 +46,7 @@ public class GamePanel extends JPanel {
 			}
 
 		});
-		btnStart.setFont(new Font("함초롬돋움", Font.BOLD, 25));
+		btnStart.setFont(new Font("고도 M", Font.PLAIN, 25));
 		btnStart.setBounds(432, 40, 126, 53);
 		add(btnStart);
 
@@ -55,7 +55,7 @@ public class GamePanel extends JPanel {
 		lbl_pickName.setForeground(Color.BLACK);
 		sl_GamePanel.putConstraint(SpringLayout.WEST, lbl_pickName, 86, SpringLayout.WEST, this);
 		sl_GamePanel.putConstraint(SpringLayout.EAST, lbl_pickName, -77, SpringLayout.EAST, this);
-		lbl_pickName.setFont(new Font("궁서", Font.BOLD, 80));
+		lbl_pickName.setFont(new Font("고도 M", Font.BOLD, 80));
 		lbl_pickName.setHorizontalAlignment(SwingConstants.CENTER);
 		sl_GamePanel.putConstraint(SpringLayout.NORTH, lbl_pickName, 137, SpringLayout.NORTH, this);
 		sl_GamePanel.putConstraint(SpringLayout.SOUTH, lbl_pickName, 229, SpringLayout.NORTH, this);
@@ -81,7 +81,7 @@ public class GamePanel extends JPanel {
 
 			}
 		});
-		btnStop.setFont(new Font("함초롬돋움", Font.BOLD, 25));
+		btnStop.setFont(new Font("고도 M", Font.PLAIN, 25));
 		btnStop.setBounds(584, 40, 126, 53);
 		add(btnStop);
 
