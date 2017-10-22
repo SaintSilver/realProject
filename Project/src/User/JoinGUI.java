@@ -75,7 +75,7 @@ public class JoinGUI {
 			public void paintComponent(Graphics g) {
 				try {
 					String path = A.class.getResource("").getPath();// aÅ¬·¡½º À§Ä¡ °¡Áö°í¿À±â
-					File fileInSamePackage = new File(path + "BackGround.jpg");
+					File fileInSamePackage = new File(path + "BackGround4.jpg");
 					icon = ImageIO.read(fileInSamePackage);
 					Dimension d = getSize();// ÀüÃ¼È­¸é
 					g.drawImage(icon, 0, 0, d.width, d.height, null);
@@ -89,6 +89,8 @@ public class JoinGUI {
 
 		frame.getContentPane().add(panel, BorderLayout.CENTER);
 		SpringLayout sl_panel = new SpringLayout();
+		sl_panel.putConstraint(SpringLayout.WEST, warning, 259, SpringLayout.WEST, panel);
+		sl_panel.putConstraint(SpringLayout.SOUTH, warning, -32, SpringLayout.SOUTH, panel);
 		panel.setLayout(sl_panel);
 
 		label = new JLabel("\uD68C\uC6D0\uAC00\uC785");
@@ -122,6 +124,7 @@ public class JoinGUI {
 		group.add(radioButton_Woman);
 
 		JButton idCheck = new JButton("\uC911\uBCF5\uAC80\uC0AC");
+		idCheck.setFont(new Font("³ª´®°íµñ", Font.PLAIN, 12));
 		idCheck.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(idField.getText().length()<=0) {
@@ -163,6 +166,7 @@ public class JoinGUI {
 		});
 
 		JButton confirmButton = new JButton("");
+		sl_panel.putConstraint(SpringLayout.EAST, warning, -30, SpringLayout.WEST, confirmButton);
 		confirmButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
@@ -217,95 +221,100 @@ public class JoinGUI {
 		panel.add(confirmButton);
 
 		JPanel panel_1 = new JPanel();
+		sl_panel.putConstraint(SpringLayout.NORTH, warning, 30, SpringLayout.SOUTH, panel_1);
+		sl_panel.putConstraint(SpringLayout.WEST, panel_1, 0, SpringLayout.WEST, warning);
+		sl_panel.putConstraint(SpringLayout.NORTH, panel_1, 126, SpringLayout.NORTH, panel);
+		sl_panel.putConstraint(SpringLayout.SOUTH, panel_1, -30, SpringLayout.NORTH, cancelButton);
+		sl_panel.putConstraint(SpringLayout.EAST, panel_1, 0, SpringLayout.EAST, cancelButton);
 		panel_1.setBackground(new Color(255, 0, 0, 0));
-		sl_panel.putConstraint(SpringLayout.NORTH, panel_1, 124, SpringLayout.NORTH, panel);
-		sl_panel.putConstraint(SpringLayout.WEST, panel_1, 259, SpringLayout.WEST, panel);
-		sl_panel.putConstraint(SpringLayout.SOUTH, panel_1, -32, SpringLayout.NORTH, cancelButton);
-		sl_panel.putConstraint(SpringLayout.EAST, panel_1, -99, SpringLayout.EAST, panel);
 		panel.add(panel_1);
 		SpringLayout sl_panel_1 = new SpringLayout();
+		sl_panel_1.putConstraint(SpringLayout.EAST, idCheck, -225, SpringLayout.EAST, panel_1);
 		panel_1.setLayout(sl_panel_1);
 
 		JLabel label_2 = new JLabel("\uC544\uC774\uB514");
+		sl_panel_1.putConstraint(SpringLayout.NORTH, idCheck, -2, SpringLayout.NORTH, label_2);
 		sl_panel_1.putConstraint(SpringLayout.NORTH, label_2, 10, SpringLayout.NORTH, panel_1);
-		sl_panel_1.putConstraint(SpringLayout.WEST, label_2, 25, SpringLayout.WEST, panel_1);
 		label_2.setHorizontalAlignment(SwingConstants.CENTER);
-		label_2.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 13));
+		label_2.setFont(new Font("³ª´®°íµñ", Font.BOLD, 14));
 		panel_1.add(label_2);
 
 		idField = new JTextField();
-		sl_panel_1.putConstraint(SpringLayout.NORTH, idField, 0, SpringLayout.NORTH, label_2);
-		sl_panel_1.putConstraint(SpringLayout.EAST, idField, -19, SpringLayout.WEST, idCheck);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, idField, -2, SpringLayout.NORTH, label_2);
+		sl_panel_1.putConstraint(SpringLayout.WEST, idField, 34, SpringLayout.EAST, label_2);
 		idField.setHorizontalAlignment(SwingConstants.CENTER);
 		idField.setColumns(10);
 		panel_1.add(idField);
 
 		JLabel label_3 = new JLabel("\uBE44\uBC00\uBC88\uD638");
-		sl_panel_1.putConstraint(SpringLayout.NORTH, label_3, 26, SpringLayout.SOUTH, label_2);
-		sl_panel_1.putConstraint(SpringLayout.WEST, label_3, 0, SpringLayout.WEST, label_2);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, label_3, 30, SpringLayout.SOUTH, label_2);
+		sl_panel_1.putConstraint(SpringLayout.WEST, label_3, 10, SpringLayout.WEST, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.EAST, label_2, 0, SpringLayout.EAST, label_3);
 		label_3.setHorizontalAlignment(SwingConstants.CENTER);
-		label_3.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 13));
+		label_3.setFont(new Font("³ª´®°íµñ", Font.BOLD, 14));
 		panel_1.add(label_3);
 
 		JLabel label_4 = new JLabel("\uBE44\uBC00\uBC88\uD638 \uD655\uC778");
-		sl_panel_1.putConstraint(SpringLayout.NORTH, label_4, 25, SpringLayout.SOUTH, idCheck);
-		sl_panel_1.putConstraint(SpringLayout.WEST, label_4, 169, SpringLayout.EAST, label_3);
+		sl_panel_1.putConstraint(SpringLayout.WEST, idCheck, 0, SpringLayout.WEST, label_4);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, label_4, 0, SpringLayout.NORTH, label_3);
 		label_4.setHorizontalAlignment(SwingConstants.CENTER);
-		label_4.setFont(new Font("±¼¸²", Font.BOLD, 12));
+		label_4.setFont(new Font("³ª´®°íµñ", Font.BOLD, 14));
 		panel_1.add(label_4);
 
 		pwField = new JPasswordField();
-		sl_panel_1.putConstraint(SpringLayout.NORTH, pwField, 24, SpringLayout.SOUTH, idField);
-		sl_panel_1.putConstraint(SpringLayout.WEST, pwField, 0, SpringLayout.WEST, idField);
-		sl_panel_1.putConstraint(SpringLayout.EAST, pwField, 0, SpringLayout.EAST, idField);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, pwField, -2, SpringLayout.NORTH, label_3);
+		sl_panel_1.putConstraint(SpringLayout.WEST, pwField, 34, SpringLayout.EAST, label_3);
+		sl_panel_1.putConstraint(SpringLayout.EAST, pwField, -31, SpringLayout.WEST, label_4);
 		panel_1.add(pwField);
 
 		pwConField = new JPasswordField();
-		sl_panel_1.putConstraint(SpringLayout.NORTH, pwConField, 55, SpringLayout.NORTH, panel_1);
-		sl_panel_1.putConstraint(SpringLayout.WEST, pwConField, 26, SpringLayout.EAST, label_4);
-		sl_panel_1.putConstraint(SpringLayout.EAST, pwConField, 142, SpringLayout.EAST, label_4);
+		sl_panel_1.putConstraint(SpringLayout.EAST, label_4, -23, SpringLayout.WEST, pwConField);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, pwConField, -2, SpringLayout.NORTH, label_3);
+		sl_panel_1.putConstraint(SpringLayout.WEST, pwConField, 348, SpringLayout.WEST, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.EAST, pwConField, -92, SpringLayout.EAST, panel_1);
 		panel_1.add(pwConField);
 
 		JLabel label_5 = new JLabel("\uC774\uB984");
-		sl_panel_1.putConstraint(SpringLayout.NORTH, label_5, 32, SpringLayout.SOUTH, label_3);
-		sl_panel_1.putConstraint(SpringLayout.WEST, label_5, 0, SpringLayout.WEST, label_2);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, label_5, 28, SpringLayout.SOUTH, label_3);
+		sl_panel_1.putConstraint(SpringLayout.EAST, label_5, 0, SpringLayout.EAST, label_2);
 		label_5.setHorizontalAlignment(SwingConstants.CENTER);
-		label_5.setFont(new Font("±¼¸²", Font.BOLD, 12));
+		label_5.setFont(new Font("³ª´®°íµñ", Font.BOLD, 14));
 		panel_1.add(label_5);
 
 		nameField = new JTextField();
-		sl_panel_1.putConstraint(SpringLayout.NORTH, nameField, -3, SpringLayout.NORTH, label_5);
-		sl_panel_1.putConstraint(SpringLayout.EAST, nameField, 0, SpringLayout.EAST, idField);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, nameField, -2, SpringLayout.NORTH, label_5);
+		sl_panel_1.putConstraint(SpringLayout.WEST, nameField, 0, SpringLayout.WEST, idField);
 		nameField.setColumns(10);
 		panel_1.add(nameField);
 
 		JLabel label_6 = new JLabel("\uC5F0\uB77D\uCC98");
-		sl_panel_1.putConstraint(SpringLayout.WEST, label_6, 0, SpringLayout.WEST, label_2);
-		sl_panel_1.putConstraint(SpringLayout.SOUTH, label_6, -71, SpringLayout.SOUTH, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.EAST, label_6, 0, SpringLayout.EAST, label_2);
 		label_6.setHorizontalAlignment(SwingConstants.CENTER);
-		label_6.setFont(new Font("±¼¸²", Font.BOLD, 12));
+		label_6.setFont(new Font("³ª´®°íµñ", Font.BOLD, 14));
 		panel_1.add(label_6);
 
 		contactField = new JTextField();
-		sl_panel_1.putConstraint(SpringLayout.NORTH, contactField, 150, SpringLayout.NORTH, panel_1);
-		sl_panel_1.putConstraint(SpringLayout.WEST, contactField, 47, SpringLayout.EAST, label_6);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, contactField, -2, SpringLayout.NORTH, label_6);
+		sl_panel_1.putConstraint(SpringLayout.WEST, contactField, 0, SpringLayout.WEST, idField);
+		sl_panel_1.putConstraint(SpringLayout.EAST, contactField, 0, SpringLayout.EAST, idField);
 		contactField.setColumns(10);
 		panel_1.add(contactField);
 
 		JLabel label_1 = new JLabel("\uC131\uBCC4");
-		sl_panel_1.putConstraint(SpringLayout.NORTH, label_1, 13, SpringLayout.SOUTH, label_6);
-		sl_panel_1.putConstraint(SpringLayout.WEST, label_1, 0, SpringLayout.WEST, label_2);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, label_1, 181, SpringLayout.NORTH, panel_1);
+		sl_panel_1.putConstraint(SpringLayout.SOUTH, label_6, -13, SpringLayout.NORTH, label_1);
 		sl_panel_1.putConstraint(SpringLayout.SOUTH, label_1, -30, SpringLayout.SOUTH, panel_1);
-		label_1.setFont(new Font("±¼¸²", Font.BOLD, 12));
+		sl_panel_1.putConstraint(SpringLayout.EAST, label_1, 0, SpringLayout.EAST, label_2);
+		label_1.setFont(new Font("³ª´®°íµñ", Font.BOLD, 14));
 		panel_1.add(label_1);
 
 		JPanel panel_3 = new JPanel();
-		panel_3.setOpaque(false);
-		panel_3.setBackground(new Color(255, 255, 255));
-		sl_panel_1.putConstraint(SpringLayout.NORTH, panel_3, 0, SpringLayout.NORTH, label_1);
+		sl_panel_1.putConstraint(SpringLayout.NORTH, panel_3, 181, SpringLayout.NORTH, panel_1);
 		sl_panel_1.putConstraint(SpringLayout.WEST, panel_3, 0, SpringLayout.WEST, idField);
 		sl_panel_1.putConstraint(SpringLayout.SOUTH, panel_3, 0, SpringLayout.SOUTH, label_1);
-		sl_panel_1.putConstraint(SpringLayout.EAST, panel_3, 6, SpringLayout.EAST, idField);
+		sl_panel_1.putConstraint(SpringLayout.EAST, panel_3, 0, SpringLayout.EAST, idField);
+		panel_3.setOpaque(false);
+		panel_3.setBackground(new Color(255, 255, 255));
 		panel_1.add(panel_3);
 		panel_3.setLayout(new GridLayout(1, 0, 0, 0));
 
@@ -333,14 +342,7 @@ public class JoinGUI {
 
 		warning.setHorizontalAlignment(SwingConstants.CENTER);
 		warning.setFont(new Font("°íµµ M", Font.PLAIN, 16));
-		sl_panel.putConstraint(SpringLayout.NORTH, warning, 32, SpringLayout.SOUTH, panel_1);
-		sl_panel.putConstraint(SpringLayout.WEST, warning, 0, SpringLayout.WEST, panel_1);
-
-		sl_panel_1.putConstraint(SpringLayout.NORTH, idCheck, 0, SpringLayout.NORTH, label_2);
-		sl_panel_1.putConstraint(SpringLayout.WEST, idCheck, 0, SpringLayout.WEST, label_4);
 		panel_1.add(idCheck);
-		sl_panel.putConstraint(SpringLayout.SOUTH, warning, 0, SpringLayout.SOUTH, cancelButton);
-		sl_panel.putConstraint(SpringLayout.EAST, warning, -30, SpringLayout.WEST, confirmButton);
 		panel.add(warning);
 		
 

@@ -50,7 +50,7 @@ public class MyOrderPanel extends JPanel {
 	      }
 	      
 	      table = new JTable(data, columnNames);
-	      table.setFont(new Font("³ª´®°íµñ", Font.PLAIN, 12));
+	      table.setFont(new Font("°íµµ M", Font.PLAIN, 12));
 
 	      scrollPane.setViewportView(table);
 		
