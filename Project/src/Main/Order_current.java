@@ -11,6 +11,7 @@ import java.util.Vector;
 
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import java.awt.Font;
 
 public class Order_current extends JPanel {
 	private JTable table;
@@ -47,6 +48,7 @@ public class Order_current extends JPanel {
 	      }
 	      
 	      table = new JTable(data, columnNames);
+	      table.setFont(new Font("³ª´®°íµñ", Font.PLAIN, 12));
 
 	      scrollPane.setViewportView(table);
 	}

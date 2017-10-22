@@ -128,7 +128,7 @@ public class MainGUI {
 		
 		
 		JButton btnNewButton = new JButton("\uC8FC\uBB38\uD604\uD669");
-		btnNewButton.setFont(new Font("°íµµ M", Font.PLAIN, 16));
+		btnNewButton.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -142,7 +142,7 @@ public class MainGUI {
 		});
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				lblNewLabel.setText("ÁÖ¹®ÇöÈ²");
+				lblNewLabel.setText("¿À´ÃÀÇÁÖ¹®");
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "order_current");
 			}
 		});
@@ -179,13 +179,13 @@ public class MainGUI {
 			}
 		});
 		btnNewButton_3.setBackground(new Color(254, 194, 15));
-		btnNewButton_3.setFont(new Font("°íµµ M", Font.PLAIN, 16));
+		btnNewButton_3.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
 		menuPanel.add(btnNewButton_3);
 		btnNewButton.setBackground(new Color(254, 194, 15));
 		menuPanel.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("\uB0B4 \uC8FC\uBB38");
-		btnNewButton_1.setFont(new Font("°íµµ M", Font.PLAIN, 16));
+		btnNewButton_1.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
 		btnNewButton_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -199,10 +199,26 @@ public class MainGUI {
 		});
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				lblNewLabel.setText("³» ÁÖ¹®");
+				lblNewLabel.setText("³» ÁÖ¹® ´©ÀûÁ¶È¸");
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "paymentPanel");
 			}
 		});
+		
+		JButton btnNewButton_4 = new JButton("\uC8FC\uBB38\uC218\uC815");
+		btnNewButton_4.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
+		btnNewButton_4.setBackground(new Color(254, 194, 15));
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				frame.dispose();
+				ReorderGUI reorder = new ReorderGUI();
+				reorder.main(null);
+				
+				
+				
+			}
+		});
+		menuPanel.add(btnNewButton_4);
 		btnNewButton_1.setBackground(new Color(254, 194, 15));
 		menuPanel.add(btnNewButton_1);
 		
@@ -224,7 +240,7 @@ public class MainGUI {
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "gamePanel");	
 			}
 		});
-		btnNewButton_2.setFont(new Font("°íµµ M", Font.PLAIN, 16));
+		btnNewButton_2.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
 		btnNewButton_2.setBackground(new Color(254, 194, 15));
 		menuPanel.add(btnNewButton_2);
 		panel.add(titlePanel);

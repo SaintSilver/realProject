@@ -36,7 +36,7 @@ public class OrderGUI {
 	private LoginGUI login = new LoginGUI();
 	private String path;
 	private UserVO user;
-	private UserDAO dao = new UserDAO();
+	private OrderDAO dao = new OrderDAO();
 	private OrderDAO orderDAO = new OrderDAO();
 	private MainGUI mainGUI = new MainGUI();
 

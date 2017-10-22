@@ -151,7 +151,7 @@ public class UserDAO {
 		try {
 			getConnection();
 
-			String sql = "delete userinfo where id = ?";
+			String sql = "delete from userinfo where id = ?";
 			psmt = con.prepareStatement(sql);
 			// ? 순번(1부터시작), 넣을 값
 			psmt.setString(1, id);
@@ -421,12 +421,6 @@ public class UserDAO {
 			} else {
 				return false; // 숫자가 아님!
 			}
-		}
-		
-		if(textInput.length()>=9 && textInput.length()<=11) {
-			//9~11자리
-		}else {
-			return false;
 		}
 
 		return true;

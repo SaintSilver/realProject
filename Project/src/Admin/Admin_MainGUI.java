@@ -119,7 +119,7 @@ public class Admin_MainGUI {
 		
 		
 		JButton btnOrder_current = new JButton("\uC8FC\uBB38\uD604\uD669");
-		btnOrder_current.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.BOLD, 15));
+		btnOrder_current.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
 		btnOrder_current.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -133,7 +133,7 @@ public class Admin_MainGUI {
 		});
 		btnOrder_current.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				lblNewLabel.setText("ÁÖ¹®ÇöÈ²");
+				lblNewLabel.setText("¿À´ÃÀÇÁÖ¹®");
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "order_current");
 			}
 		});
@@ -192,7 +192,7 @@ public class Admin_MainGUI {
 		menuPanel.add(btnOrder_current);
 		
 		JButton btnPayment = new JButton("\uB204\uC801\uC8FC\uBB38");
-		btnPayment.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.BOLD, 15));
+		btnPayment.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
 		btnPayment.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -231,7 +231,7 @@ public class Admin_MainGUI {
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "gamePanel");	
 			}
 		});
-		btnGame.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.BOLD, 15));
+		btnGame.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
 		btnGame.setBackground(new Color(254, 194, 15));
 		menuPanel.add(btnGame);
 		panel.add(titlePanel);
