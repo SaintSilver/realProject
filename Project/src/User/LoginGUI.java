@@ -164,6 +164,7 @@ public class LoginGUI {
 		panel.add(JoinButton);
 
 		idField = new JTextField();
+		idField.setOpaque(false);
 		sl_panel.putConstraint(SpringLayout.WEST, idField, 497, SpringLayout.WEST, panel);
 		sl_panel.putConstraint(SpringLayout.NORTH, idField, 151, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, idField, -289, SpringLayout.SOUTH, panel);
@@ -172,6 +173,7 @@ public class LoginGUI {
 		idField.setColumns(10);
 
 		pwField = new JPasswordField();
+		pwField.setOpaque(false);
 		sl_panel.putConstraint(SpringLayout.WEST, pwField, 0, SpringLayout.WEST, idField);
 		sl_panel.putConstraint(SpringLayout.EAST, pwField, 0, SpringLayout.EAST, idField);
 		panel.add(pwField);

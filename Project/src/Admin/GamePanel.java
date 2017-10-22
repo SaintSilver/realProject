@@ -18,6 +18,7 @@ import Main.PickNameVO;
 import Order.OrderDAO;
 import Order.OrderVO;
 import javax.swing.SwingConstants;
+import java.awt.SystemColor;
 
 public class GamePanel extends JPanel {
 
@@ -26,13 +27,16 @@ public class GamePanel extends JPanel {
 
 	public GamePanel() {
 
-		setBackground(Color.WHITE);
+		setBackground(SystemColor.inactiveCaption);
 		SpringLayout sl_GamePanel = new SpringLayout();
 		setLayout(sl_GamePanel);
 
-		JButton btnStart = new JButton("Start");
+		JButton btnStart = new JButton("\uC2DC\uC791!!!");
+		btnStart.setBackground(SystemColor.activeCaption);
 		sl_GamePanel.putConstraint(SpringLayout.NORTH, btnStart, 30, SpringLayout.NORTH, this);
-		sl_GamePanel.putConstraint(SpringLayout.WEST, btnStart, 86, SpringLayout.WEST, this);
+		sl_GamePanel.putConstraint(SpringLayout.WEST, btnStart, 74, SpringLayout.WEST, this);
+		sl_GamePanel.putConstraint(SpringLayout.SOUTH, btnStart, 105, SpringLayout.NORTH, this);
+		sl_GamePanel.putConstraint(SpringLayout.EAST, btnStart, 191, SpringLayout.WEST, this);
 		btnStart.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
@@ -42,22 +46,27 @@ public class GamePanel extends JPanel {
 			}
 
 		});
-		btnStart.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 20));
+		btnStart.setFont(new Font("«‘√ ∑“µ∏øÚ", Font.BOLD, 25));
 		btnStart.setBounds(432, 40, 126, 53);
 		add(btnStart);
 
 		lbl_pickName = new JLabel("\uB2F9\uCCA8\uC790\uB294?");
-		lbl_pickName.setFont(new Font("±º∏≤", Font.PLAIN, 42));
+		lbl_pickName.setBackground(Color.WHITE);
+		lbl_pickName.setForeground(Color.BLACK);
+		sl_GamePanel.putConstraint(SpringLayout.WEST, lbl_pickName, 86, SpringLayout.WEST, this);
+		sl_GamePanel.putConstraint(SpringLayout.EAST, lbl_pickName, -77, SpringLayout.EAST, this);
+		lbl_pickName.setFont(new Font("±√º≠", Font.BOLD, 80));
 		lbl_pickName.setHorizontalAlignment(SwingConstants.CENTER);
 		sl_GamePanel.putConstraint(SpringLayout.NORTH, lbl_pickName, 137, SpringLayout.NORTH, this);
-		sl_GamePanel.putConstraint(SpringLayout.WEST, lbl_pickName, 0, SpringLayout.WEST, btnStart);
 		sl_GamePanel.putConstraint(SpringLayout.SOUTH, lbl_pickName, 229, SpringLayout.NORTH, this);
 		lbl_pickName.setBounds(223, 156, 513, 91);
 
-		JButton btnStop = new JButton("Stop");
-		sl_GamePanel.putConstraint(SpringLayout.EAST, lbl_pickName, 0, SpringLayout.EAST, btnStop);
-		sl_GamePanel.putConstraint(SpringLayout.NORTH, btnStop, 0, SpringLayout.NORTH, btnStart);
-		sl_GamePanel.putConstraint(SpringLayout.EAST, btnStop, -77, SpringLayout.EAST, this);
+		JButton btnStop = new JButton("\uC2A4\uD1B1!!!");
+		btnStop.setBackground(SystemColor.activeCaption);
+		sl_GamePanel.putConstraint(SpringLayout.NORTH, btnStop, 30, SpringLayout.NORTH, this);
+		sl_GamePanel.putConstraint(SpringLayout.WEST, btnStop, -117, SpringLayout.EAST, lbl_pickName);
+		sl_GamePanel.putConstraint(SpringLayout.SOUTH, btnStop, -32, SpringLayout.NORTH, lbl_pickName);
+		sl_GamePanel.putConstraint(SpringLayout.EAST, btnStop, 0, SpringLayout.EAST, lbl_pickName);
 		btnStop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				t.stop();
@@ -72,7 +81,7 @@ public class GamePanel extends JPanel {
 
 			}
 		});
-		btnStop.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 20));
+		btnStop.setFont(new Font("«‘√ ∑“µ∏øÚ", Font.BOLD, 25));
 		btnStop.setBounds(584, 40, 126, 53);
 		add(btnStop);
 

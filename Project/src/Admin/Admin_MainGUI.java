@@ -20,6 +20,8 @@ import javax.swing.SwingConstants;
 
 import Main.Clock;
 import User.LoginGUI;
+import java.awt.GridLayout;
+import java.awt.SystemColor;
 
 
 public class Admin_MainGUI {
@@ -56,28 +58,26 @@ public class Admin_MainGUI {
 		panel.setLayout(sl_panel);
 		
 		JPanel menuPanel = new JPanel();
-		sl_panel.putConstraint(SpringLayout.EAST, menuPanel, 104, SpringLayout.WEST, panel);
 		menuPanel.setBackground(new Color(254, 194, 15));
-		sl_panel.putConstraint(SpringLayout.NORTH, menuPanel, 0, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.WEST, menuPanel, 0, SpringLayout.WEST, panel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, menuPanel, 0, SpringLayout.SOUTH, panel);
 		panel.add(menuPanel);
-		SpringLayout sl_menuPanel = new SpringLayout();
-		menuPanel.setLayout(sl_menuPanel);
 		
 		JPanel titlePanel = new JPanel();
 		sl_panel.putConstraint(SpringLayout.NORTH, titlePanel, 50, SpringLayout.NORTH, panel);
+		sl_panel.putConstraint(SpringLayout.WEST, titlePanel, 104, SpringLayout.WEST, panel);
+		sl_panel.putConstraint(SpringLayout.EAST, titlePanel, 0, SpringLayout.EAST, panel);
 		titlePanel.setBackground(Color.WHITE);
-		sl_panel.putConstraint(SpringLayout.WEST, titlePanel, 0, SpringLayout.EAST, menuPanel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, titlePanel, 92, SpringLayout.NORTH, panel);
-		sl_panel.putConstraint(SpringLayout.EAST, titlePanel, 780, SpringLayout.EAST, menuPanel);
 		
 		mainPanel = new JPanel();
+		sl_panel.putConstraint(SpringLayout.EAST, menuPanel, -1, SpringLayout.WEST, mainPanel);
+		sl_panel.putConstraint(SpringLayout.WEST, mainPanel, 110, SpringLayout.WEST, panel);
+		sl_panel.putConstraint(SpringLayout.EAST, mainPanel, -10, SpringLayout.EAST, panel);
+		sl_panel.putConstraint(SpringLayout.NORTH, menuPanel, 0, SpringLayout.NORTH, mainPanel);
 		sl_panel.putConstraint(SpringLayout.NORTH, mainPanel, 6, SpringLayout.SOUTH, titlePanel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, mainPanel, -10, SpringLayout.SOUTH, panel);
 		mainPanel.setBackground(Color.DARK_GRAY);
-		sl_panel.putConstraint(SpringLayout.WEST, mainPanel, 6, SpringLayout.EAST, menuPanel);
-		sl_panel.putConstraint(SpringLayout.EAST, mainPanel, 770, SpringLayout.EAST, menuPanel);
 		panel.add(mainPanel);
 		mainPanel.setLayout(new CardLayout(0, 0));
 		
@@ -118,8 +118,6 @@ public class Admin_MainGUI {
 		
 		
 		JButton btnOrder_current = new JButton("\uC8FC\uBB38\uD604\uD669");
-		sl_menuPanel.putConstraint(SpringLayout.NORTH, btnOrder_current, 181, SpringLayout.NORTH, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.WEST, btnOrder_current, 0, SpringLayout.WEST, menuPanel);
 		btnOrder_current.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.BOLD, 15));
 		btnOrder_current.addMouseListener(new MouseAdapter() {
 			@Override
@@ -138,68 +136,30 @@ public class Admin_MainGUI {
 				((CardLayout)mainPanel.getLayout()).show(mainPanel, "order_current");
 			}
 		});
-		btnOrder_current.setBackground(new Color(254, 194, 15));
-		menuPanel.add(btnOrder_current);
+		menuPanel.setLayout(new GridLayout(0, 1, 0, 0));
 		
-		JButton btnPayment = new JButton("\uB204\uC801\uC8FC\uBB38");
-		sl_menuPanel.putConstraint(SpringLayout.NORTH, btnPayment, 242, SpringLayout.NORTH, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.WEST, btnPayment, 0, SpringLayout.WEST, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.EAST, btnPayment, 0, SpringLayout.EAST, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.SOUTH, btnOrder_current, -6, SpringLayout.NORTH, btnPayment);
-		sl_menuPanel.putConstraint(SpringLayout.EAST, btnOrder_current, 0, SpringLayout.EAST, btnPayment);
-		btnPayment.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.BOLD, 15));
-		btnPayment.addMouseListener(new MouseAdapter() {
+		JButton btnUserManage = new JButton("\uD68C\uC6D0\uD604\uD669");
+		btnUserManage.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
-				btnPayment.setBackground(new Color(255, 255, 255));
-				
+				btnUserManage.setBackground(Color.white);
 			}
 			@Override
 			public void mouseExited(MouseEvent e) {
-				btnPayment.setBackground(new Color(254, 194, 15));
+				btnUserManage.setBackground(new Color(254, 194, 15));
 			}
 		});
-		btnPayment.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				lblNewLabel.setText("´©ÀûÁÖ¹®Á¶È¸");
-				((CardLayout)mainPanel.getLayout()).show(mainPanel, "paymentPanel");
+		btnUserManage.setBackground(new Color(254, 194, 15));
+		btnUserManage.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				lblNewLabel.setText("È¸¿øÇöÈ²");
+				mainPanel.setBackground(Color.BLUE);
+				mainPanel.setVisible(true);
+				((CardLayout)mainPanel.getLayout()).show(mainPanel, "userManagePanel");	
 			}
 		});
-		btnPayment.setBackground(new Color(254, 194, 15));
-		menuPanel.add(btnPayment);
-		
-		JButton btnGame = new JButton("\uACB0\uC81C\uC790\uCD94\uCCA8");
-		sl_menuPanel.putConstraint(SpringLayout.WEST, btnGame, 0, SpringLayout.WEST, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.EAST, btnGame, 0, SpringLayout.EAST, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.SOUTH, btnPayment, -6, SpringLayout.NORTH, btnGame);
-		sl_menuPanel.putConstraint(SpringLayout.NORTH, btnGame, 303, SpringLayout.NORTH, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.SOUTH, btnGame, -126, SpringLayout.SOUTH, menuPanel);
-		btnGame.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseEntered(MouseEvent e) {
-				btnGame.setBackground(new Color(255, 255, 255));
-				
-			}
-			@Override
-			public void mouseExited(MouseEvent e) {
-				btnGame.setBackground(new Color(254, 194, 15));
-			}
-		});
-		btnGame.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				lblNewLabel.setText("°áÁ¦ÀÚÃßÃ·");
-				((CardLayout)mainPanel.getLayout()).show(mainPanel, "gamePanel");	
-			}
-		});
-		btnGame.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.BOLD, 15));
-		btnGame.setBackground(new Color(254, 194, 15));
-		menuPanel.add(btnGame);
 		
 		JButton btnMenuMange = new JButton("\uD68C\uC6D0\uAD00\uB9AC");
-		sl_menuPanel.putConstraint(SpringLayout.NORTH, btnMenuMange, 70, SpringLayout.NORTH, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.WEST, btnMenuMange, 0, SpringLayout.WEST, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.SOUTH, btnMenuMange, -56, SpringLayout.NORTH, btnOrder_current);
-		sl_menuPanel.putConstraint(SpringLayout.EAST, btnMenuMange, 0, SpringLayout.EAST, menuPanel);
 		btnMenuMange.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -226,41 +186,60 @@ public class Admin_MainGUI {
 		btnMenuMange.setBackground(new Color(254, 194, 15));
 		btnMenuMange.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
 		menuPanel.add(btnMenuMange);
-		panel.add(titlePanel);
+		btnUserManage.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
+		menuPanel.add(btnUserManage);
+		btnOrder_current.setBackground(new Color(254, 194, 15));
+		menuPanel.add(btnOrder_current);
 		
-		JPanel panel_1 = new JPanel();
-		sl_panel.putConstraint(SpringLayout.SOUTH, panel_1, -6, SpringLayout.NORTH, titlePanel);
-		sl_panel.putConstraint(SpringLayout.EAST, panel_1, 163, SpringLayout.EAST, menuPanel);
-		panel_1.setBackground(Color.WHITE);
-		sl_panel.putConstraint(SpringLayout.NORTH, panel_1, 0, SpringLayout.NORTH, panel);
-		sl_panel.putConstraint(SpringLayout.WEST, panel_1, 6, SpringLayout.EAST, menuPanel);
-		
-		JButton btnUserManage = new JButton("\uD68C\uC6D0\uD604\uD669");
-		sl_menuPanel.putConstraint(SpringLayout.NORTH, btnUserManage, 6, SpringLayout.SOUTH, btnMenuMange);
-		btnUserManage.addMouseListener(new MouseAdapter() {
+		JButton btnPayment = new JButton("\uB204\uC801\uC8FC\uBB38");
+		btnPayment.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.BOLD, 15));
+		btnPayment.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
-				btnUserManage.setBackground(Color.white);
+				btnPayment.setBackground(new Color(255, 255, 255));
+				
 			}
 			@Override
 			public void mouseExited(MouseEvent e) {
-				btnUserManage.setBackground(new Color(254, 194, 15));
+				btnPayment.setBackground(new Color(254, 194, 15));
 			}
 		});
-		btnUserManage.setBackground(new Color(254, 194, 15));
-		btnUserManage.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				lblNewLabel.setText("È¸¿øÇöÈ²");
-				mainPanel.setBackground(Color.BLUE);
-				mainPanel.setVisible(true);
-				((CardLayout)mainPanel.getLayout()).show(mainPanel, "userManagePanel");	
+		btnPayment.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lblNewLabel.setText("´©ÀûÁÖ¹®Á¶È¸");
+				((CardLayout)mainPanel.getLayout()).show(mainPanel, "paymentPanel");
 			}
 		});
-		btnUserManage.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));
-		sl_menuPanel.putConstraint(SpringLayout.WEST, btnUserManage, 0, SpringLayout.WEST, menuPanel);
-		sl_menuPanel.putConstraint(SpringLayout.SOUTH, btnUserManage, -6, SpringLayout.NORTH, btnOrder_current);
-		sl_menuPanel.putConstraint(SpringLayout.EAST, btnUserManage, 0, SpringLayout.EAST, btnOrder_current);
-		menuPanel.add(btnUserManage);
+		btnPayment.setBackground(new Color(254, 194, 15));
+		menuPanel.add(btnPayment);
+		
+		JButton btnGame = new JButton("\uACB0\uC81C\uC790\uCD94\uCCA8");
+		btnGame.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				btnGame.setBackground(new Color(255, 255, 255));
+				
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+				btnGame.setBackground(new Color(254, 194, 15));
+			}
+		});
+		btnGame.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lblNewLabel.setText("°áÁ¦ÀÚÃßÃ·");
+				((CardLayout)mainPanel.getLayout()).show(mainPanel, "gamePanel");	
+			}
+		});
+		btnGame.setFont(new Font("³ª´®¹Ù¸¥°íµñ", Font.BOLD, 15));
+		btnGame.setBackground(new Color(254, 194, 15));
+		menuPanel.add(btnGame);
+		panel.add(titlePanel);
+		
+		JPanel panel_1 = new JPanel();
+		sl_panel.putConstraint(SpringLayout.WEST, panel_1, 0, SpringLayout.WEST, titlePanel);
+		sl_panel.putConstraint(SpringLayout.SOUTH, panel_1, -6, SpringLayout.NORTH, titlePanel);
+		panel_1.setBackground(Color.WHITE);
 		panel.add(panel_1);
 		panel_1.setLayout(new CardLayout(0, 0));
 		
@@ -271,7 +250,9 @@ public class Admin_MainGUI {
 		panel_1.add(label, "name_63540991356036");
 		
 		JLabel timeLabel = new JLabel("\"\"");
-		sl_panel.putConstraint(SpringLayout.NORTH, timeLabel, 0, SpringLayout.NORTH, menuPanel);
+		sl_panel.putConstraint(SpringLayout.NORTH, panel_1, 0, SpringLayout.NORTH, timeLabel);
+		sl_panel.putConstraint(SpringLayout.EAST, panel_1, -449, SpringLayout.WEST, timeLabel);
+		sl_panel.putConstraint(SpringLayout.NORTH, timeLabel, 0, SpringLayout.NORTH, panel);
 		sl_panel.putConstraint(SpringLayout.WEST, timeLabel, -212, SpringLayout.EAST, panel);
 		sl_panel.putConstraint(SpringLayout.EAST, timeLabel, -10, SpringLayout.EAST, panel);
 		timeLabel.setHorizontalAlignment(SwingConstants.CENTER);

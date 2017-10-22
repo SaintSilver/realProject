@@ -112,7 +112,9 @@ public class JoinGUI {
 		panel.add(cancelButton);
 
 		JRadioButton radioButton_Man = new JRadioButton("\uB0A8\uC790");
+		radioButton_Man.setBackground(new Color(255, 255, 255));
 		JRadioButton radioButton_Woman = new JRadioButton("\uC5EC\uC790");
+		radioButton_Woman.setBackground(new Color(255, 255, 255));
 
 		ButtonGroup group = new ButtonGroup(); // 라디오버튼 그룹화를 위한 버튼그룹 설정
 		group.add(radioButton_Man);
@@ -281,6 +283,8 @@ public class JoinGUI {
 		panel_1.add(label_1);
 
 		JPanel panel_3 = new JPanel();
+		panel_3.setOpaque(false);
+		panel_3.setBackground(new Color(255, 255, 255));
 		sl_panel_1.putConstraint(SpringLayout.NORTH, panel_3, 0, SpringLayout.NORTH, label_1);
 		sl_panel_1.putConstraint(SpringLayout.WEST, panel_3, 0, SpringLayout.WEST, idField);
 		sl_panel_1.putConstraint(SpringLayout.SOUTH, panel_3, 0, SpringLayout.SOUTH, label_1);
