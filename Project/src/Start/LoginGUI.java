@@ -25,7 +25,7 @@ import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
 import Admin.Admin_MainGUI;
-import Main.Clock;
+import Clock.Clock;
 import Main.MainGUI;
 import User.A;
 import User.JoinGUI;

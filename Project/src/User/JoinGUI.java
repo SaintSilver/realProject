@@ -26,7 +26,7 @@ import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
-import Main.Clock;
+import Clock.Clock;
 
 import javax.swing.JPasswordField;
 

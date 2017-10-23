@@ -261,6 +261,25 @@ public class ReorderGUI {
 		for (int i = 0; i < list.size(); i++) {
 			comboBox.addItem(list.get(i).getItem());
 		}
+		
+		String item = comboBox.getSelectedItem().toString();
+		UserVO user = userDAO.viewInfo(myID);
+		int count = 0;
+		String time= "";
+
+		// 주문리스트
+		for (int i = 0; i < list.size(); i++) {
+			if(item.equals(list.get(i).getItem())) {
+				count = list.get(i).getEa();
+				time = list.get(i).getTime();
+			}
+		}
+
+		id_Field.setText(myID);
+		name_Field.setText(user.getName());
+		menu_Field.setText(item);
+		count_textField.setText(String.valueOf(count));
+		time_Field.setText(time.substring(5));
 
 		comboBox.addItemListener(new ItemListener() {
 
@@ -268,7 +287,6 @@ public class ReorderGUI {
 
 				// 선택되면 아이디에 맞는 회원정보 가져오기
 				String item = comboBox.getSelectedItem().toString();
-				
 				UserVO user = userDAO.viewInfo(myID);
 				int count = 0;
 				String time= "";

@@ -277,6 +277,17 @@ public class UserManagementGUI {
 		for (int i = 1; i < list.size(); i++) {
 			comboBox.addItem(list.get(i).getId());
 		}
+		
+		String id = comboBox.getSelectedItem().toString();
+		UserVO user = dao.viewInfo(id);
+
+		num_textField.setText(String.valueOf(user.getUserNumber()));
+		type_textField.setText(user.getUserType());
+		id_Field.setText(user.getId());
+		name_textField.setText(user.getName());
+		contact_textField.setText(user.getContact());
+		RadioButton_man.setEnabled(user.getGender().equals("³²"));
+		RadioButton_woman.setEnabled(user.getGender().equals("¿©"));
 
 		comboBox.addItemListener(new ItemListener() {
 

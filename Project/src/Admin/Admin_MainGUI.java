@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
-import Main.Clock;
+import Clock.Clock;
 import Start.LoginGUI;
 
 import java.awt.GridLayout;
