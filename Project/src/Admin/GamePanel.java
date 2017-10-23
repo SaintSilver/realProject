@@ -13,10 +13,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 
-import Main.PickNameDAO;
-import Main.PickNameVO;
 import Order.OrderDAO;
 import Order.OrderVO;
+import PickName.PickNameDAO;
+import PickName.PickNameVO;
+
 import javax.swing.SwingConstants;
 import java.awt.SystemColor;
 
@@ -24,7 +25,7 @@ public class GamePanel extends JPanel {
 
 	static JLabel lbl_pickName;
 	private ThreadStart t;
-	private boolean check = false;
+	private boolean check = false; //쓰레드 제어용 
 
 	public GamePanel() {
 
@@ -41,6 +42,7 @@ public class GamePanel extends JPanel {
 		btnStart.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
+				//start를 두번 누르면 아무일 없게.
 				if(check == false) {
 					t = new ThreadStart();
 					t.start();
@@ -72,7 +74,7 @@ public class GamePanel extends JPanel {
 		sl_GamePanel.putConstraint(SpringLayout.EAST, btnStop, 0, SpringLayout.EAST, lbl_pickName);
 		btnStop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
+				//start가 돌고있을때만 됨
 				if(check == true) {
 				t.stop();
 				

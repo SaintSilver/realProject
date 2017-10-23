@@ -1,4 +1,4 @@
-package Main;
+package PickName;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

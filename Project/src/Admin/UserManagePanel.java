@@ -16,7 +16,6 @@ import java.awt.Font;
 import java.awt.SystemColor;
 import java.awt.Color;
 
-
 public class UserManagePanel extends JPanel  {
 	private JTable table;
 	

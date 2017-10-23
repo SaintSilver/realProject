@@ -1,4 +1,4 @@
-package Main;
+package PickName;
 
 public class PickNameVO {
 	

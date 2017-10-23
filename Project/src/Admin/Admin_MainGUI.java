@@ -24,7 +24,6 @@ import Start.LoginGUI;
 import java.awt.GridLayout;
 import java.awt.SystemColor;
 
-
 public class Admin_MainGUI {
 	private JFrame frame;
 	private String menuList;
@@ -88,10 +87,6 @@ public class Admin_MainGUI {
 		SpringLayout springLayout = (SpringLayout) systemPanel.getLayout();
 		mainPanel.add(systemPanel, "SystemPanel");
 		
-		/*//order panel
-		ManagementPanel ManagementPanel = new ManagementPanel();
-		mainPanel.add(ManagementPanel, "ManagementPanel");*/
-		
 		//order_current
 		Order_current_panel order_current = new Order_current_panel();
 		mainPanel.add(order_current, "order_current");
@@ -99,6 +94,7 @@ public class Admin_MainGUI {
 		//payment panel
 		PaymentPanel paymentPanel = new PaymentPanel();
 		mainPanel.add(paymentPanel,"paymentPanel");
+		
 		//game panel
 		GamePanel gamePanel = new GamePanel();
 		mainPanel.add(gamePanel, "gamePanel");
@@ -106,7 +102,6 @@ public class Admin_MainGUI {
 		//user ManageMent panel
 		UserManagePanel userManagePanel = new UserManagePanel();
 		mainPanel.add(userManagePanel, "userManagePanel");
-		
 		
 		SpringLayout sl_titlePanel = new SpringLayout();
 		titlePanel.setLayout(sl_titlePanel);
@@ -116,7 +111,6 @@ public class Admin_MainGUI {
 		sl_titlePanel.putConstraint(SpringLayout.WEST, lblNewLabel, 10, SpringLayout.WEST, titlePanel);
 		sl_titlePanel.putConstraint(SpringLayout.SOUTH, lblNewLabel, -10, SpringLayout.SOUTH, titlePanel);
 		titlePanel.add(lblNewLabel);
-		
 		
 		JButton btnOrder_current = new JButton("\uC8FC\uBB38\uD604\uD669");
 		btnOrder_current.setFont(new Font("³ª´®°íµñ", Font.BOLD, 15));

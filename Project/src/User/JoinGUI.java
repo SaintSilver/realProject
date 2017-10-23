@@ -160,9 +160,6 @@ public class JoinGUI {
 					}
 				}
 				
-				
-				
-				
 			}
 		});
 

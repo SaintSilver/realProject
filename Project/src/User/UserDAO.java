@@ -22,7 +22,6 @@ public class UserDAO {
 
 	public void getConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
-		// con -연결주소 : 주소, 계정명, 비번
 		con = DriverManager.getConnection(url, id, pw);
 	}
 
@@ -46,8 +45,6 @@ public class UserDAO {
 			psmt.setString(6, user.getContact());
 			psmt.setString(7, user.getGender());
 
-			// 꺼내올때, 변경할때 execute 두가지
-			// 변경할때는 :
 			psmt.executeUpdate();
 
 		} catch (ClassNotFoundException e) {
@@ -55,7 +52,6 @@ public class UserDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// 연결 끊기 - 열기 순서의 반대
 			try {
 				if (psmt != null)
 					psmt.close();
@@ -92,7 +88,6 @@ public class UserDAO {
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// 연결 끊기 - 열기 순서의 반대
 			try {
 				if (psmt != null)
 					psmt.close();
@@ -107,7 +102,7 @@ public class UserDAO {
 		return result;
 	}
 
-	// 사용자가 입력한 id와 pw db와 매칭 
+	// 사용자가 입력한 id와 pw 를 db와 매칭 
 	public boolean login(String id, String password) {
 
 		try {
@@ -131,7 +126,6 @@ public class UserDAO {
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// 연결 끊기 - 열기 순서의 반대
 			try {
 				if (psmt != null)
 					psmt.close();
@@ -153,9 +147,7 @@ public class UserDAO {
 
 			String sql = "delete from userinfo where id = ?";
 			psmt = con.prepareStatement(sql);
-			// ? 순번(1부터시작), 넣을 값
 			psmt.setString(1, id);
-			
 			psmt.executeUpdate();
 
 		} catch (ClassNotFoundException e) {
@@ -163,7 +155,6 @@ public class UserDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// 연결 끊기 - 열기 순서의 반대
 			try {
 				if (psmt != null)
 					psmt.close();
@@ -175,7 +166,6 @@ public class UserDAO {
 				e.printStackTrace();
 			}
 		}
-
 	}
 	
 	//회원정보보기
@@ -187,16 +177,11 @@ public class UserDAO {
 			getConnection();
 
 			String sql = "select * from userinfo where id=?";
-
 			psmt = con.prepareStatement(sql);
-
 			psmt.setString(1, id);
 
-			// 단순조회 (update는 변경) - resultset 객체로 반환
 			rs = psmt.executeQuery();
-			// 다음 데이터가 있으면 true 아니면 false
 			while (rs.next()) {
-				// 인덱스도가능 컬럼이름도가능
 				int resultUserNumber = rs.getInt(1);
 				String resultUserType = rs.getString(2);
 				String resultID = rs.getString(3);
@@ -213,7 +198,6 @@ public class UserDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// 연결 끊기 - 열기 순서의 반대
 			try {
 				if (rs != null)
 					rs.close();
@@ -244,9 +228,6 @@ public class UserDAO {
 			psmt.setString(2, user.getName());
 			psmt.setString(3, user.getContact());
 			psmt.setString(4, user.getId());
-
-			// 꺼내올때, 변경할때 execute 두가지
-			// 변경할때는 :
 			psmt.executeUpdate();
 
 		} catch (ClassNotFoundException e) {
@@ -254,7 +235,6 @@ public class UserDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// 연결 끊기 - 열기 순서의 반대
 			try {
 				if (psmt != null)
 					psmt.close();
@@ -268,7 +248,7 @@ public class UserDAO {
 		}
 	}
 	
-	//관리자용 수정
+	//관리자용 회원정보수정
 	public void ChangeInfoAdmin(UserVO user) {
 		try {
 			getConnection();
@@ -282,8 +262,6 @@ public class UserDAO {
 			psmt.setString(4, user.getContact());
 			psmt.setString(5, user.getId());
 
-			// 꺼내올때, 변경할때 execute 두가지
-			// 변경할때는 :
 			psmt.executeUpdate();
 
 		} catch (ClassNotFoundException e) {
@@ -291,7 +269,6 @@ public class UserDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// 연결 끊기 - 열기 순서의 반대
 			try {
 				if (psmt != null)
 					psmt.close();
@@ -314,14 +291,10 @@ public class UserDAO {
 			getConnection();
 
 			String sql = "select * from userinfo";
-
 			psmt = con.prepareStatement(sql);
-
-			// 단순조회 (update는 변경) - resultset 객체로 반환
 			rs = psmt.executeQuery();
-			// 다음 데이터가 있으면 true 아니면 false
+			
 			while (rs.next()) {
-				// 인덱스도가능 컬럼이름도가능
 				int resultUserNumber = rs.getInt("usernumber");
 				String resultUserType = rs.getString(2);
 				String resultID = rs.getString(3);
@@ -338,7 +311,6 @@ public class UserDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// 연결 끊기 - 열기 순서의 반대
 			try {
 				if (rs != null)
 					rs.close();
@@ -372,7 +344,6 @@ public class UserDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			// 연결 끊기 - 열기 순서의 반대
 			try {
 				if (psmt != null)
 					psmt.close();
@@ -401,7 +372,7 @@ public class UserDAO {
 			} else if (chrInput >= 0x30 && chrInput <= 0x39) {
 				// 숫자
 			} else {
-				return false; // 영문자도 아니고 숫자도 아님!
+				return false; // 영어도 숫자도 아님
 			}
 		}
 
@@ -419,7 +390,7 @@ public class UserDAO {
 			if (chrInput >= 0x30 && chrInput <= 0x39) {
 				// 숫자
 			} else {
-				return false; // 숫자가 아님!
+				return false; // 숫자가 아님
 			}
 		}
 
@@ -437,7 +408,7 @@ public class UserDAO {
 			if (c >= (char) 0xAC00 && c <= (char) 0xD7A3) {
 				// 한글
 			} else {
-				return false; // 제대로된 한글음절이 아님!
+				return false; // 완성된 한글음절이 아님
 			}
 		}
 		
